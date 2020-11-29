@@ -1,10 +1,9 @@
 <html>
 <head>
-	<meta name="generator" content="Hugo 0.79.0" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>My New Hugo Site</title>
+    <title>My New Hugo Site - Posts </title>
     
     
     <meta content="My New Hugo Site" name="keywords">
@@ -15,8 +14,8 @@
     
 
     
-        <link href="/index.xml" rel="alternate" type="application/rss&#43;xml" title="My New Hugo Site" />
-        <link href="/index.xml" rel="feed" type="application/rss&#43;xml" title="My New Hugo Site" />
+        <link href="/post/index.xml" rel="alternate" type="application/rss&#43;xml" title="My New Hugo Site" />
+        <link href="/post/index.xml" rel="feed" type="application/rss&#43;xml" title="My New Hugo Site" />
     
 
     
@@ -80,38 +79,25 @@ layui.use('element', function(){
 
         <div id="content" style="min-height:80%">
 
-<main>
+<main id="main">
 
-
-
-
-<div class="layui-container">
-    <div class="layui-row about">
-        <div class="layui-col-xs12 layui-col-sm4 layui-col-md4 about_left">
-            <img class="lazyload about_portrait" data-src="/self/img/avater.jpg" />
-            <h1> Authors </h1>
-            <h2> Intro </h2>
-            
-            
-            
-
+<div class="layui-fluid list-show" >
+    <div class="layui-row">
+        <div class="layui-col-md6 layui-col-sm12 layui-col-xs12">
+            <div class="list-show-title">
+                <h1>These are my blogs</h1>
+                <h2>and also my life</h2>
+            </div>
         </div>
-        <div class="layui-col-xs12 layui-col-sm8 layui-col-md8 about_right">
-            <h1>Biography</h1>
-            <h2></h2>
+        <div class="layui-col-md6 layui-col-sm12 layui-col-xs12" style="text-align:center;">
+            <img src="/self/img/undraw_chat_bot_kli5.png" class="list-title-pic">
         </div>
     </div>
 </div>
 
-<div class="layui-fluid recent" >
-    <div class="layui-container">
-        <div class="layui-row recent-inner" >
-            <div class="layui-col-md8 layui-col-sm8 layui-col-xs12">
-                <h1> Recent Posts </h1>
-                
-                    
-                    
-                            <blockquote class="self-elem-quote " style="background-color:#FFFFFF;margin-top: 10px;">
+<div class="layui-container">
+        
+            <blockquote class="self-elem-quote " style="background-color:#FFFFFF;margin-top: 10px;">
         <a href="/post/my-first-post/">
             <h2 class="">My First Post</h2>
         </a>
@@ -137,24 +123,30 @@ layui.use('element', function(){
         </h3>
     </blockquote>
 
-                    
-                
-            </div>
+    
 
-            <div class="layui-col-md4 layui-col-sm4 layui-col-xs12">
-
-                
-
-                
-                    <h1><a href="/categories">categories</a> </h1>
-                    
-                
-                    <h1><a href="/tags">tags</a> </h1>
-                    
-                
-            </div>
-        </div>
+    
+<div class="pager">
+    <div class="layui-btn-group">
+        <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+            <a href="/post/"><i class="layui-icon">&#xe65a;</i></a>
+        </button>
+        
+        <button type="button" class="layui-btn layui-btn-disabled layui-btn-sm">
+            <i class="layui-icon">&#xe603;</i>
+        </button>
+        
+        
+        <button type="button" class="layui-btn layui-btn-disabled layui-btn-sm">
+            <i class="layui-icon">&#xe602;</i>
+        </button>
+        
+        <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+            <a href="/post/"><i class="layui-icon">&#xe65b;</i></a>
+        </button>
     </div>
+</div>
+
 </div>
 
 </main>
