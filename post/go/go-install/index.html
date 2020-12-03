@@ -9,10 +9,9 @@
     <meta content="go, env, linux, Config" name="keywords">
     
     <meta content="Ranbo&#39;s Blog - Golang Installation And configuration Windows 1.Download and Installation 2.Set GOPATH in user environment variable settings and global environment variable settings For me:
- C:\work\Go
- 3.Verify the installation Command Line:
- go version 4.Open the GOMOD Command Line:
- go env -w GO111MODULE=on 5.Create a golang project by vscode and config the setting json { &quot;version&quot;: &quot;0.2.0&quot;, &quot;configurations&quot;: [{ &quot;name&quot;: &quot;{yourprojectname}&quot;, &quot;type&quot;: &quot;go&quot;, &quot;request&quot;: &quot;launch&quot;, &quot;mode&quot;: &quot;auto&quot;, &quot;program&quot;: &quot;${fileDirname}&quot;, &quot;env&quot;: { &quot;GOPATH&quot;: &quot;{your GOPATH}&quot;, &quot;GOROOT&quot;: &quot;{your GOROOT}&quot; }, &quot;args&quot;: [], //&quot;showLog&quot;: true } ] } Linux 1." name="description">
+C:\work\Go 3.Verify the installation Command Line:
+go version 4.Open the GOMOD Command Line:
+go env -w GO111MODULE=on 5.Create a golang project by vscode and config the setting json { &#34;version&#34;: &#34;0.2.0&#34;, &#34;configurations&#34;: [{ &#34;name&#34;: &#34;{yourprojectname}&#34;, &#34;type&#34;: &#34;go&#34;, &#34;request&#34;: &#34;launch&#34;, &#34;mode&#34;: &#34;auto&#34;, &#34;program&#34;: &#34;${fileDirname}&#34;, &#34;env&#34;: { &#34;GOPATH&#34;: &#34;{your GOPATH}&#34;, &#34;GOROOT&#34;: &#34;{your GOROOT}&#34; }, &#34;args&#34;: [], //&#34;showLog&#34;: true } ] } Linux 1." name="description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     
@@ -132,70 +131,52 @@ layui.use('element', function(){
 <h4 id="1download-and-installation">1.Download and Installation</h4>
 <h4 id="2set-gopath-in-user-environment-variable-settings-and-global-environment-variable-settings">2.Set GOPATH in user environment variable settings and global environment variable settings</h4>
 <p>For me:</p>
-<blockquote>
-<p>C:\work\Go</p>
-</blockquote>
-<h4 id="3verify-the-installation">3.Verify the installation</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">C:\work\Go
+</code></pre></div><h4 id="3verify-the-installation">3.Verify the installation</h4>
 <p>Command Line:</p>
-<blockquote>
-<p><!-- raw HTML omitted -->go version<!-- raw HTML omitted --></p>
-</blockquote>
-<h4 id="4open-the-gomod">4.Open the GOMOD</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">go version
+</code></pre></div><h4 id="4open-the-gomod">4.Open the GOMOD</h4>
 <p>Command Line:</p>
-<blockquote>
-<p><!-- raw HTML omitted -->go env -w GO111MODULE=on<!-- raw HTML omitted --></p>
-</blockquote>
-<h4 id="5create-a-golang-project-by-vscode-and-config-the-setting-json">5.Create a golang project by vscode and config the setting json</h4>
-<pre><code>{
-    &quot;version&quot;: &quot;0.2.0&quot;,
-    &quot;configurations&quot;: [{
-            &quot;name&quot;: &quot;{yourprojectname}&quot;,
-            &quot;type&quot;: &quot;go&quot;,
-            &quot;request&quot;: &quot;launch&quot;,
-            &quot;mode&quot;: &quot;auto&quot;,
-            &quot;program&quot;: &quot;${fileDirname}&quot;,
-            &quot;env&quot;: {
-                &quot;GOPATH&quot;: &quot;{your GOPATH}&quot;,
-                &quot;GOROOT&quot;: &quot;{your GOROOT}&quot;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">go env -w GO111MODULE=on
+</code></pre></div><h4 id="5create-a-golang-project-by-vscode-and-config-the-setting-json">5.Create a golang project by vscode and config the setting json</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;0.2.0&#34;</span>,
+    <span style="color:#f92672">&#34;configurations&#34;</span>: [{
+            <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;{yourprojectname}&#34;</span>,
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;go&#34;</span>,
+            <span style="color:#f92672">&#34;request&#34;</span>: <span style="color:#e6db74">&#34;launch&#34;</span>,
+            <span style="color:#f92672">&#34;mode&#34;</span>: <span style="color:#e6db74">&#34;auto&#34;</span>,
+            <span style="color:#f92672">&#34;program&#34;</span>: <span style="color:#e6db74">&#34;${fileDirname}&#34;</span>,
+            <span style="color:#f92672">&#34;env&#34;</span>: {
+                <span style="color:#f92672">&#34;GOPATH&#34;</span>: <span style="color:#e6db74">&#34;{your GOPATH}&#34;</span>,
+                <span style="color:#f92672">&#34;GOROOT&#34;</span>: <span style="color:#e6db74">&#34;{your GOROOT}&#34;</span>
             },
-            &quot;args&quot;: [],
-            //&quot;showLog&quot;: true
+            <span style="color:#f92672">&#34;args&#34;</span>: [],
+            <span style="color:#960050;background-color:#1e0010">//</span><span style="color:#f92672">&#34;showLog&#34;</span>: <span style="color:#66d9ef">true</span>
         }
     ]
 }
-</code></pre><h3 id="linux">Linux</h3>
+</code></pre></div><h3 id="linux">Linux</h3>
 <h4 id="1download-and-installation-1">1.Download and Installation</h4>
 <p>Download the tar.gz file and unzip it to &ldquo;/usr/local/&rdquo;</p>
-<blockquote>
-<p><!-- raw HTML omitted -->tar -C /usr/local -zxvf  gox.xx.x.linux-amd64.tar.gz<!-- raw HTML omitted --></p>
-</blockquote>
-<h4 id="2config-goroot">2.Config GOROOT</h4>
-<blockquote>
-<p>vim /etc/profile
-Add the following words in the last line</p>
-</blockquote>
-<pre><code>export GOROOT=/usr/local/go
-export PATH=$PATH:$GOROOT/bin
-</code></pre><p>Save the file and source it</p>
-<blockquote>
-<p><!-- raw HTML omitted -->source /etc/profile<!-- raw HTML omitted --></p>
-</blockquote>
-<h4 id="2verify-the-installation">2.Verify the installation</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">tar -C /usr/local -zxvf  gox.xx.x.linux-amd64.tar.gz
+</code></pre></div><h4 id="2config-goroot">2.Config GOROOT</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vim /etc/profile
+</code></pre></div><p>Add the following words in the last line</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export GOROOT<span style="color:#f92672">=</span>/usr/local/go
+export PATH<span style="color:#f92672">=</span>$PATH:$GOROOT/bin
+</code></pre></div><p>Save the file and source it</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">source /etc/profile
+</code></pre></div><h4 id="2verify-the-installation">2.Verify the installation</h4>
 <p>Terminal:</p>
-<blockquote>
-<p><!-- raw HTML omitted -->go version<!-- raw HTML omitted --></p>
-</blockquote>
-<h4 id="3config-gopath">3.Config GOPATH</h4>
-<blockquote>
-<p><!-- raw HTML omitted -->vim ~/.bash_profile<!-- raw HTML omitted --></p>
-</blockquote>
-<p>Or</p>
-<blockquote>
-<p><!-- raw HTML omitted -->vim ~/.bashrc<!-- raw HTML omitted --></p>
-</blockquote>
-<p>Add the following words in the last line</p>
-<pre><code>export GOPATH=$HOME/go
-</code></pre><p>Save the file and source it</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">go version
+</code></pre></div><h4 id="3config-gopath">3.Config GOPATH</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vim ~/.bash_profile
+</code></pre></div><p>Or</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vim ~/.bashrc
+</code></pre></div><p>Add the following words in the last line</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export GOPATH<span style="color:#f92672">=</span>$HOME/go
+</code></pre></div><p>Save the file and source it</p>
 </div>
             </div>
         </div>
