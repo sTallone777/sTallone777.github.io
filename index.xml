@@ -6,7 +6,16 @@
     <description>Recent content on Ranbo&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Dec 2020 22:20:08 +0900</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Dec 2020 12:38:30 +0900</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go CommonTechniques</title>
+      <link>http://example.org/post/go/go-commontechniques/</link>
+      <pubDate>Thu, 03 Dec 2020 12:38:30 +0900</pubDate>
+      
+      <guid>http://example.org/post/go/go-commontechniques/</guid>
+      <description>Data Conversion 1)int to string s := strconv.Itoa(i) s := strconv.FormatInt(int64(i), 10) 2)int64 to string i := int64(123) s := strconv.FormatInt(i, 10) 3)string to int i, err := strconv.Atoi(s) 4)string to int64 i, err := strconv.ParseInt(s, 10, 64) 5)float to string v := 3.1415926535 s1 := strconv.FormatFloat(v, &amp;#39;E&amp;#39;, -1, 32)//float32s2 := strconv.FormatFloat(v, &amp;#39;E&amp;#39;, -1, 64)//float64 6)string to float s := &amp;#34;3.1415926535&amp;#34; v1, err := strconv.ParseFloat(v, 32) v2, err := strconv.ParseFloat(v, 64) Float format a:=strconv.</description>
+    </item>
+    
     <item>
       <title>Go Install</title>
       <link>http://example.org/post/go/go-install/</link>
