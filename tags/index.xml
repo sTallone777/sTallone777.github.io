@@ -5,6 +5,34 @@
     <link>http://example.org/tags/</link>
     <description>Recent content in Tags on Ranbo&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Dec 2020 22:20:08 +0900</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>env</title>
+      <link>http://example.org/tags/env/</link>
+      <pubDate>Tue, 01 Dec 2020 22:20:08 +0900</pubDate>
+      
+      <guid>http://example.org/tags/env/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go</title>
+      <link>http://example.org/tags/go/</link>
+      <pubDate>Tue, 01 Dec 2020 22:20:08 +0900</pubDate>
+      
+      <guid>http://example.org/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>http://example.org/tags/linux/</link>
+      <pubDate>Tue, 01 Dec 2020 22:20:08 +0900</pubDate>
+      
+      <guid>http://example.org/tags/linux/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
