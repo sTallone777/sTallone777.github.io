@@ -3,15 +3,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Ranbo&#39;s Blog - Go Install </title>
+    <title>Ranbo&#39;s Blog - Docker Command </title>
     
     
-    <meta content="go, env, linux, Config" name="keywords">
+    <meta content="docker, Command" name="keywords">
     
-    <meta content="Ranbo&#39;s Blog - Golang Installation And configuration Windows 1.Download and Installation 2.Set GOPATH in user environment variable settings and global environment variable settings For me:
-C:\work\Go 3.Verify the installation Command Line:
-go version 4.Open the GOMOD Command Line:
-go env -w GO111MODULE=on 5.Create a golang project by vscode and config the setting json { &#34;version&#34;: &#34;0.2.0&#34;, &#34;configurations&#34;: [{ &#34;name&#34;: &#34;{yourprojectname}&#34;, &#34;type&#34;: &#34;go&#34;, &#34;request&#34;: &#34;launch&#34;, &#34;mode&#34;: &#34;auto&#34;, &#34;program&#34;: &#34;${fileDirname}&#34;, &#34;env&#34;: { &#34;GOPATH&#34;: &#34;{your GOPATH}&#34;, &#34;GOROOT&#34;: &#34;{your GOROOT}&#34; }, &#34;args&#34;: [], //&#34;showLog&#34;: true } ] } Linux 1." name="description">
+    <meta content="Ranbo&#39;s Blog - Docker Command #Start/Stop Container docker start/stop [containerID] #Running container status docker ps #Enter the container docker attach [containerID] #Create a container and run it docker run -it ubuntu:14.04 /bin/bash #Slove the problem than process 1 is not &#34;init&#34; docker run -tid --name centos8 --privileged=true -p 3306:3306centos:latest /sbin/init docker exec -it test /bin/bash #Create a container with mysql5.7 image docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7 sudo docker exec -it mysql bash mysql -uroot -p123456 #Delete image docker rmi [image] #Run a container with port mapping docker run -it -d -p 8083:80 centos:latest /bin/bash #Check the port config docker port [containerID] " name="description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     
@@ -88,10 +85,10 @@ layui.use('element', function(){
             <div class="layui-card single-card">
                 <br />
                 <blockquote class="self-elem-quote self-elem-quote-bg-red markdown-body single-title" >
-                    <h1>Go Install</h1>
+                    <h1>Docker Command</h1>
                     <h3 style="margin-top:10px; margin-bottom:10px"> 
     <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
-    <span>2020-12-01</span>
+    <span>2020-12-05</span>
 
     
      
@@ -99,8 +96,8 @@ layui.use('element', function(){
     
 
     
-        <a href="/categories/config/">
-            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">Config</span>
+        <a href="/categories/command/">
+            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">Command</span>
         </a>
     
 
@@ -109,16 +106,8 @@ layui.use('element', function(){
     
 
     
-        <a href="/tags/go/">
-            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">go</span>
-        </a>
-    
-        <a href="/tags/env/">
-            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">env</span>
-        </a>
-    
-        <a href="/tags/linux/">
-            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">linux</span>
+        <a href="/tags/docker/">
+            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">docker</span>
         </a>
     
     
@@ -126,58 +115,37 @@ layui.use('element', function(){
 
                 </blockquote>
                 <div class="layui-card-body markdown-body single-content">
-                    <h1 id="golang-installation-and-configuration">Golang Installation And configuration</h1>
-<h3 id="windows">Windows</h3>
-<h4 id="1download-and-installation">1.Download and Installation</h4>
-<h4 id="2set-gopath-in-user-environment-variable-settings-and-global-environment-variable-settings">2.Set GOPATH in user environment variable settings and global environment variable settings</h4>
-<p>For me:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">C:\work\Go
-</code></pre></div><h4 id="3verify-the-installation">3.Verify the installation</h4>
-<p>Command Line:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">go version
-</code></pre></div><h4 id="4open-the-gomod">4.Open the GOMOD</h4>
-<p>Command Line:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">go env -w GO111MODULE=on
-</code></pre></div><h4 id="5create-a-golang-project-by-vscode-and-config-the-setting-json">5.Create a golang project by vscode and config the setting json</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
-    <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;0.2.0&#34;</span>,
-    <span style="color:#f92672">&#34;configurations&#34;</span>: [{
-            <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;{yourprojectname}&#34;</span>,
-            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;go&#34;</span>,
-            <span style="color:#f92672">&#34;request&#34;</span>: <span style="color:#e6db74">&#34;launch&#34;</span>,
-            <span style="color:#f92672">&#34;mode&#34;</span>: <span style="color:#e6db74">&#34;auto&#34;</span>,
-            <span style="color:#f92672">&#34;program&#34;</span>: <span style="color:#e6db74">&#34;${fileDirname}&#34;</span>,
-            <span style="color:#f92672">&#34;env&#34;</span>: {
-                <span style="color:#f92672">&#34;GOPATH&#34;</span>: <span style="color:#e6db74">&#34;{your GOPATH}&#34;</span>,
-                <span style="color:#f92672">&#34;GOROOT&#34;</span>: <span style="color:#e6db74">&#34;{your GOROOT}&#34;</span>
-            },
-            <span style="color:#f92672">&#34;args&#34;</span>: [],
-            <span style="color:#960050;background-color:#1e0010">//</span><span style="color:#f92672">&#34;showLog&#34;</span>: <span style="color:#66d9ef">true</span>
-        }
-    ]
-}
-</code></pre></div><h3 id="linux">Linux</h3>
-<h4 id="1download-and-installation-1">1.Download and Installation</h4>
-<p>Download the tar.gz file and unzip it to &ldquo;/usr/local/&rdquo;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">tar -C /usr/local -zxvf  gox.xx.x.linux-amd64.tar.gz
-</code></pre></div><h4 id="2config-goroot">2.Config GOROOT</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vim /etc/profile
-</code></pre></div><p>Add the following words in the last line</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export GOROOT<span style="color:#f92672">=</span>/usr/local/go
-export PATH<span style="color:#f92672">=</span>$PATH:$GOROOT/bin
-</code></pre></div><p>Save the file and source it</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">source /etc/profile
-</code></pre></div><h4 id="2verify-the-installation">2.Verify the installation</h4>
-<p>Terminal:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">go version
-</code></pre></div><h4 id="3config-gopath">3.Config GOPATH</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vim ~/.bash_profile
-</code></pre></div><p>Or</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vim ~/.bashrc
-</code></pre></div><p>Add the following words in the last line</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export GOPATH<span style="color:#f92672">=</span>$HOME/go
-</code></pre></div><p>Save the file and source it</p>
-</div>
+                    <h1 id="docker-command">Docker Command</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Start/Stop Container</span>
+    docker start/stop <span style="color:#f92672">[</span>containerID<span style="color:#f92672">]</span>
+
+<span style="color:#75715e">#Running container status</span>
+    docker ps
+
+<span style="color:#75715e">#Enter the container</span>
+    docker attach <span style="color:#f92672">[</span>containerID<span style="color:#f92672">]</span>
+
+<span style="color:#75715e">#Create a container and run it</span>
+    docker run -it ubuntu:14.04 /bin/bash
+
+<span style="color:#75715e">#Slove the problem than process 1 is not &#34;init&#34;</span>
+    docker run -tid --name centos8 --privileged<span style="color:#f92672">=</span>true -p 3306:3306centos:latest /sbin/init
+    docker exec -it test /bin/bash
+
+<span style="color:#75715e">#Create a container with mysql5.7 image</span>
+    docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD<span style="color:#f92672">=</span><span style="color:#ae81ff">123456</span> -d mysql:5.7
+    sudo docker exec -it mysql bash
+    mysql -uroot -p123456
+
+<span style="color:#75715e">#Delete image</span>
+    docker rmi <span style="color:#f92672">[</span>image<span style="color:#f92672">]</span>
+
+<span style="color:#75715e">#Run a container with port mapping</span>
+    docker run -it -d -p 8083:80 centos:latest /bin/bash
+
+<span style="color:#75715e">#Check the port config</span>
+    docker port <span style="color:#f92672">[</span>containerID<span style="color:#f92672">]</span>
+</code></pre></div></div>
             </div>
         </div>
 

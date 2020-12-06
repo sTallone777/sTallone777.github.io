@@ -4,12 +4,37 @@
   
   <url>
     <loc>http://example.org/categories/</loc>
-    <lastmod>2020-12-05T11:53:10+09:00</lastmod>
+    <lastmod>2020-12-05T22:02:10+09:00</lastmod>
   </url>
   
   <url>
     <loc>http://example.org/categories/command/</loc>
-    <lastmod>2020-12-05T11:53:10+09:00</lastmod>
+    <lastmod>2020-12-05T22:02:10+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/docker/</loc>
+    <lastmod>2020-12-05T22:02:10+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/post/docker/docker-command/</loc>
+    <lastmod>2020-12-05T22:02:10+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/post/</loc>
+    <lastmod>2020-12-05T22:02:10+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2020-12-05T22:02:10+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+    <lastmod>2020-12-05T22:02:10+09:00</lastmod>
   </url>
   
   <url>
@@ -19,21 +44,6 @@
   
   <url>
     <loc>http://example.org/post/git/git-command/</loc>
-    <lastmod>2020-12-05T11:53:10+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/post/</loc>
-    <lastmod>2020-12-05T11:53:10+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/</loc>
-    <lastmod>2020-12-05T11:53:10+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/tags/</loc>
     <lastmod>2020-12-05T11:53:10+09:00</lastmod>
   </url>
   
