@@ -3,12 +3,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Ranbo&#39;s Blog - Git Command </title>
+    <title>Ranbo&#39;s Blog - Flutter Command </title>
     
     
-    <meta content="git, Command" name="keywords">
+    <meta content="docker, Command" name="keywords">
     
-    <meta content="Ranbo&#39;s Blog - Git Command git init # remote(ssh)  git remote add origin git@github.com:{github_name}/{repo_name}.git git status git add . git commit -m &#34;{comment}&#34; # make ssl key # this command will create a public key and primary key at ~/.ssh/ folder # open ~/.ssh/id_rsa.pub adn copy the content to your  # github account settings -&gt; SSH and GPG keys ssh-keygen -t rsa -C &#34;{github_account_email}&#34; # confirm connect ssh -T git@github.com # push to your repositry git push -u origin master Other Command # delete folder git rm {folder_name} -r -f # delete file git rm {file_name} " name="description">
+    <meta content="Ranbo&#39;s Blog - Config Flutter Environment Installation Guide
+Convert FlutterApp to FlutterWeb #download web sdk flutter channel beta flutter upgrade flutter config --enable-web flutter devices #then type in following words on project terminal #and the web contents will be builded on build/web/ flutter build web " name="description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     
@@ -85,8 +86,65 @@ layui.use('element', function(){
             <div class="layui-card single-card">
                 <br />
                 <blockquote class="self-elem-quote self-elem-quote-bg-red markdown-body single-title" >
-                    <h1>Git Command</h1>
+                    <h1>Flutter Command</h1>
                     <h3 style="margin-top:10px; margin-bottom:10px"> 
+    <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
+    <span>2020-12-07</span>
+
+    
+     
+    <i class="layui-icon layui-icon-list" style="font-size: 32px; vertical-align: -3px;"></i>
+    
+
+    
+        <a href="/categories/command/">
+            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">Command</span>
+        </a>
+    
+
+    
+    <i class="layui-icon layui-icon-tabs" style="font-size: 22px; vertical-align: 1px;margin-right:2px;"></i>
+    
+
+    
+        <a href="/tags/docker/">
+            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">docker</span>
+        </a>
+    
+    
+</h3>
+
+                </blockquote>
+                <div class="layui-card-body markdown-body single-content">
+                    <h1 id="config-flutter-environment">Config Flutter Environment</h1>
+<p><a href="https://flutterchina.club/get-started/install/">Installation Guide</a></p>
+<h1 id="convert-flutterapp-to-flutterweb">Convert FlutterApp to FlutterWeb</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#download web sdk</span>
+flutter channel beta
+flutter upgrade
+flutter config --enable-web
+flutter devices
+
+<span style="color:#75715e">#then type in following words on project terminal</span>
+<span style="color:#75715e">#and the web contents will be builded on build/web/</span>
+flutter build web
+</code></pre></div></div>
+            </div>
+        </div>
+
+        <div class="layui-col-md4 layui-col-sm12 layui-col-xs12">
+            
+            <div class="layui-card single-card">
+                <h2 class="single-title">Relevant Topics</h2>
+                
+                	
+                    <div style="margin-left: 10px;">
+                        <blockquote class="self-elem-quote self-elem-quote-bg-red" style="background-color:#FFFFFF;margin-top: 10px;">
+                            <a href="/post/docker/docker-command/">
+                                <h3 class="">Docker Command</h3>
+                            </a>
+                            
+                            <h3 style="margin-top:10px; margin-bottom:10px"> 
     <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
     <span>2020-12-05</span>
 
@@ -106,42 +164,19 @@ layui.use('element', function(){
     
 
     
-        <a href="/tags/git/">
-            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">git</span>
+        <a href="/tags/docker/">
+            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">docker</span>
         </a>
     
     
 </h3>
 
-                </blockquote>
-                <div class="layui-card-body markdown-body single-content">
-                    <h1 id="git-command">Git Command</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git init
-<span style="color:#75715e"># remote(ssh) </span>
-git remote add origin git@github.com:<span style="color:#f92672">{</span>github_name<span style="color:#f92672">}</span>/<span style="color:#f92672">{</span>repo_name<span style="color:#f92672">}</span>.git
-
-git status
-git add .
-git commit -m <span style="color:#e6db74">&#34;{comment}&#34;</span>
-<span style="color:#75715e"># make ssl key</span>
-<span style="color:#75715e"># this command will create a public key and primary key at ~/.ssh/ folder</span>
-<span style="color:#75715e"># open ~/.ssh/id_rsa.pub adn copy the content to your </span>
-<span style="color:#75715e"># github account settings -&gt; SSH and GPG keys</span>
-ssh-keygen -t rsa -C <span style="color:#e6db74">&#34;{github_account_email}&#34;</span>
-<span style="color:#75715e"># confirm connect</span>
-ssh -T git@github.com
-<span style="color:#75715e"># push to your repositry</span>
-git push -u origin master
-</code></pre></div><h3 id="other-command">Other Command</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># delete folder</span>
-git rm <span style="color:#f92672">{</span>folder_name<span style="color:#f92672">}</span> -r -f
-<span style="color:#75715e"># delete file</span>
-git rm <span style="color:#f92672">{</span>file_name<span style="color:#f92672">}</span>
-</code></pre></div></div>
+                        </blockquote>
+                    </div>
+                	
+                
+                <br />
             </div>
-        </div>
-
-        <div class="layui-col-md4 layui-col-sm12 layui-col-xs12">
             
 
             <div class="layui-card single-card">
