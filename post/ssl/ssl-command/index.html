@@ -3,12 +3,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Ranbo&#39;s Blog - Docker Command </title>
+    <title>Ranbo&#39;s Blog - SSL Command </title>
     
     
-    <meta content="docker, Command" name="keywords">
+    <meta content="SSL, TSL, cacert, Command" name="keywords">
     
-    <meta content="Ranbo&#39;s Blog - Docker Command #Start/Stop Container docker start/stop [containerID] #Running container status docker ps #Enter the container docker attach [containerID] #Create a container and run it docker run -it ubuntu:14.04 /bin/bash #Slove the problem than process 1 is not &#34;init&#34; docker run -tid --name centos8 --privileged=true -p 3306:3306centos:latest /sbin/init docker exec -it test /bin/bash #Create a container with mysql5.7 image docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7 sudo docker exec -it mysql bash mysql -uroot -p123456 #Delete image docker rmi [image] #Run a container with port mapping docker run -it -d -p 8083:80 centos:latest /bin/bash #Check the port config docker port [containerID] " name="description">
+    <meta content="Ranbo&#39;s Blog - Certificate&rsquo;s generation and publisher RootCA作成(keytool)： keytool -genkeypair -alias {rootca_name} -keyalg RSA -keysize 2048 -validity 7300 -keystore ca.jks RootCAで二級CA作成に関するコマンド(keytool)： #独自証明書作成： keytool -genkeypair -alias {subca_name} -keyalg RSA -keysize 2048 -validity 7300 -keystore ca.jks #独自証明書の請求書を作成： keytool -certreq -alias {subca_name} -file {subca_name}.csr -keystore ca.jks #RootCAで独自証明書をサイン： keytool -gencert -alias {rootca_name} -keystore ca.jks -infile {subca_name}.csr -outfile {subca_name}.cer　-validity 7300 #証明書の証明書チェーンをキーストアに入れる： keytool -importcert -alias {subca_name} -file {subca_name}.cer -keystore ca.jks #p12形式のモニタサーバ証明書をエクスポート： keytool -importkeystore -srckeystore ca.jks -destkeystore jp.cps-iot.{your_filename}.P12 -srcalias {subca_name} -destalias pvk -srcstoretype JKS -deststoretype PKCS12 -noprompt #p12からclient証明書を取り出す： openssl pkcs12 -in ." name="description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     
@@ -85,10 +85,10 @@ layui.use('element', function(){
             <div class="layui-card single-card">
                 <br />
                 <blockquote class="self-elem-quote self-elem-quote-bg-red markdown-body single-title" >
-                    <h1>Docker Command</h1>
+                    <h1>SSL Command</h1>
                     <h3 style="margin-top:10px; margin-bottom:10px"> 
     <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
-    <span>2020-12-05</span>
+    <span>2020-12-07</span>
 
     
      
@@ -106,8 +106,16 @@ layui.use('element', function(){
     
 
     
-        <a href="/tags/docker/">
-            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">docker</span>
+        <a href="/tags/ssl/">
+            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">SSL</span>
+        </a>
+    
+        <a href="/tags/tsl/">
+            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">TSL</span>
+        </a>
+    
+        <a href="/tags/cacert/">
+            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">cacert</span>
         </a>
     
     
@@ -115,36 +123,87 @@ layui.use('element', function(){
 
                 </blockquote>
                 <div class="layui-card-body markdown-body single-content">
-                    <h1 id="docker-command">Docker Command</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Start/Stop Container</span>
-    docker start/stop <span style="color:#f92672">[</span>containerID<span style="color:#f92672">]</span>
+                    <h1 id="certificates-generation-and-publisher">Certificate&rsquo;s generation and publisher</h1>
+<h3 id="rootca作成keytool">RootCA作成(keytool)：</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">keytool -genkeypair -alias <span style="color:#f92672">{</span>rootca_name<span style="color:#f92672">}</span> -keyalg RSA -keysize <span style="color:#ae81ff">2048</span> -validity <span style="color:#ae81ff">7300</span> -keystore ca.jks
+</code></pre></div><h3 id="rootcaで二級ca作成に関するコマンドkeytool">RootCAで二級CA作成に関するコマンド(keytool)：</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#独自証明書作成：</span>
+keytool -genkeypair -alias <span style="color:#f92672">{</span>subca_name<span style="color:#f92672">}</span> -keyalg RSA -keysize <span style="color:#ae81ff">2048</span> -validity <span style="color:#ae81ff">7300</span> -keystore ca.jks
 
-<span style="color:#75715e">#Running container status</span>
-    docker ps
+<span style="color:#75715e">#独自証明書の請求書を作成：</span>
+keytool -certreq -alias <span style="color:#f92672">{</span>subca_name<span style="color:#f92672">}</span> -file <span style="color:#f92672">{</span>subca_name<span style="color:#f92672">}</span>.csr -keystore ca.jks
 
-<span style="color:#75715e">#Enter the container</span>
-    docker attach <span style="color:#f92672">[</span>containerID<span style="color:#f92672">]</span>
+<span style="color:#75715e">#RootCAで独自証明書をサイン：</span>
+keytool -gencert -alias <span style="color:#f92672">{</span>rootca_name<span style="color:#f92672">}</span> -keystore ca.jks -infile <span style="color:#f92672">{</span>subca_name<span style="color:#f92672">}</span>.csr -outfile <span style="color:#f92672">{</span>subca_name<span style="color:#f92672">}</span>.cer　-validity <span style="color:#ae81ff">7300</span>
 
-<span style="color:#75715e">#Create a container and run it</span>
-    docker run -it ubuntu:14.04 /bin/bash
+<span style="color:#75715e">#証明書の証明書チェーンをキーストアに入れる：</span>
+keytool -importcert -alias <span style="color:#f92672">{</span>subca_name<span style="color:#f92672">}</span> -file <span style="color:#f92672">{</span>subca_name<span style="color:#f92672">}</span>.cer -keystore ca.jks
 
-<span style="color:#75715e">#Slove the problem than process 1 is not &#34;init&#34;</span>
-    docker run -tid --name centos8 --privileged<span style="color:#f92672">=</span>true -p 3306:3306centos:latest /sbin/init
-    docker exec -it test /bin/bash
+<span style="color:#75715e">#p12形式のモニタサーバ証明書をエクスポート：</span>
+keytool -importkeystore -srckeystore ca.jks -destkeystore jp.cps-iot.<span style="color:#f92672">{</span>your_filename<span style="color:#f92672">}</span>.P12 -srcalias <span style="color:#f92672">{</span>subca_name<span style="color:#f92672">}</span> -destalias pvk -srcstoretype JKS -deststoretype PKCS12 -noprompt
 
-<span style="color:#75715e">#Create a container with mysql5.7 image</span>
-    docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD<span style="color:#f92672">=</span><span style="color:#ae81ff">123456</span> -d mysql:5.7
-    sudo docker exec -it mysql bash
-    mysql -uroot -p123456
+<span style="color:#75715e">#p12からclient証明書を取り出す：</span>
+openssl pkcs12 -in .<span style="color:#ae81ff">\P</span>F.pfx -nokeys -clcerts -out PF-cert.pem
 
-<span style="color:#75715e">#Delete image</span>
-    docker rmi <span style="color:#f92672">[</span>image<span style="color:#f92672">]</span>
+<span style="color:#75715e">#キーペアを取り出す：</span>
+openssl pkcs12 -in .<span style="color:#ae81ff">\P</span>F.pfx -nocerts -nodes -out PF-keypair.pem
 
-<span style="color:#75715e">#Run a container with port mapping</span>
-    docker run -it -d -p 8083:80 centos:latest /bin/bash
+<span style="color:#75715e"># keystoreから証明書をエクスポート：</span>
 
-<span style="color:#75715e">#Check the port config</span>
-    docker port <span style="color:#f92672">[</span>containerID<span style="color:#f92672">]</span>
+keytool -exportcert -alias <span style="color:#f92672">{</span>rootca_name<span style="color:#f92672">}</span> -keystore ca.jks  -file <span style="color:#f92672">{</span>rootca_name<span style="color:#f92672">}</span>.cer
+	
+<span style="color:#75715e">#cer⇒pem</span>
+openssl x509 -inform der -in <span style="color:#f92672">{</span>rootca_name<span style="color:#f92672">}</span>.cer -out <span style="color:#f92672">{</span>rootca_name<span style="color:#f92672">}</span>.pem
+
+<span style="color:#75715e">#pem⇒der</span>
+openssl x509 -inform PEM -in PF-cert.pem -outform der -out 0000.der
+
+<span style="color:#75715e">#証明書から公開鍵をエクスポート：</span>
+openssl x509 -outform pem -in 0000.pem -pubkey -out 000000.key
+
+<span style="color:#75715e">#P12からオリジナル証明書(秘密鍵入り)：</span>
+openssl pkcs12 -in myssl.pfx -nodes -out server.pem
+
+<span style="color:#75715e">#秘密鍵をエクスポート：</span>
+openssl rsa -in server.pem -out server.key
+
+<span style="color:#75715e">#公開鍵をエクスポート：</span>
+openssl x509 -in server.pem -out server.crt
+
+<span style="color:#75715e">#P12から秘密鍵：</span>
+openssl pkcs12 -in test.p12 -nocerts -out key.pem
+
+<span style="color:#75715e">#キーベアから秘密鍵：</span>
+openssl rsa -in keypair.key -out private.key
+
+<span style="color:#75715e">#キーペアから公開鍵：</span>
+openssl rsa -in keypair.key -pubout -out public.key
+</code></pre></div><h3 id="keystore操作">keystore操作：</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#export:</span>
+keytool -export -keystore ca.jks -file xxx.cer/pem -alias xxx
+
+<span style="color:#75715e">#import:</span>
+keytool -import -alias xxxx -file xxx.pem/cer -keystore xxxxx.truststore
+
+<span style="color:#75715e">#truststore作成：</span>
+keytool -import -alias selfca -file .<span style="color:#ae81ff">\s</span>elfca.pem -keystore cacert.truststore
+</code></pre></div><h3 id="opensslで証明書作成">opensslで証明書作成：</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#private key作成：</span>
+    <span style="color:#75715e">#passwordなし</span>
+    openssl genrsa -out xxx_key.pem <span style="color:#ae81ff">2048</span>
+
+    <span style="color:#75715e">#passwordあり(des3で暗号化)</span>
+    openssl genrsa -des3 -out xxx_key.pem <span style="color:#ae81ff">2048</span>
+
+<span style="color:#75715e">#請求書を作成：</span>
+openssl req -new -key .<span style="color:#ae81ff">\x</span>xx_key.pem -out xxx_crt.csr -config C:<span style="color:#ae81ff">\O</span>penSSL-Win64<span style="color:#ae81ff">\b</span>in<span style="color:#ae81ff">\o</span>penssl.cfg
+
+<span style="color:#75715e">#証明書作成</span>
+    <span style="color:#75715e">#rootca:</span>
+        &gt;openssl x509 -req -in .<span style="color:#ae81ff">\r</span>ootca.csr -signkey .<span style="color:#ae81ff">\r</span>ootca-key.pem -out rootca.pem
+    
+    <span style="color:#75715e">#二級CA：</span>
+        openssl x509 -req -in .<span style="color:#ae81ff">\x</span>xx_crt.csr -signkey .<span style="color:#ae81ff">\x</span>xx_key.pem -out xxx_crt.pem -CA .<span style="color:#ae81ff">\r</span>ootca.pem -CAkey .<span style="color:#ae81ff">\r</span>ootca-key.pem -CAcreateserial -days <span style="color:#ae81ff">7300</span>
 </code></pre></div></div>
             </div>
         </div>
