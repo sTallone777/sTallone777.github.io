@@ -3,12 +3,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Ranbo&#39;s Blog - Docker Command </title>
+    <title>Ranbo&#39;s Blog - Delegate In Java And C# </title>
     
     
-    <meta content="docker, Command" name="keywords">
+    <meta content="Java, C#, Lambda, Syntax, Compare" name="keywords">
     
-    <meta content="Ranbo&#39;s Blog - Docker Command #Start/Stop Container docker start/stop [containerID] #Running container status docker ps #Enter the container docker attach [containerID] #Create a container and run it docker run -it ubuntu:14.04 /bin/bash #Slove the problem than process 1 is not &#34;init&#34; docker run -tid --name centos8 --privileged=true -p 3306:3306centos:latest /sbin/init docker exec -it test /bin/bash #Create a container with mysql5.7 image docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7 sudo docker exec -it mysql bash mysql -uroot -p123456 #Delete image docker rmi [image] #Run a container with port mapping docker run -it -d -p 8083:80 centos:latest /bin/bash #Check the port config docker port [containerID] " name="description">
+    <meta content="Ranbo&#39;s Blog - UnderStanding of Lambda in Java and C#  In Java and C#, if you want to use lambda expression, then the object must first be a unnamed delegate. So in essence, lambda is a anonymous delegate. As we all know that delegate is a function pointer, although there is no delegate in Java, but we can use it like this:
+C# class Program { public delegate void delType(string s); static void Main(string[] args) { //Console." name="description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     
@@ -85,10 +86,10 @@ layui.use('element', function(){
             <div class="layui-card single-card">
                 <br />
                 <blockquote class="self-elem-quote self-elem-quote-bg-red markdown-body single-title" >
-                    <h1>Docker Command</h1>
+                    <h1>Delegate In Java And C#</h1>
                     <h3 style="margin-top:10px; margin-bottom:10px"> 
     <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
-    <span>2020-12-05</span>
+    <span>2020-12-20</span>
 
     
      
@@ -96,8 +97,12 @@ layui.use('element', function(){
     
 
     
-        <a href="/categories/command/">
-            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">Command</span>
+        <a href="/categories/syntax/">
+            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">Syntax</span>
+        </a>
+    
+        <a href="/categories/compare/">
+            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">Compare</span>
         </a>
     
 
@@ -106,8 +111,16 @@ layui.use('element', function(){
     
 
     
-        <a href="/tags/docker/">
-            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">docker</span>
+        <a href="/tags/java/">
+            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">Java</span>
+        </a>
+    
+        <a href="/tags/c/">
+            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">C#</span>
+        </a>
+    
+        <a href="/tags/lambda/">
+            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">Lambda</span>
         </a>
     
     
@@ -115,36 +128,35 @@ layui.use('element', function(){
 
                 </blockquote>
                 <div class="layui-card-body markdown-body single-content">
-                    <h1 id="docker-command">Docker Command</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Start/Stop Container</span>
-    docker start/stop <span style="color:#f92672">[</span>containerID<span style="color:#f92672">]</span>
+                    <h1 id="understanding-of-lambda-in-java-and-c">UnderStanding of Lambda in Java and C#</h1>
+<p>  In Java and C#, if you want to use lambda expression, then the object must first be a unnamed delegate. So in essence, lambda is a anonymous delegate. As we all know that delegate is a function pointer, although there is no delegate in Java, but we can use it like this:</p>
+<h4 id="c">C#</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Program</span>
+{
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">delegate</span> <span style="color:#66d9ef">void</span> delType(<span style="color:#66d9ef">string</span> s);
+    
+    <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> Main(<span style="color:#66d9ef">string</span>[] args)
+    {
+        <span style="color:#75715e">//Console.WriteLine(&#34;Hello World!&#34;);
+</span><span style="color:#75715e"></span>        delType d = s =&gt; Console.WriteLine(<span style="color:#e6db74">&#34;Hello &#34;</span> + s);
+        <span style="color:#75715e">//d(&#34;world!&#34;);
+</span><span style="color:#75715e"></span>        d.Invoke(<span style="color:#e6db74">&#34;world!&#34;</span>);
+    }
+}
+</code></pre></div><h4 id="java">Java</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Main</span> <span style="color:#f92672">{</span>
 
-<span style="color:#75715e">#Running container status</span>
-    docker ps
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+	    <span style="color:#75715e">// write your code here
+</span><span style="color:#75715e"></span>        IDelType d <span style="color:#f92672">=</span> s <span style="color:#f92672">-&gt;</span> System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hello &#34;</span> <span style="color:#f92672">+</span> s<span style="color:#f92672">);</span>
+        d<span style="color:#f92672">.</span><span style="color:#a6e22e">test</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;world!&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
 
-<span style="color:#75715e">#Enter the container</span>
-    docker attach <span style="color:#f92672">[</span>containerID<span style="color:#f92672">]</span>
-
-<span style="color:#75715e">#Create a container and run it</span>
-    docker run -it ubuntu:14.04 /bin/bash
-
-<span style="color:#75715e">#Slove the problem than process 1 is not &#34;init&#34;</span>
-    docker run -tid --name centos8 --privileged<span style="color:#f92672">=</span>true -p 3306:3306centos:latest /sbin/init
-    docker exec -it test /bin/bash
-
-<span style="color:#75715e">#Create a container with mysql5.7 image</span>
-    docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD<span style="color:#f92672">=</span><span style="color:#ae81ff">123456</span> -d mysql:5.7
-    sudo docker exec -it mysql bash
-    mysql -uroot -p123456
-
-<span style="color:#75715e">#Delete image</span>
-    docker rmi <span style="color:#f92672">[</span>image<span style="color:#f92672">]</span>
-
-<span style="color:#75715e">#Run a container with port mapping</span>
-    docker run -it -d -p 8083:80 centos:latest /bin/bash
-
-<span style="color:#75715e">#Check the port config</span>
-    docker port <span style="color:#f92672">[</span>containerID<span style="color:#f92672">]</span>
+<span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">IDelType</span><span style="color:#f92672">{</span>
+    <span style="color:#75715e">//Interface with only one member method.
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">test</span><span style="color:#f92672">(</span>String s<span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
 </code></pre></div></div>
             </div>
         </div>

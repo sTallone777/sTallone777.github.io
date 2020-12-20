@@ -3,27 +3,62 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://example.org/tags/c#/</loc>
+    <lastmod>2020-12-20T14:23:13+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+    <lastmod>2020-12-20T14:23:13+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/compare/</loc>
+    <lastmod>2020-12-20T14:23:13+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/post/csharp/post1/</loc>
+    <lastmod>2020-12-20T14:23:13+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/java/</loc>
+    <lastmod>2020-12-20T14:23:13+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/lambda/</loc>
+    <lastmod>2020-12-20T14:23:13+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/post/</loc>
+    <lastmod>2020-12-20T14:23:13+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2020-12-20T14:23:13+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/syntax/</loc>
+    <lastmod>2020-12-20T14:23:13+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+    <lastmod>2020-12-20T14:23:13+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://example.org/tags/cacert/</loc>
     <lastmod>2020-12-07T15:23:53+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
-    <lastmod>2020-12-07T15:23:53+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://example.org/categories/command/</loc>
-    <lastmod>2020-12-07T15:23:53+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/post/</loc>
-    <lastmod>2020-12-07T15:23:53+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/</loc>
     <lastmod>2020-12-07T15:23:53+09:00</lastmod>
   </url>
   
@@ -34,11 +69,6 @@
   
   <url>
     <loc>http://example.org/post/ssl/ssl-command/</loc>
-    <lastmod>2020-12-07T15:23:53+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/tags/</loc>
     <lastmod>2020-12-07T15:23:53+09:00</lastmod>
   </url>
   

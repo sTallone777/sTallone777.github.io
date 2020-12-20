@@ -6,7 +6,34 @@
     <description>Recent content in Tags on Ranbo&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Dec 2020 15:23:53 +0900</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Dec 2020 14:23:13 +0900</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C#</title>
+      <link>http://example.org/tags/c#/</link>
+      <pubDate>Sun, 20 Dec 2020 14:23:13 +0900</pubDate>
+      
+      <guid>http://example.org/tags/c#/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>http://example.org/tags/java/</link>
+      <pubDate>Sun, 20 Dec 2020 14:23:13 +0900</pubDate>
+      
+      <guid>http://example.org/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lambda</title>
+      <link>http://example.org/tags/lambda/</link>
+      <pubDate>Sun, 20 Dec 2020 14:23:13 +0900</pubDate>
+      
+      <guid>http://example.org/tags/lambda/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>cacert</title>
       <link>http://example.org/tags/cacert/</link>

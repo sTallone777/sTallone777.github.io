@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C# on Ranbo&#39;s Blog</title>
+    <link>http://example.org/tags/c#/</link>
+    <description>Recent content in C# on Ranbo&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Dec 2020 14:23:13 +0900</lastBuildDate><atom:link href="http://example.org/tags/c#/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Delegate In Java And C#</title>
+      <link>http://example.org/post/csharp/post1/</link>
+      <pubDate>Sun, 20 Dec 2020 14:23:13 +0900</pubDate>
+      
+      <guid>http://example.org/post/csharp/post1/</guid>
+      <description>UnderStanding of Lambda in Java and C#  In Java and C#, if you want to use lambda expression, then the object must first be a unnamed delegate. So in essence, lambda is a anonymous delegate. As we all know that delegate is a function pointer, although there is no delegate in Java, but we can use it like this:
+C# class Program { public delegate void delType(string s); static void Main(string[] args) { //Console.</description>
+    </item>
+    
+  </channel>
+</rss>
