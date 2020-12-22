@@ -6,7 +6,25 @@
     <description>Recent content in Categories on Ranbo&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Dec 2020 14:23:13 +0900</lastBuildDate><atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Dec 2020 21:56:58 +0900</lastBuildDate><atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Command</title>
+      <link>http://example.org/categories/command/</link>
+      <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
+      
+      <guid>http://example.org/categories/command/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Config</title>
+      <link>http://example.org/categories/config/</link>
+      <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
+      
+      <guid>http://example.org/categories/config/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Compare</title>
       <link>http://example.org/categories/compare/</link>
@@ -22,24 +40,6 @@
       <pubDate>Sun, 20 Dec 2020 14:23:13 +0900</pubDate>
       
       <guid>http://example.org/categories/syntax/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Command</title>
-      <link>http://example.org/categories/command/</link>
-      <pubDate>Mon, 07 Dec 2020 15:23:53 +0900</pubDate>
-      
-      <guid>http://example.org/categories/command/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Config</title>
-      <link>http://example.org/categories/config/</link>
-      <pubDate>Mon, 07 Dec 2020 12:00:41 +0900</pubDate>
-      
-      <guid>http://example.org/categories/config/</guid>
       <description></description>
     </item>
     

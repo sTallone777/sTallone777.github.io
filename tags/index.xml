@@ -6,13 +6,40 @@
     <description>Recent content in Tags on Ranbo&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Dec 2020 14:23:13 +0900</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Dec 2020 21:56:58 +0900</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C#</title>
       <link>http://example.org/tags/c#/</link>
-      <pubDate>Sun, 20 Dec 2020 14:23:13 +0900</pubDate>
+      <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
       
       <guid>http://example.org/tags/c#/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DotNet Core</title>
+      <link>http://example.org/tags/dotnet-core/</link>
+      <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
+      
+      <guid>http://example.org/tags/dotnet-core/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EF</title>
+      <link>http://example.org/tags/ef/</link>
+      <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
+      
+      <guid>http://example.org/tags/ef/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MVC</title>
+      <link>http://example.org/tags/mvc/</link>
+      <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
+      
+      <guid>http://example.org/tags/mvc/</guid>
       <description></description>
     </item>
     

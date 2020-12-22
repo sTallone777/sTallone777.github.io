@@ -3,12 +3,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Ranbo&#39;s Blog - Git Command </title>
+    <title>Ranbo&#39;s Blog - Use EF In DotNet Core </title>
     
     
-    <meta content="git, Command" name="keywords">
+    <meta content="C#, DotNet Core, EF, MVC, Command, Config" name="keywords">
     
-    <meta content="Ranbo&#39;s Blog - Git Command git init # remote(ssh)  git remote add origin git@github.com:{github_name}/{repo_name}.git git status git add . git commit -m &#34;{comment}&#34; # make ssl key # this command will create a public key and primary key at ~/.ssh/ folder # open ~/.ssh/id_rsa.pub adn copy the content to your  # github account settings -&gt; SSH and GPG keys ssh-keygen -t rsa -C &#34;{github_account_email}&#34; # confirm connect ssh -T git@github.com # push to your repositry git push -u origin master Other Command # delete folder git rm {folder_name} -r -f # delete file git rm {file_name} " name="description">
+    <meta content="Ranbo&#39;s Blog - How to create entity in dotnet core Install Packages First of all, you need install the packages that needed to create the entitys through the nuget package manager.
+ Microsoft.EntityFrameworkCore Microsoft.EntityFrameworkCore.Tools Microsoft.EntityFrameworkCore.Design Microsoft.EntityFrameworkCore.Relational Pomelo.EntityFrameworkCore.MySql  Create Entity Then you can create entitys with the following command at the console.
+For Mysql:
+Scaffold-DbContext -Provider Pomelo.EntityFrameworkCore.MySql -Context DBContext -Project Common -Connection &#34;Server=192.168.10.100;User Id=ranbo;Password=ranBo000;Database=FILECTLSYS&#34; -outputdir DBModel For Sql:
+Scaffold-DbContext -Force “Server=192.168.10.100;Database=FILECTLSYS;User ID=ranbo;Password=ranBo000;” Microsoft.EntityFrameworkCore.SqlServer -OutputDir DBModel " name="description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     
@@ -85,10 +89,10 @@ layui.use('element', function(){
             <div class="layui-card single-card">
                 <br />
                 <blockquote class="self-elem-quote self-elem-quote-bg-red markdown-body single-title" >
-                    <h1>Git Command</h1>
+                    <h1>Use EF In DotNet Core</h1>
                     <h3 style="margin-top:10px; margin-bottom:10px"> 
     <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
-    <span>2020-12-05</span>
+    <span>2020-12-22</span>
 
     
      
@@ -100,14 +104,30 @@ layui.use('element', function(){
             <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">Command</span>
         </a>
     
+        <a href="/categories/config/">
+            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">Config</span>
+        </a>
+    
 
     
     <i class="layui-icon layui-icon-tabs" style="font-size: 22px; vertical-align: 1px;margin-right:2px;"></i>
     
 
     
-        <a href="/tags/git/">
-            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">git</span>
+        <a href="/tags/c/">
+            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">C#</span>
+        </a>
+    
+        <a href="/tags/dotnet-core/">
+            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">DotNet Core</span>
+        </a>
+    
+        <a href="/tags/ef/">
+            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">EF</span>
+        </a>
+    
+        <a href="/tags/mvc/">
+            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">MVC</span>
         </a>
     
     
@@ -115,33 +135,83 @@ layui.use('element', function(){
 
                 </blockquote>
                 <div class="layui-card-body markdown-body single-content">
-                    <h1 id="git-command">Git Command</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git init
-<span style="color:#75715e"># remote(ssh) </span>
-git remote add origin git@github.com:<span style="color:#f92672">{</span>github_name<span style="color:#f92672">}</span>/<span style="color:#f92672">{</span>repo_name<span style="color:#f92672">}</span>.git
-
-git status
-git add .
-git commit -m <span style="color:#e6db74">&#34;{comment}&#34;</span>
-<span style="color:#75715e"># make ssl key</span>
-<span style="color:#75715e"># this command will create a public key and primary key at ~/.ssh/ folder</span>
-<span style="color:#75715e"># open ~/.ssh/id_rsa.pub adn copy the content to your </span>
-<span style="color:#75715e"># github account settings -&gt; SSH and GPG keys</span>
-ssh-keygen -t rsa -C <span style="color:#e6db74">&#34;{github_account_email}&#34;</span>
-<span style="color:#75715e"># confirm connect</span>
-ssh -T git@github.com
-<span style="color:#75715e"># push to your repositry</span>
-git push -u origin master
-</code></pre></div><h3 id="other-command">Other Command</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># delete folder</span>
-git rm <span style="color:#f92672">{</span>folder_name<span style="color:#f92672">}</span> -r -f
-<span style="color:#75715e"># delete file</span>
-git rm <span style="color:#f92672">{</span>file_name<span style="color:#f92672">}</span>
+                    <h1 id="how-to-create-entity-in-dotnet-core">How to create entity in dotnet core</h1>
+<h3 id="install-packages">Install Packages</h3>
+<p>First of all, you need install the packages that needed to create the entitys through the nuget package manager.</p>
+<ul>
+<li>Microsoft.EntityFrameworkCore</li>
+<li>Microsoft.EntityFrameworkCore.Tools</li>
+<li>Microsoft.EntityFrameworkCore.Design</li>
+<li>Microsoft.EntityFrameworkCore.Relational</li>
+<li>Pomelo.EntityFrameworkCore.MySql</li>
+</ul>
+<h3 id="create-entity">Create Entity</h3>
+<p>Then you can create entitys with the following command at the console.</p>
+<p><em>For Mysql:</em></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">Scaffold-DbContext -Provider Pomelo.EntityFrameworkCore.MySql -Context DBContext -Project Common -Connection <span style="color:#e6db74">&#34;Server=192.168.10.100;User Id=ranbo;Password=ranBo000;Database=FILECTLSYS&#34;</span> -outputdir DBModel
+</code></pre></div><p><em>For Sql:</em></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">Scaffold-DbContext -Force “Server=192.168.10.100;Database=FILECTLSYS;User ID=ranbo;Password=ranBo000;” Microsoft.EntityFrameworkCore.SqlServer -OutputDir DBModel
 </code></pre></div></div>
             </div>
         </div>
 
         <div class="layui-col-md4 layui-col-sm12 layui-col-xs12">
+            
+            <div class="layui-card single-card">
+                <h2 class="single-title">Relevant Topics</h2>
+                
+                	
+                    <div style="margin-left: 10px;">
+                        <blockquote class="self-elem-quote self-elem-quote-bg-red" style="background-color:#FFFFFF;margin-top: 10px;">
+                            <a href="/post/csharp/post1/">
+                                <h3 class="">Delegate In Java And C#</h3>
+                            </a>
+                            
+                            <h3 style="margin-top:10px; margin-bottom:10px"> 
+    <i class="layui-icon layui-icon-date" style="font-size: 28px; vertical-align: -2px;"></i>
+    <span>2020-12-20</span>
+
+    
+     
+    <i class="layui-icon layui-icon-list" style="font-size: 32px; vertical-align: -3px;"></i>
+    
+
+    
+        <a href="/categories/syntax/">
+            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">Syntax</span>
+        </a>
+    
+        <a href="/categories/compare/">
+            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">Compare</span>
+        </a>
+    
+
+    
+    <i class="layui-icon layui-icon-tabs" style="font-size: 22px; vertical-align: 1px;margin-right:2px;"></i>
+    
+
+    
+        <a href="/tags/java/">
+            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">Java</span>
+        </a>
+    
+        <a href="/tags/c/">
+            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">C#</span>
+        </a>
+    
+        <a href="/tags/lambda/">
+            <span class="layui-badge layui-bg-orange" style="vertical-align: 2px;">Lambda</span>
+        </a>
+    
+    
+</h3>
+
+                        </blockquote>
+                    </div>
+                	
+                
+                <br />
+            </div>
             
 
             <div class="layui-card single-card">

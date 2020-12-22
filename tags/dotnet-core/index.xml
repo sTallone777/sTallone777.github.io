@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>C# on Ranbo&#39;s Blog</title>
-    <link>http://example.org/tags/c#/</link>
-    <description>Recent content in C# on Ranbo&#39;s Blog</description>
+    <title>DotNet Core on Ranbo&#39;s Blog</title>
+    <link>http://example.org/tags/dotnet-core/</link>
+    <description>Recent content in DotNet Core on Ranbo&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Dec 2020 21:56:58 +0900</lastBuildDate><atom:link href="http://example.org/tags/c#/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Dec 2020 21:56:58 +0900</lastBuildDate><atom:link href="http://example.org/tags/dotnet-core/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Use EF In DotNet Core</title>
       <link>http://example.org/post/csharp/mvc-ef/</link>
@@ -18,16 +18,6 @@
 For Mysql:
 Scaffold-DbContext -Provider Pomelo.EntityFrameworkCore.MySql -Context DBContext -Project Common -Connection &amp;#34;Server=192.168.10.100;User Id=ranbo;Password=ranBo000;Database=FILECTLSYS&amp;#34; -outputdir DBModel For Sql:
 Scaffold-DbContext -Force “Server=192.168.10.100;Database=FILECTLSYS;User ID=ranbo;Password=ranBo000;” Microsoft.EntityFrameworkCore.SqlServer -OutputDir DBModel </description>
-    </item>
-    
-    <item>
-      <title>Delegate In Java And C#</title>
-      <link>http://example.org/post/csharp/post1/</link>
-      <pubDate>Sun, 20 Dec 2020 14:23:13 +0900</pubDate>
-      
-      <guid>http://example.org/post/csharp/post1/</guid>
-      <description>UnderStanding of Lambda in Java and C#  In Java and C#, if you want to use lambda expression, then the object must first be a unnamed delegate. So in essence, lambda is a anonymous delegate. As we all know that delegate is a function pointer, although there is no delegate in Java, but we can use it like this:
-C# class Program { public delegate void delType(string s); static void Main(string[] args) { //Console.</description>
     </item>
     
   </channel>

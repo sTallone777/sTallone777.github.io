@@ -4,12 +4,57 @@
   
   <url>
     <loc>http://example.org/tags/c#/</loc>
-    <lastmod>2020-12-20T14:23:13+09:00</lastmod>
+    <lastmod>2020-12-22T21:56:58+09:00</lastmod>
   </url>
   
   <url>
     <loc>http://example.org/categories/</loc>
-    <lastmod>2020-12-20T14:23:13+09:00</lastmod>
+    <lastmod>2020-12-22T21:56:58+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/command/</loc>
+    <lastmod>2020-12-22T21:56:58+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/config/</loc>
+    <lastmod>2020-12-22T21:56:58+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/dotnet-core/</loc>
+    <lastmod>2020-12-22T21:56:58+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/ef/</loc>
+    <lastmod>2020-12-22T21:56:58+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/mvc/</loc>
+    <lastmod>2020-12-22T21:56:58+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/post/</loc>
+    <lastmod>2020-12-22T21:56:58+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2020-12-22T21:56:58+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+    <lastmod>2020-12-22T21:56:58+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/post/csharp/mvc-ef/</loc>
+    <lastmod>2020-12-22T21:56:58+09:00</lastmod>
   </url>
   
   <url>
@@ -33,32 +78,12 @@
   </url>
   
   <url>
-    <loc>http://example.org/post/</loc>
-    <lastmod>2020-12-20T14:23:13+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/</loc>
-    <lastmod>2020-12-20T14:23:13+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://example.org/categories/syntax/</loc>
     <lastmod>2020-12-20T14:23:13+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
-    <lastmod>2020-12-20T14:23:13+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://example.org/tags/cacert/</loc>
-    <lastmod>2020-12-07T15:23:53+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/categories/command/</loc>
     <lastmod>2020-12-07T15:23:53+09:00</lastmod>
   </url>
   
@@ -75,11 +100,6 @@
   <url>
     <loc>http://example.org/tags/tsl/</loc>
     <lastmod>2020-12-07T15:23:53+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/categories/config/</loc>
-    <lastmod>2020-12-07T12:00:41+09:00</lastmod>
   </url>
   
   <url>
