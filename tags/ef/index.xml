@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>EF on Ranbo&#39;s Blog</title>
-    <link>http://example.org/tags/ef/</link>
-    <description>Recent content in EF on Ranbo&#39;s Blog</description>
+    <title>EF on Ranbo</title>
+    <link>https://example.com/tags/ef/</link>
+    <description>Recent content in EF on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 22 Dec 2020 21:56:58 +0900</lastBuildDate><atom:link href="http://example.org/tags/ef/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Tue, 22 Dec 2020 21:56:58 +0900</lastBuildDate><atom:link href="https://example.com/tags/ef/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Use EF In DotNet Core</title>
-      <link>http://example.org/post/csharp/mvc-ef/</link>
+      <link>https://example.com/post/csharp/mvc-ef/</link>
       <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
       
-      <guid>http://example.org/post/csharp/mvc-ef/</guid>
-      <description>How to create entity in dotnet core Install Packages First of all, you need install the packages that needed to create the entitys through the nuget package manager.
- Microsoft.EntityFrameworkCore Microsoft.EntityFrameworkCore.Tools Microsoft.EntityFrameworkCore.Design Microsoft.EntityFrameworkCore.Relational Pomelo.EntityFrameworkCore.MySql  Create Entity Then you can create entitys with the following command at the console.
-For Mysql:
-Scaffold-DbContext -Provider Pomelo.EntityFrameworkCore.MySql -Context DBContext -Project Common -Connection &amp;#34;Server=192.168.10.100;User Id=ranbo;Password=ranBo000;Database=FILECTLSYS&amp;#34; -outputdir DBModel For Sql:
-Scaffold-DbContext -Force “Server=192.168.10.100;Database=FILECTLSYS;User ID=ranbo;Password=ranBo000;” Microsoft.EntityFrameworkCore.SqlServer -OutputDir DBModel </description>
+      <guid>https://example.com/post/csharp/mvc-ef/</guid>
+      <description>&lt;p&gt;How to create ef in .net core.&lt;/p&gt;</description>
     </item>
     
   </channel>

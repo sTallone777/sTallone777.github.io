@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>linux on Ranbo&#39;s Blog</title>
-    <link>http://example.org/tags/linux/</link>
-    <description>Recent content in linux on Ranbo&#39;s Blog</description>
+    <title>linux on Ranbo</title>
+    <link>https://example.com/tags/linux/</link>
+    <description>Recent content in linux on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 01 Dec 2020 22:20:08 +0900</lastBuildDate><atom:link href="http://example.org/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Tue, 01 Dec 2020 22:20:08 +0900</lastBuildDate><atom:link href="https://example.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go Install</title>
-      <link>http://example.org/post/go/go-install/</link>
+      <link>https://example.com/post/go/go-install/</link>
       <pubDate>Tue, 01 Dec 2020 22:20:08 +0900</pubDate>
       
-      <guid>http://example.org/post/go/go-install/</guid>
+      <guid>https://example.com/post/go/go-install/</guid>
       <description>Golang Installation And configuration Windows 1.Download and Installation 2.Set GOPATH in user environment variable settings and global environment variable settings For me:
 C:\work\Go 3.Verify the installation Command Line:
 go version 4.Open the GOMOD Command Line:

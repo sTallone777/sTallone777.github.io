@@ -1,162 +1,162 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Ranbo&#39;s Blog</title>
-    <link>http://example.org/tags/</link>
-    <description>Recent content in Tags on Ranbo&#39;s Blog</description>
+    <title>Tags on Ranbo</title>
+    <link>https://example.com/tags/</link>
+    <description>Recent content in Tags on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 22 Dec 2020 21:56:58 +0900</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Tue, 22 Dec 2020 21:56:58 +0900</lastBuildDate><atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C#</title>
-      <link>http://example.org/tags/c#/</link>
+      <link>https://example.com/tags/c#/</link>
       <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
       
-      <guid>http://example.org/tags/c#/</guid>
+      <guid>https://example.com/tags/c#/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DotNet Core</title>
-      <link>http://example.org/tags/dotnet-core/</link>
+      <link>https://example.com/tags/dotnet-core/</link>
       <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
       
-      <guid>http://example.org/tags/dotnet-core/</guid>
+      <guid>https://example.com/tags/dotnet-core/</guid>
       <description></description>
     </item>
     
     <item>
       <title>EF</title>
-      <link>http://example.org/tags/ef/</link>
+      <link>https://example.com/tags/ef/</link>
       <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
       
-      <guid>http://example.org/tags/ef/</guid>
+      <guid>https://example.com/tags/ef/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MVC</title>
-      <link>http://example.org/tags/mvc/</link>
+      <link>https://example.com/tags/mvc/</link>
       <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
       
-      <guid>http://example.org/tags/mvc/</guid>
+      <guid>https://example.com/tags/mvc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Java</title>
-      <link>http://example.org/tags/java/</link>
+      <link>https://example.com/tags/java/</link>
       <pubDate>Sun, 20 Dec 2020 14:23:13 +0900</pubDate>
       
-      <guid>http://example.org/tags/java/</guid>
+      <guid>https://example.com/tags/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Lambda</title>
-      <link>http://example.org/tags/lambda/</link>
+      <link>https://example.com/tags/lambda/</link>
       <pubDate>Sun, 20 Dec 2020 14:23:13 +0900</pubDate>
       
-      <guid>http://example.org/tags/lambda/</guid>
+      <guid>https://example.com/tags/lambda/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cacert</title>
-      <link>http://example.org/tags/cacert/</link>
+      <link>https://example.com/tags/cacert/</link>
       <pubDate>Mon, 07 Dec 2020 15:23:53 +0900</pubDate>
       
-      <guid>http://example.org/tags/cacert/</guid>
+      <guid>https://example.com/tags/cacert/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SSL</title>
-      <link>http://example.org/tags/ssl/</link>
+      <link>https://example.com/tags/ssl/</link>
       <pubDate>Mon, 07 Dec 2020 15:23:53 +0900</pubDate>
       
-      <guid>http://example.org/tags/ssl/</guid>
+      <guid>https://example.com/tags/ssl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TSL</title>
-      <link>http://example.org/tags/tsl/</link>
+      <link>https://example.com/tags/tsl/</link>
       <pubDate>Mon, 07 Dec 2020 15:23:53 +0900</pubDate>
       
-      <guid>http://example.org/tags/tsl/</guid>
+      <guid>https://example.com/tags/tsl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dart</title>
-      <link>http://example.org/tags/dart/</link>
+      <link>https://example.com/tags/dart/</link>
       <pubDate>Mon, 07 Dec 2020 12:00:41 +0900</pubDate>
       
-      <guid>http://example.org/tags/dart/</guid>
+      <guid>https://example.com/tags/dart/</guid>
       <description></description>
     </item>
     
     <item>
       <title>flutter</title>
-      <link>http://example.org/tags/flutter/</link>
+      <link>https://example.com/tags/flutter/</link>
       <pubDate>Mon, 07 Dec 2020 12:00:41 +0900</pubDate>
       
-      <guid>http://example.org/tags/flutter/</guid>
+      <guid>https://example.com/tags/flutter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>web</title>
-      <link>http://example.org/tags/web/</link>
+      <link>https://example.com/tags/web/</link>
       <pubDate>Mon, 07 Dec 2020 12:00:41 +0900</pubDate>
       
-      <guid>http://example.org/tags/web/</guid>
+      <guid>https://example.com/tags/web/</guid>
       <description></description>
     </item>
     
     <item>
       <title>docker</title>
-      <link>http://example.org/tags/docker/</link>
+      <link>https://example.com/tags/docker/</link>
       <pubDate>Sat, 05 Dec 2020 22:02:10 +0900</pubDate>
       
-      <guid>http://example.org/tags/docker/</guid>
+      <guid>https://example.com/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>git</title>
-      <link>http://example.org/tags/git/</link>
+      <link>https://example.com/tags/git/</link>
       <pubDate>Sat, 05 Dec 2020 11:53:10 +0900</pubDate>
       
-      <guid>http://example.org/tags/git/</guid>
+      <guid>https://example.com/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>go</title>
-      <link>http://example.org/tags/go/</link>
+      <link>https://example.com/tags/go/</link>
       <pubDate>Thu, 03 Dec 2020 12:38:30 +0900</pubDate>
       
-      <guid>http://example.org/tags/go/</guid>
+      <guid>https://example.com/tags/go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>env</title>
-      <link>http://example.org/tags/env/</link>
+      <link>https://example.com/tags/env/</link>
       <pubDate>Tue, 01 Dec 2020 22:20:08 +0900</pubDate>
       
-      <guid>http://example.org/tags/env/</guid>
+      <guid>https://example.com/tags/env/</guid>
       <description></description>
     </item>
     
     <item>
       <title>linux</title>
-      <link>http://example.org/tags/linux/</link>
+      <link>https://example.com/tags/linux/</link>
       <pubDate>Tue, 01 Dec 2020 22:20:08 +0900</pubDate>
       
-      <guid>http://example.org/tags/linux/</guid>
+      <guid>https://example.com/tags/linux/</guid>
       <description></description>
     </item>
     
