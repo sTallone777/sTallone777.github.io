@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DotNet Core on Ranbo</title>
-    <link>https://example.com/tags/dotnet-core/</link>
+    <link>https://stallone777.github.io/tags/dotnet-core/</link>
     <description>Recent content in DotNet Core on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 22 Dec 2020 21:56:58 +0900</lastBuildDate><atom:link href="https://example.com/tags/dotnet-core/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Dec 2020 21:56:58 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/tags/dotnet-core/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Use EF In DotNet Core</title>
-      <link>https://example.com/post/csharp/mvc-ef/</link>
+      <link>https://stallone777.github.io/post/csharp/mvc-ef/</link>
       <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
       
-      <guid>https://example.com/post/csharp/mvc-ef/</guid>
+      <guid>https://stallone777.github.io/post/csharp/mvc-ef/</guid>
       <description>&lt;p&gt;How to create ef in .net core.&lt;/p&gt;</description>
     </item>
     

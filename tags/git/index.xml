@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>git on Ranbo</title>
-    <link>https://example.com/tags/git/</link>
+    <link>https://stallone777.github.io/tags/git/</link>
     <description>Recent content in git on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 05 Dec 2020 11:53:10 +0900</lastBuildDate><atom:link href="https://example.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Dec 2020 11:53:10 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git Command</title>
-      <link>https://example.com/post/git/git-command/</link>
+      <link>https://stallone777.github.io/post/git/git-command/</link>
       <pubDate>Sat, 05 Dec 2020 11:53:10 +0900</pubDate>
       
-      <guid>https://example.com/post/git/git-command/</guid>
+      <guid>https://stallone777.github.io/post/git/git-command/</guid>
       <description>&lt;p&gt;Common command of git.&lt;/p&gt;</description>
     </item>
     
