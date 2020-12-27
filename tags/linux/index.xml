@@ -13,10 +13,7 @@
       <pubDate>Tue, 01 Dec 2020 22:20:08 +0900</pubDate>
       
       <guid>https://example.com/post/go/go-install/</guid>
-      <description>Golang Installation And configuration Windows 1.Download and Installation 2.Set GOPATH in user environment variable settings and global environment variable settings For me:
-C:\work\Go 3.Verify the installation Command Line:
-go version 4.Open the GOMOD Command Line:
-go env -w GO111MODULE=on 5.Create a golang project by vscode and config the setting json { &amp;#34;version&amp;#34;: &amp;#34;0.2.0&amp;#34;, &amp;#34;configurations&amp;#34;: [{ &amp;#34;name&amp;#34;: &amp;#34;{yourprojectname}&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;go&amp;#34;, &amp;#34;request&amp;#34;: &amp;#34;launch&amp;#34;, &amp;#34;mode&amp;#34;: &amp;#34;auto&amp;#34;, &amp;#34;program&amp;#34;: &amp;#34;${fileDirname}&amp;#34;, &amp;#34;env&amp;#34;: { &amp;#34;GOPATH&amp;#34;: &amp;#34;{your GOPATH}&amp;#34;, &amp;#34;GOROOT&amp;#34;: &amp;#34;{your GOROOT}&amp;#34; }, &amp;#34;args&amp;#34;: [], //&amp;#34;showLog&amp;#34;: true } ] } Linux 1.</description>
+      <description>&lt;p&gt;Configuration of golang.&lt;/p&gt;</description>
     </item>
     
   </channel>

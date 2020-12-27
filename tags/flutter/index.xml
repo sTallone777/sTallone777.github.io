@@ -13,8 +13,7 @@
       <pubDate>Mon, 07 Dec 2020 12:00:41 +0900</pubDate>
       
       <guid>https://example.com/post/flutter/flutter-command/</guid>
-      <description>Config Flutter Environment Installation Guide
-Convert FlutterApp to FlutterWeb #download web sdk flutter channel beta flutter upgrade flutter config --enable-web flutter devices #then type in following words on project terminal #and the web contents will be builded on build/web/ flutter build web Cretae flutter project by commands flutter create --no-overwrite $PROJECT cd $PROJECT flutter analyze flutter test flutter run </description>
+      <description>&lt;p&gt;Configration about flutter.&lt;/p&gt;</description>
     </item>
     
   </channel>

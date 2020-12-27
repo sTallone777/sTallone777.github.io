@@ -22,8 +22,7 @@
       <pubDate>Sun, 20 Dec 2020 14:23:13 +0900</pubDate>
       
       <guid>https://example.com/post/csharp/post1/</guid>
-      <description>UnderStanding of Lambda in Java and C#  In Java and C#, if you want to use lambda expression, then the object must first be a unnamed delegate. So in essence, lambda is a anonymous delegate. As we all know that delegate is a function pointer, although there is no delegate in Java, but we can use it like this:
-C# class Program { public delegate void delType(string s); static void Main(string[] args) { //Console.</description>
+      <description>&lt;p&gt;Introduce the difference between java and c# lambda expression.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -32,7 +31,7 @@ C# class Program { public delegate void delType(string s); static void Main(stri
       <pubDate>Mon, 07 Dec 2020 15:23:53 +0900</pubDate>
       
       <guid>https://example.com/post/ssl/ssl-command/</guid>
-      <description>Certificate&amp;rsquo;s generation and publisher RootCA作成(keytool)： keytool -genkeypair -alias {rootca_name} -keyalg RSA -keysize 2048 -validity 7300 -keystore ca.jks RootCAで二級CA作成に関するコマンド(keytool)： #独自証明書作成： keytool -genkeypair -alias {subca_name} -keyalg RSA -keysize 2048 -validity 7300 -keystore ca.jks #独自証明書の請求書を作成： keytool -certreq -alias {subca_name} -file {subca_name}.csr -keystore ca.jks #RootCAで独自証明書をサイン： keytool -gencert -alias {rootca_name} -keystore ca.jks -infile {subca_name}.csr -outfile {subca_name}.cer　-validity 7300 #証明書の証明書チェーンをキーストアに入れる： keytool -importcert -alias {subca_name} -file {subca_name}.cer -keystore ca.jks #p12形式のモニタサーバ証明書をエクスポート： keytool -importkeystore -srckeystore ca.jks -destkeystore jp.cps-iot.{your_filename}.P12 -srcalias {subca_name} -destalias pvk -srcstoretype JKS -deststoretype PKCS12 -noprompt #p12からclient証明書を取り出す： openssl pkcs12 -in .</description>
+      <description>&lt;p&gt;Common command of SSL &amp;amp; TLS&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -41,8 +40,7 @@ C# class Program { public delegate void delType(string s); static void Main(stri
       <pubDate>Mon, 07 Dec 2020 12:00:41 +0900</pubDate>
       
       <guid>https://example.com/post/flutter/flutter-command/</guid>
-      <description>Config Flutter Environment Installation Guide
-Convert FlutterApp to FlutterWeb #download web sdk flutter channel beta flutter upgrade flutter config --enable-web flutter devices #then type in following words on project terminal #and the web contents will be builded on build/web/ flutter build web Cretae flutter project by commands flutter create --no-overwrite $PROJECT cd $PROJECT flutter analyze flutter test flutter run </description>
+      <description>&lt;p&gt;Configration about flutter.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -51,7 +49,7 @@ Convert FlutterApp to FlutterWeb #download web sdk flutter channel beta flutter 
       <pubDate>Sat, 05 Dec 2020 22:02:10 +0900</pubDate>
       
       <guid>https://example.com/post/docker/docker-command/</guid>
-      <description>Docker Command #Start/Stop Container docker start/stop [containerID] #Running container status docker ps #Enter the container docker attach [containerID] #Create a container and run it docker run -it ubuntu:14.04 /bin/bash #Slove the problem than process 1 is not &amp;#34;init&amp;#34; docker run -tid --name centos8 --privileged=true -p 3306:3306centos:latest /sbin/init docker exec -it test /bin/bash #Create a container with mysql5.7 image docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7 sudo docker exec -it mysql bash mysql -uroot -p123456 #Delete image docker rmi [image] #Run a container with port mapping docker run -it -d -p 8083:80 centos:latest /bin/bash #Check the port config docker port [containerID] </description>
+      <description>&lt;p&gt;Common docker command.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -60,7 +58,7 @@ Convert FlutterApp to FlutterWeb #download web sdk flutter channel beta flutter 
       <pubDate>Sat, 05 Dec 2020 11:53:10 +0900</pubDate>
       
       <guid>https://example.com/post/git/git-command/</guid>
-      <description>Git Command git init # remote(ssh)  git remote add origin git@github.com:{github_name}/{repo_name}.git git status git add . git commit -m &amp;#34;{comment}&amp;#34; # make ssl key # this command will create a public key and primary key at ~/.ssh/ folder # open ~/.ssh/id_rsa.pub adn copy the content to your  # github account settings -&amp;gt; SSH and GPG keys ssh-keygen -t rsa -C &amp;#34;{github_account_email}&amp;#34; # confirm connect ssh -T git@github.com # push to your repositry git push -u origin master Other Command # delete folder git rm {folder_name} -r -f # delete file git rm {file_name} </description>
+      <description>&lt;p&gt;Common command of git.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -69,7 +67,7 @@ Convert FlutterApp to FlutterWeb #download web sdk flutter channel beta flutter 
       <pubDate>Thu, 03 Dec 2020 12:38:30 +0900</pubDate>
       
       <guid>https://example.com/post/go/go-commontechniques/</guid>
-      <description>Data Conversion 1)int to string s := strconv.Itoa(i) s := strconv.FormatInt(int64(i), 10) 2)int64 to string i := int64(123) s := strconv.FormatInt(i, 10) 3)string to int i, err := strconv.Atoi(s) 4)string to int64 i, err := strconv.ParseInt(s, 10, 64) 5)float to string v := 3.1415926535 s1 := strconv.FormatFloat(v, &amp;#39;E&amp;#39;, -1, 32)//float32s2 := strconv.FormatFloat(v, &amp;#39;E&amp;#39;, -1, 64)//float64 6)string to float s := &amp;#34;3.1415926535&amp;#34; v1, err := strconv.ParseFloat(v, 32) v2, err := strconv.ParseFloat(v, 64) Float format a:=strconv.</description>
+      <description>&lt;p&gt;Experiences summary of golang.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -78,10 +76,7 @@ Convert FlutterApp to FlutterWeb #download web sdk flutter channel beta flutter 
       <pubDate>Tue, 01 Dec 2020 22:20:08 +0900</pubDate>
       
       <guid>https://example.com/post/go/go-install/</guid>
-      <description>Golang Installation And configuration Windows 1.Download and Installation 2.Set GOPATH in user environment variable settings and global environment variable settings For me:
-C:\work\Go 3.Verify the installation Command Line:
-go version 4.Open the GOMOD Command Line:
-go env -w GO111MODULE=on 5.Create a golang project by vscode and config the setting json { &amp;#34;version&amp;#34;: &amp;#34;0.2.0&amp;#34;, &amp;#34;configurations&amp;#34;: [{ &amp;#34;name&amp;#34;: &amp;#34;{yourprojectname}&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;go&amp;#34;, &amp;#34;request&amp;#34;: &amp;#34;launch&amp;#34;, &amp;#34;mode&amp;#34;: &amp;#34;auto&amp;#34;, &amp;#34;program&amp;#34;: &amp;#34;${fileDirname}&amp;#34;, &amp;#34;env&amp;#34;: { &amp;#34;GOPATH&amp;#34;: &amp;#34;{your GOPATH}&amp;#34;, &amp;#34;GOROOT&amp;#34;: &amp;#34;{your GOROOT}&amp;#34; }, &amp;#34;args&amp;#34;: [], //&amp;#34;showLog&amp;#34;: true } ] } Linux 1.</description>
+      <description>&lt;p&gt;Configuration of golang.&lt;/p&gt;</description>
     </item>
     
   </channel>

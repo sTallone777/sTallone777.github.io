@@ -13,7 +13,7 @@
       <pubDate>Sat, 05 Dec 2020 11:53:10 +0900</pubDate>
       
       <guid>https://example.com/post/git/git-command/</guid>
-      <description>Git Command git init # remote(ssh)  git remote add origin git@github.com:{github_name}/{repo_name}.git git status git add . git commit -m &amp;#34;{comment}&amp;#34; # make ssl key # this command will create a public key and primary key at ~/.ssh/ folder # open ~/.ssh/id_rsa.pub adn copy the content to your  # github account settings -&amp;gt; SSH and GPG keys ssh-keygen -t rsa -C &amp;#34;{github_account_email}&amp;#34; # confirm connect ssh -T git@github.com # push to your repositry git push -u origin master Other Command # delete folder git rm {folder_name} -r -f # delete file git rm {file_name} </description>
+      <description>&lt;p&gt;Common command of git.&lt;/p&gt;</description>
     </item>
     
   </channel>

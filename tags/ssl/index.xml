@@ -13,7 +13,7 @@
       <pubDate>Mon, 07 Dec 2020 15:23:53 +0900</pubDate>
       
       <guid>https://example.com/post/ssl/ssl-command/</guid>
-      <description>Certificate&amp;rsquo;s generation and publisher RootCA作成(keytool)： keytool -genkeypair -alias {rootca_name} -keyalg RSA -keysize 2048 -validity 7300 -keystore ca.jks RootCAで二級CA作成に関するコマンド(keytool)： #独自証明書作成： keytool -genkeypair -alias {subca_name} -keyalg RSA -keysize 2048 -validity 7300 -keystore ca.jks #独自証明書の請求書を作成： keytool -certreq -alias {subca_name} -file {subca_name}.csr -keystore ca.jks #RootCAで独自証明書をサイン： keytool -gencert -alias {rootca_name} -keystore ca.jks -infile {subca_name}.csr -outfile {subca_name}.cer　-validity 7300 #証明書の証明書チェーンをキーストアに入れる： keytool -importcert -alias {subca_name} -file {subca_name}.cer -keystore ca.jks #p12形式のモニタサーバ証明書をエクスポート： keytool -importkeystore -srckeystore ca.jks -destkeystore jp.cps-iot.{your_filename}.P12 -srcalias {subca_name} -destalias pvk -srcstoretype JKS -deststoretype PKCS12 -noprompt #p12からclient証明書を取り出す： openssl pkcs12 -in .</description>
+      <description>&lt;p&gt;Common command of SSL &amp;amp; TLS&lt;/p&gt;</description>
     </item>
     
   </channel>

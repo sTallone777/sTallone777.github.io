@@ -13,8 +13,7 @@
       <pubDate>Sun, 20 Dec 2020 14:23:13 +0900</pubDate>
       
       <guid>https://example.com/post/csharp/post1/</guid>
-      <description>UnderStanding of Lambda in Java and C#  In Java and C#, if you want to use lambda expression, then the object must first be a unnamed delegate. So in essence, lambda is a anonymous delegate. As we all know that delegate is a function pointer, although there is no delegate in Java, but we can use it like this:
-C# class Program { public delegate void delType(string s); static void Main(string[] args) { //Console.</description>
+      <description>&lt;p&gt;Introduce the difference between java and c# lambda expression.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -7,6 +7,8 @@
     <title>docker | Ranbo</title>
 
     
+<link href="/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
 
 
 
@@ -60,9 +62,9 @@
   
   body.default {
     
-    background-color: black;
-    
 
+    
+    background-image: url(/img/background5.jpg);
     
   }
   
@@ -219,8 +221,8 @@
     
       
       
-      <a class="ui label" href="/tags/tsl/" title="Tsl">
-        Tsl
+      <a class="ui label" href="/tags/tls/" title="Tls">
+        Tls
       </a>
     
       
@@ -441,7 +443,7 @@
       <article class="ui attached segment card dream-card">
   <a class="image" href="https://example.com/post/docker/docker-command/">
     
-      <img src="/img/default3.jpg" alt="Docker Command" />
+      <img src="/img/docker.jpg" alt="Docker Command" />
     
   </a>
 
@@ -453,7 +455,7 @@
       <p class="date">Saturday, Dec 5, 2020</p>
     </div>
     <div class="description">
-      Docker Command #Start/Stop Container docker start/stop [containerID] #Running container status docker ps #Enter the container docker attach [containerID] #Create a container and run it docker run -it ubuntu:14.04 /bin/bash #Slove the problem than process 1 is not &#34;init&#34; docker run -tid --name centos8 --privileged=true -p 3306:3306centos:latest /sbin/init docker exec -it test /bin/bash #Create a container with mysql5.7 image docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7 sudo docker exec -it mysql bash mysql -uroot -p123456 #Delete image docker rmi [image] #Run a container with port mapping docker run -it -d -p 8083:80 centos:latest /bin/bash #Check the port config docker port [containerID] 
+      <p>Common docker command.</p>
     </div>
   </div>
 

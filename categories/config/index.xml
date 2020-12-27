@@ -22,8 +22,7 @@
       <pubDate>Mon, 07 Dec 2020 12:00:41 +0900</pubDate>
       
       <guid>https://example.com/post/flutter/flutter-command/</guid>
-      <description>Config Flutter Environment Installation Guide
-Convert FlutterApp to FlutterWeb #download web sdk flutter channel beta flutter upgrade flutter config --enable-web flutter devices #then type in following words on project terminal #and the web contents will be builded on build/web/ flutter build web Cretae flutter project by commands flutter create --no-overwrite $PROJECT cd $PROJECT flutter analyze flutter test flutter run </description>
+      <description>&lt;p&gt;Configration about flutter.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -32,7 +31,7 @@ Convert FlutterApp to FlutterWeb #download web sdk flutter channel beta flutter 
       <pubDate>Thu, 03 Dec 2020 12:38:30 +0900</pubDate>
       
       <guid>https://example.com/post/go/go-commontechniques/</guid>
-      <description>Data Conversion 1)int to string s := strconv.Itoa(i) s := strconv.FormatInt(int64(i), 10) 2)int64 to string i := int64(123) s := strconv.FormatInt(i, 10) 3)string to int i, err := strconv.Atoi(s) 4)string to int64 i, err := strconv.ParseInt(s, 10, 64) 5)float to string v := 3.1415926535 s1 := strconv.FormatFloat(v, &amp;#39;E&amp;#39;, -1, 32)//float32s2 := strconv.FormatFloat(v, &amp;#39;E&amp;#39;, -1, 64)//float64 6)string to float s := &amp;#34;3.1415926535&amp;#34; v1, err := strconv.ParseFloat(v, 32) v2, err := strconv.ParseFloat(v, 64) Float format a:=strconv.</description>
+      <description>&lt;p&gt;Experiences summary of golang.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -41,10 +40,7 @@ Convert FlutterApp to FlutterWeb #download web sdk flutter channel beta flutter 
       <pubDate>Tue, 01 Dec 2020 22:20:08 +0900</pubDate>
       
       <guid>https://example.com/post/go/go-install/</guid>
-      <description>Golang Installation And configuration Windows 1.Download and Installation 2.Set GOPATH in user environment variable settings and global environment variable settings For me:
-C:\work\Go 3.Verify the installation Command Line:
-go version 4.Open the GOMOD Command Line:
-go env -w GO111MODULE=on 5.Create a golang project by vscode and config the setting json { &amp;#34;version&amp;#34;: &amp;#34;0.2.0&amp;#34;, &amp;#34;configurations&amp;#34;: [{ &amp;#34;name&amp;#34;: &amp;#34;{yourprojectname}&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;go&amp;#34;, &amp;#34;request&amp;#34;: &amp;#34;launch&amp;#34;, &amp;#34;mode&amp;#34;: &amp;#34;auto&amp;#34;, &amp;#34;program&amp;#34;: &amp;#34;${fileDirname}&amp;#34;, &amp;#34;env&amp;#34;: { &amp;#34;GOPATH&amp;#34;: &amp;#34;{your GOPATH}&amp;#34;, &amp;#34;GOROOT&amp;#34;: &amp;#34;{your GOROOT}&amp;#34; }, &amp;#34;args&amp;#34;: [], //&amp;#34;showLog&amp;#34;: true } ] } Linux 1.</description>
+      <description>&lt;p&gt;Configuration of golang.&lt;/p&gt;</description>
     </item>
     
   </channel>
