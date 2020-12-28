@@ -6,7 +6,16 @@
     <description>Recent content in Config on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 22 Dec 2020 21:56:58 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/categories/config/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Dec 2020 17:36:14 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/categories/config/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>React&#43;Webpack Scaffold</title>
+      <link>https://stallone777.github.io/post/nodejs/react/start-react/</link>
+      <pubDate>Mon, 28 Dec 2020 17:36:14 +0900</pubDate>
+      
+      <guid>https://stallone777.github.io/post/nodejs/react/start-react/</guid>
+      <description>&lt;h1 id=&#34;create-the-reactwebpack-scaffold&#34;&gt;Create the react+webpack scaffold.&lt;/h1&gt;</description>
+    </item>
+    
     <item>
       <title>Use EF In DotNet Core</title>
       <link>https://stallone777.github.io/post/csharp/mvc-ef/</link>
