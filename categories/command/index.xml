@@ -6,7 +6,16 @@
     <description>Recent content in Command on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 22 Dec 2020 21:56:58 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/categories/command/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Dec 2020 08:12:12 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/categories/command/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Manjaro Summary</title>
+      <link>https://stallone777.github.io/post/server/linux/manjaro/</link>
+      <pubDate>Mon, 28 Dec 2020 08:12:12 +0900</pubDate>
+      
+      <guid>https://stallone777.github.io/post/server/linux/manjaro/</guid>
+      <description>&lt;p&gt;Summary about Manjaro&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Use EF In DotNet Core</title>
       <link>https://stallone777.github.io/post/csharp/mvc-ef/</link>

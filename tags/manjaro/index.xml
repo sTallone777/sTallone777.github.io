@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Manjaro on Ranbo</title>
+    <link>https://stallone777.github.io/tags/manjaro/</link>
+    <description>Recent content in Manjaro on Ranbo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 28 Dec 2020 08:12:12 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/tags/manjaro/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Manjaro Summary</title>
+      <link>https://stallone777.github.io/post/server/linux/manjaro/</link>
+      <pubDate>Mon, 28 Dec 2020 08:12:12 +0900</pubDate>
+      
+      <guid>https://stallone777.github.io/post/server/linux/manjaro/</guid>
+      <description>&lt;p&gt;Summary about Manjaro&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

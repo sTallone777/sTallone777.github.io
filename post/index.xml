@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 27 Dec 2020 18:22:28 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Dec 2020 08:12:12 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Manjaro Summary</title>
+      <link>https://stallone777.github.io/post/server/linux/manjaro/</link>
+      <pubDate>Mon, 28 Dec 2020 08:12:12 +0900</pubDate>
+      
+      <guid>https://stallone777.github.io/post/server/linux/manjaro/</guid>
+      <description>&lt;p&gt;Summary about Manjaro&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>BinaryTree in Go</title>
       <link>https://stallone777.github.io/post/algorithm/go-binarytree/</link>

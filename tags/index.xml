@@ -6,7 +6,25 @@
     <description>Recent content in Tags on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 27 Dec 2020 18:22:28 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Dec 2020 08:12:12 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Manjaro</title>
+      <link>https://stallone777.github.io/tags/manjaro/</link>
+      <pubDate>Mon, 28 Dec 2020 08:12:12 +0900</pubDate>
+      
+      <guid>https://stallone777.github.io/tags/manjaro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pacman</title>
+      <link>https://stallone777.github.io/tags/pacman/</link>
+      <pubDate>Mon, 28 Dec 2020 08:12:12 +0900</pubDate>
+      
+      <guid>https://stallone777.github.io/tags/pacman/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>BinaryTree</title>
       <link>https://stallone777.github.io/tags/binarytree/</link>
