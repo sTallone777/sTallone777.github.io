@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>linux on Ranbo</title>
-    <link>https://stallone777.github.io/tags/linux/</link>
+    <link>http://ranbo.work/tags/linux/</link>
     <description>Recent content in linux on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Dec 2020 22:20:08 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Dec 2020 22:20:08 +0900</lastBuildDate><atom:link href="http://ranbo.work/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go Install</title>
-      <link>https://stallone777.github.io/post/go/go-install/</link>
+      <link>http://ranbo.work/post/go/go-install/</link>
       <pubDate>Tue, 01 Dec 2020 22:20:08 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/post/go/go-install/</guid>
+      <guid>http://ranbo.work/post/go/go-install/</guid>
       <description>&lt;p&gt;Configuration of golang.&lt;/p&gt;</description>
     </item>
     

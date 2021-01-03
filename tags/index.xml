@@ -2,206 +2,206 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Ranbo</title>
-    <link>https://stallone777.github.io/tags/</link>
+    <link>http://ranbo.work/tags/</link>
     <description>Recent content in Tags on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 31 Dec 2020 21:21:10 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Dec 2020 21:21:10 +0900</lastBuildDate><atom:link href="http://ranbo.work/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>dart</title>
-      <link>https://stallone777.github.io/tags/dart/</link>
+      <link>http://ranbo.work/tags/dart/</link>
       <pubDate>Thu, 31 Dec 2020 21:21:10 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/tags/dart/</guid>
+      <guid>http://ranbo.work/tags/dart/</guid>
       <description></description>
     </item>
     
     <item>
       <title>flutter</title>
-      <link>https://stallone777.github.io/tags/flutter/</link>
+      <link>http://ranbo.work/tags/flutter/</link>
       <pubDate>Thu, 31 Dec 2020 21:21:10 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/tags/flutter/</guid>
+      <guid>http://ranbo.work/tags/flutter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>env</title>
-      <link>https://stallone777.github.io/tags/env/</link>
+      <link>http://ranbo.work/tags/env/</link>
       <pubDate>Mon, 28 Dec 2020 17:36:14 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/tags/env/</guid>
+      <guid>http://ranbo.work/tags/env/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Nodejs</title>
-      <link>https://stallone777.github.io/tags/nodejs/</link>
+      <link>http://ranbo.work/tags/nodejs/</link>
       <pubDate>Mon, 28 Dec 2020 17:36:14 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/tags/nodejs/</guid>
+      <guid>http://ranbo.work/tags/nodejs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>React</title>
-      <link>https://stallone777.github.io/tags/react/</link>
+      <link>http://ranbo.work/tags/react/</link>
       <pubDate>Mon, 28 Dec 2020 17:36:14 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/tags/react/</guid>
+      <guid>http://ranbo.work/tags/react/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Manjaro</title>
-      <link>https://stallone777.github.io/tags/manjaro/</link>
+      <link>http://ranbo.work/tags/manjaro/</link>
       <pubDate>Mon, 28 Dec 2020 08:12:12 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/tags/manjaro/</guid>
+      <guid>http://ranbo.work/tags/manjaro/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pacman</title>
-      <link>https://stallone777.github.io/tags/pacman/</link>
+      <link>http://ranbo.work/tags/pacman/</link>
       <pubDate>Mon, 28 Dec 2020 08:12:12 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/tags/pacman/</guid>
+      <guid>http://ranbo.work/tags/pacman/</guid>
       <description></description>
     </item>
     
     <item>
       <title>BinaryTree</title>
-      <link>https://stallone777.github.io/tags/binarytree/</link>
+      <link>http://ranbo.work/tags/binarytree/</link>
       <pubDate>Sun, 27 Dec 2020 18:22:28 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/tags/binarytree/</guid>
+      <guid>http://ranbo.work/tags/binarytree/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Go</title>
-      <link>https://stallone777.github.io/tags/go/</link>
+      <link>http://ranbo.work/tags/go/</link>
       <pubDate>Sun, 27 Dec 2020 18:22:28 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/tags/go/</guid>
+      <guid>http://ranbo.work/tags/go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>C#</title>
-      <link>https://stallone777.github.io/tags/c#/</link>
+      <link>http://ranbo.work/tags/c#/</link>
       <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/tags/c#/</guid>
+      <guid>http://ranbo.work/tags/c#/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DotNet Core</title>
-      <link>https://stallone777.github.io/tags/dotnet-core/</link>
+      <link>http://ranbo.work/tags/dotnet-core/</link>
       <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/tags/dotnet-core/</guid>
+      <guid>http://ranbo.work/tags/dotnet-core/</guid>
       <description></description>
     </item>
     
     <item>
       <title>EF</title>
-      <link>https://stallone777.github.io/tags/ef/</link>
+      <link>http://ranbo.work/tags/ef/</link>
       <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/tags/ef/</guid>
+      <guid>http://ranbo.work/tags/ef/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MVC</title>
-      <link>https://stallone777.github.io/tags/mvc/</link>
+      <link>http://ranbo.work/tags/mvc/</link>
       <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/tags/mvc/</guid>
+      <guid>http://ranbo.work/tags/mvc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Java</title>
-      <link>https://stallone777.github.io/tags/java/</link>
+      <link>http://ranbo.work/tags/java/</link>
       <pubDate>Sun, 20 Dec 2020 14:23:13 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/tags/java/</guid>
+      <guid>http://ranbo.work/tags/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Lambda</title>
-      <link>https://stallone777.github.io/tags/lambda/</link>
+      <link>http://ranbo.work/tags/lambda/</link>
       <pubDate>Sun, 20 Dec 2020 14:23:13 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/tags/lambda/</guid>
+      <guid>http://ranbo.work/tags/lambda/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cacert</title>
-      <link>https://stallone777.github.io/tags/cacert/</link>
+      <link>http://ranbo.work/tags/cacert/</link>
       <pubDate>Mon, 07 Dec 2020 15:23:53 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/tags/cacert/</guid>
+      <guid>http://ranbo.work/tags/cacert/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SSL</title>
-      <link>https://stallone777.github.io/tags/ssl/</link>
+      <link>http://ranbo.work/tags/ssl/</link>
       <pubDate>Mon, 07 Dec 2020 15:23:53 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/tags/ssl/</guid>
+      <guid>http://ranbo.work/tags/ssl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TLS</title>
-      <link>https://stallone777.github.io/tags/tls/</link>
+      <link>http://ranbo.work/tags/tls/</link>
       <pubDate>Mon, 07 Dec 2020 15:23:53 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/tags/tls/</guid>
+      <guid>http://ranbo.work/tags/tls/</guid>
       <description></description>
     </item>
     
     <item>
       <title>web</title>
-      <link>https://stallone777.github.io/tags/web/</link>
+      <link>http://ranbo.work/tags/web/</link>
       <pubDate>Mon, 07 Dec 2020 12:00:41 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/tags/web/</guid>
+      <guid>http://ranbo.work/tags/web/</guid>
       <description></description>
     </item>
     
     <item>
       <title>docker</title>
-      <link>https://stallone777.github.io/tags/docker/</link>
+      <link>http://ranbo.work/tags/docker/</link>
       <pubDate>Sat, 05 Dec 2020 22:02:10 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/tags/docker/</guid>
+      <guid>http://ranbo.work/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>git</title>
-      <link>https://stallone777.github.io/tags/git/</link>
+      <link>http://ranbo.work/tags/git/</link>
       <pubDate>Sat, 05 Dec 2020 11:53:10 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/tags/git/</guid>
+      <guid>http://ranbo.work/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>linux</title>
-      <link>https://stallone777.github.io/tags/linux/</link>
+      <link>http://ranbo.work/tags/linux/</link>
       <pubDate>Tue, 01 Dec 2020 22:20:08 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/tags/linux/</guid>
+      <guid>http://ranbo.work/tags/linux/</guid>
       <description></description>
     </item>
     

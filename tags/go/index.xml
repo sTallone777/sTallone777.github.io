@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Go on Ranbo</title>
-    <link>https://stallone777.github.io/tags/go/</link>
+    <link>http://ranbo.work/tags/go/</link>
     <description>Recent content in Go on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 27 Dec 2020 18:22:28 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Dec 2020 18:22:28 +0900</lastBuildDate><atom:link href="http://ranbo.work/tags/go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BinaryTree in Go</title>
-      <link>https://stallone777.github.io/post/algorithm/go-binarytree/</link>
+      <link>http://ranbo.work/post/algorithm/go-binarytree/</link>
       <pubDate>Sun, 27 Dec 2020 18:22:28 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/post/algorithm/go-binarytree/</guid>
+      <guid>http://ranbo.work/post/algorithm/go-binarytree/</guid>
       <description>&lt;p&gt;Introduce how to create a binary-tree with go.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Go CommonTechniques</title>
-      <link>https://stallone777.github.io/post/go/go-commontechniques/</link>
+      <link>http://ranbo.work/post/go/go-commontechniques/</link>
       <pubDate>Thu, 03 Dec 2020 12:38:30 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/post/go/go-commontechniques/</guid>
+      <guid>http://ranbo.work/post/go/go-commontechniques/</guid>
       <description>&lt;p&gt;Experiences summary of golang.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Go Install</title>
-      <link>https://stallone777.github.io/post/go/go-install/</link>
+      <link>http://ranbo.work/post/go/go-install/</link>
       <pubDate>Tue, 01 Dec 2020 22:20:08 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/post/go/go-install/</guid>
+      <guid>http://ranbo.work/post/go/go-install/</guid>
       <description>&lt;p&gt;Configuration of golang.&lt;/p&gt;</description>
     </item>
     

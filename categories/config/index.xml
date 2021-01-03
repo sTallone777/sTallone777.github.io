@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Config on Ranbo</title>
-    <link>https://stallone777.github.io/categories/config/</link>
+    <link>http://ranbo.work/categories/config/</link>
     <description>Recent content in Config on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 28 Dec 2020 17:36:14 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/categories/config/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Dec 2020 17:36:14 +0900</lastBuildDate><atom:link href="http://ranbo.work/categories/config/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>React&#43;Webpack Scaffold</title>
-      <link>https://stallone777.github.io/post/nodejs/react/start-react/</link>
+      <link>http://ranbo.work/post/nodejs/react/start-react/</link>
       <pubDate>Mon, 28 Dec 2020 17:36:14 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/post/nodejs/react/start-react/</guid>
+      <guid>http://ranbo.work/post/nodejs/react/start-react/</guid>
       <description>&lt;h1 id=&#34;create-the-reactwebpack-scaffold&#34;&gt;Create the react+webpack scaffold.&lt;/h1&gt;</description>
     </item>
     
     <item>
       <title>Use EF In DotNet Core</title>
-      <link>https://stallone777.github.io/post/csharp/mvc-ef/</link>
+      <link>http://ranbo.work/post/csharp/mvc-ef/</link>
       <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/post/csharp/mvc-ef/</guid>
+      <guid>http://ranbo.work/post/csharp/mvc-ef/</guid>
       <description>&lt;p&gt;How to create ef in .net core.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Flutter Command</title>
-      <link>https://stallone777.github.io/post/flutter/flutter-command/</link>
+      <link>http://ranbo.work/post/flutter/flutter-command/</link>
       <pubDate>Mon, 07 Dec 2020 12:00:41 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/post/flutter/flutter-command/</guid>
+      <guid>http://ranbo.work/post/flutter/flutter-command/</guid>
       <description>&lt;p&gt;Configration about flutter.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Go CommonTechniques</title>
-      <link>https://stallone777.github.io/post/go/go-commontechniques/</link>
+      <link>http://ranbo.work/post/go/go-commontechniques/</link>
       <pubDate>Thu, 03 Dec 2020 12:38:30 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/post/go/go-commontechniques/</guid>
+      <guid>http://ranbo.work/post/go/go-commontechniques/</guid>
       <description>&lt;p&gt;Experiences summary of golang.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Go Install</title>
-      <link>https://stallone777.github.io/post/go/go-install/</link>
+      <link>http://ranbo.work/post/go/go-install/</link>
       <pubDate>Tue, 01 Dec 2020 22:20:08 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/post/go/go-install/</guid>
+      <guid>http://ranbo.work/post/go/go-install/</guid>
       <description>&lt;p&gt;Configuration of golang.&lt;/p&gt;</description>
     </item>
     
