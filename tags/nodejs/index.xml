@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nodejs on Ranbo</title>
-    <link>http://ranbo.work/tags/nodejs/</link>
+    <link>http://www.ranbo.work/tags/nodejs/</link>
     <description>Recent content in Nodejs on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 28 Dec 2020 17:36:14 +0900</lastBuildDate><atom:link href="http://ranbo.work/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Dec 2020 17:36:14 +0900</lastBuildDate><atom:link href="http://www.ranbo.work/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>React&#43;Webpack Scaffold</title>
-      <link>http://ranbo.work/post/nodejs/react/start-react/</link>
+      <link>http://www.ranbo.work/post/nodejs/react/start-react/</link>
       <pubDate>Mon, 28 Dec 2020 17:36:14 +0900</pubDate>
       
-      <guid>http://ranbo.work/post/nodejs/react/start-react/</guid>
+      <guid>http://www.ranbo.work/post/nodejs/react/start-react/</guid>
       <description>&lt;h1 id=&#34;create-the-reactwebpack-scaffold&#34;&gt;Create the react+webpack scaffold.&lt;/h1&gt;</description>
     </item>
     

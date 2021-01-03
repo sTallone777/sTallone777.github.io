@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Compare on Ranbo</title>
-    <link>http://ranbo.work/categories/compare/</link>
+    <link>http://www.ranbo.work/categories/compare/</link>
     <description>Recent content in Compare on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 20 Dec 2020 14:23:13 +0900</lastBuildDate><atom:link href="http://ranbo.work/categories/compare/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Dec 2020 14:23:13 +0900</lastBuildDate><atom:link href="http://www.ranbo.work/categories/compare/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Delegate In Java And C#</title>
-      <link>http://ranbo.work/post/csharp/post1/</link>
+      <link>http://www.ranbo.work/post/csharp/post1/</link>
       <pubDate>Sun, 20 Dec 2020 14:23:13 +0900</pubDate>
       
-      <guid>http://ranbo.work/post/csharp/post1/</guid>
+      <guid>http://www.ranbo.work/post/csharp/post1/</guid>
       <description>&lt;p&gt;Introduce the difference between java and c# lambda expression.&lt;/p&gt;</description>
     </item>
     

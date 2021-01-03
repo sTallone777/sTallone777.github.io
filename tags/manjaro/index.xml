@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Manjaro on Ranbo</title>
-    <link>http://ranbo.work/tags/manjaro/</link>
+    <link>http://www.ranbo.work/tags/manjaro/</link>
     <description>Recent content in Manjaro on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 28 Dec 2020 08:12:12 +0900</lastBuildDate><atom:link href="http://ranbo.work/tags/manjaro/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Dec 2020 08:12:12 +0900</lastBuildDate><atom:link href="http://www.ranbo.work/tags/manjaro/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Manjaro Summary</title>
-      <link>http://ranbo.work/post/server/linux/manjaro/</link>
+      <link>http://www.ranbo.work/post/server/linux/manjaro/</link>
       <pubDate>Mon, 28 Dec 2020 08:12:12 +0900</pubDate>
       
-      <guid>http://ranbo.work/post/server/linux/manjaro/</guid>
+      <guid>http://www.ranbo.work/post/server/linux/manjaro/</guid>
       <description>&lt;p&gt;Summary about Manjaro&lt;/p&gt;</description>
     </item>
     
