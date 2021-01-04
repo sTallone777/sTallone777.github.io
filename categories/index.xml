@@ -2,62 +2,62 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Ranbo</title>
-    <link>http://www.ranbo.work/categories/</link>
+    <link>http://ranbo777.me/categories/</link>
     <description>Recent content in Categories on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 28 Dec 2020 17:36:14 +0900</lastBuildDate><atom:link href="http://www.ranbo.work/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Dec 2020 17:36:14 +0900</lastBuildDate><atom:link href="http://ranbo777.me/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Command</title>
-      <link>http://www.ranbo.work/categories/command/</link>
+      <link>http://ranbo777.me/categories/command/</link>
       <pubDate>Mon, 28 Dec 2020 17:36:14 +0900</pubDate>
       
-      <guid>http://www.ranbo.work/categories/command/</guid>
+      <guid>http://ranbo777.me/categories/command/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Config</title>
-      <link>http://www.ranbo.work/categories/config/</link>
+      <link>http://ranbo777.me/categories/config/</link>
       <pubDate>Mon, 28 Dec 2020 17:36:14 +0900</pubDate>
       
-      <guid>http://www.ranbo.work/categories/config/</guid>
+      <guid>http://ranbo777.me/categories/config/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>http://www.ranbo.work/categories/linux/</link>
+      <link>http://ranbo777.me/categories/linux/</link>
       <pubDate>Mon, 28 Dec 2020 08:12:12 +0900</pubDate>
       
-      <guid>http://www.ranbo.work/categories/linux/</guid>
+      <guid>http://ranbo777.me/categories/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Algorithm</title>
-      <link>http://www.ranbo.work/categories/algorithm/</link>
+      <link>http://ranbo777.me/categories/algorithm/</link>
       <pubDate>Sun, 27 Dec 2020 18:22:28 +0900</pubDate>
       
-      <guid>http://www.ranbo.work/categories/algorithm/</guid>
+      <guid>http://ranbo777.me/categories/algorithm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Compare</title>
-      <link>http://www.ranbo.work/categories/compare/</link>
+      <link>http://ranbo777.me/categories/compare/</link>
       <pubDate>Sun, 20 Dec 2020 14:23:13 +0900</pubDate>
       
-      <guid>http://www.ranbo.work/categories/compare/</guid>
+      <guid>http://ranbo777.me/categories/compare/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Syntax</title>
-      <link>http://www.ranbo.work/categories/syntax/</link>
+      <link>http://ranbo777.me/categories/syntax/</link>
       <pubDate>Sun, 20 Dec 2020 14:23:13 +0900</pubDate>
       
-      <guid>http://www.ranbo.work/categories/syntax/</guid>
+      <guid>http://ranbo777.me/categories/syntax/</guid>
       <description></description>
     </item>
     

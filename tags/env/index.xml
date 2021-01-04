@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>env on Ranbo</title>
-    <link>http://www.ranbo.work/tags/env/</link>
+    <link>http://ranbo777.me/tags/env/</link>
     <description>Recent content in env on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 28 Dec 2020 17:36:14 +0900</lastBuildDate><atom:link href="http://www.ranbo.work/tags/env/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Dec 2020 17:36:14 +0900</lastBuildDate><atom:link href="http://ranbo777.me/tags/env/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>React&#43;Webpack Scaffold</title>
-      <link>http://www.ranbo.work/post/nodejs/react/start-react/</link>
+      <link>http://ranbo777.me/post/nodejs/react/start-react/</link>
       <pubDate>Mon, 28 Dec 2020 17:36:14 +0900</pubDate>
       
-      <guid>http://www.ranbo.work/post/nodejs/react/start-react/</guid>
+      <guid>http://ranbo777.me/post/nodejs/react/start-react/</guid>
       <description>&lt;h1 id=&#34;create-the-reactwebpack-scaffold&#34;&gt;Create the react+webpack scaffold.&lt;/h1&gt;</description>
     </item>
     
     <item>
       <title>Go Install</title>
-      <link>http://www.ranbo.work/post/go/go-install/</link>
+      <link>http://ranbo777.me/post/go/go-install/</link>
       <pubDate>Tue, 01 Dec 2020 22:20:08 +0900</pubDate>
       
-      <guid>http://www.ranbo.work/post/go/go-install/</guid>
+      <guid>http://ranbo777.me/post/go/go-install/</guid>
       <description>&lt;p&gt;Configuration of golang.&lt;/p&gt;</description>
     </item>
     
