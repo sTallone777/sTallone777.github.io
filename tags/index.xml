@@ -6,7 +6,25 @@
     <description>Recent content in Tags on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 31 Dec 2020 21:21:10 +0900</lastBuildDate><atom:link href="http://ranbo777.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jan 2021 14:21:18 +0900</lastBuildDate><atom:link href="http://ranbo777.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linux</title>
+      <link>http://ranbo777.me/tags/linux/</link>
+      <pubDate>Wed, 06 Jan 2021 14:21:18 +0900</pubDate>
+      
+      <guid>http://ranbo777.me/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ubuntu</title>
+      <link>http://ranbo777.me/tags/ubuntu/</link>
+      <pubDate>Wed, 06 Jan 2021 14:21:18 +0900</pubDate>
+      
+      <guid>http://ranbo777.me/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>dart</title>
       <link>http://ranbo777.me/tags/dart/</link>
@@ -193,15 +211,6 @@
       <pubDate>Sat, 05 Dec 2020 11:53:10 +0900</pubDate>
       
       <guid>http://ranbo777.me/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
-      <link>http://ranbo777.me/tags/linux/</link>
-      <pubDate>Tue, 01 Dec 2020 22:20:08 +0900</pubDate>
-      
-      <guid>http://ranbo777.me/tags/linux/</guid>
       <description></description>
     </item>
     

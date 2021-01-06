@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Go Install | Ranbo</title>
+    <title>Linux Command Summary | Ranbo</title>
 
     
 <link href="/img/ico/favicon.ico" rel="shortcut icon" type="image/x-icon" />
@@ -19,21 +19,21 @@
 
 <meta name="generator" content="Hugo 0.79.0" />
 
-<link rel="canonical" href="http://ranbo777.me/post/go/go-install/" />
+<link rel="canonical" href="http://ranbo777.me/post/server/linux/ubuntu/" />
 
 
-<meta property="og:title" content="Go Install" />
-<meta property="og:description" content="Configuration of golang." />
+<meta property="og:title" content="Linux Command Summary" />
+<meta property="og:description" content="The summary about linux common command." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://ranbo777.me/post/go/go-install/" />
-<meta property="article:published_time" content="2020-12-01T22:20:08+09:00" />
-<meta property="article:modified_time" content="2020-12-01T22:20:08+09:00" />
+<meta property="og:url" content="http://ranbo777.me/post/server/linux/ubuntu/" />
+<meta property="article:published_time" content="2021-01-06T14:21:18+09:00" />
+<meta property="article:modified_time" content="2021-01-06T14:21:18+09:00" />
 
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Go Install"/>
-<meta name="twitter:description" content="Configuration of golang."/>
+<meta name="twitter:title" content="Linux Command Summary"/>
+<meta name="twitter:description" content="The summary about linux common command."/>
 
 
 <link rel="stylesheet" href="/css/semantic.min.css" />
@@ -107,93 +107,241 @@
   <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id="dream-save-post-as-img">
     
     <section class="ui top attached segment cover">
-      <div class="cover-img" style="background-image: url(/img/golang1.jpg);"></div>
+      <div class="cover-img" style="background-image: url(/img/winbuntu.jpg);"></div>
     </section>
     
     <section class="ui attached segment">
       <header>
         <h1 class="ui large header">
-          Go Install
+          Linux Command Summary
           <div class="sub header">
             @
             
-              Ranbo
+              
+                Ranbo
+              
             
 
             | 
-                Tuesday, Dec 1, 2020
+                Wednesday, Jan 6, 2021
               
 
             | 1 minutes read
 
             | Update at
               
-                Tuesday, Dec 1, 2020
+                Wednesday, Jan 6, 2021
               
           </div>
         </h1>
       </header>
 
-      <article class="main"><p>Configuration of golang.</p>
-<h1 id="golang-installation-and-configuration">Golang Installation And configuration</h1>
-<h3 id="windows">Windows</h3>
-<h4 id="1download-and-installation">1.Download and Installation</h4>
-<h4 id="2set-gopath-in-user-environment-variable-settings-and-global-environment-variable-settings">2.Set GOPATH in user environment variable settings and global environment variable settings</h4>
-<p>For me:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">C:\work\Go
-</code></pre></div><h4 id="3verify-the-installation">3.Verify the installation</h4>
-<p>Command Line:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">go version
-</code></pre></div><h4 id="4open-the-gomod">4.Open the GOMOD</h4>
-<p>Command Line:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">go env -w GO111MODULE=on
-</code></pre></div><h4 id="5create-a-golang-project-by-vscode-and-config-the-setting-json">5.Create a golang project by vscode and config the setting json</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
-    <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;0.2.0&#34;</span>,
-    <span style="color:#f92672">&#34;configurations&#34;</span>: [{
-            <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;{yourprojectname}&#34;</span>,
-            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;go&#34;</span>,
-            <span style="color:#f92672">&#34;request&#34;</span>: <span style="color:#e6db74">&#34;launch&#34;</span>,
-            <span style="color:#f92672">&#34;mode&#34;</span>: <span style="color:#e6db74">&#34;auto&#34;</span>,
-            <span style="color:#f92672">&#34;program&#34;</span>: <span style="color:#e6db74">&#34;${fileDirname}&#34;</span>,
-            <span style="color:#f92672">&#34;env&#34;</span>: {
-                <span style="color:#f92672">&#34;GOPATH&#34;</span>: <span style="color:#e6db74">&#34;{your GOPATH}&#34;</span>,
-                <span style="color:#f92672">&#34;GOROOT&#34;</span>: <span style="color:#e6db74">&#34;{your GOROOT}&#34;</span>
-            },
-            <span style="color:#f92672">&#34;args&#34;</span>: [],
-            <span style="color:#960050;background-color:#1e0010">//</span><span style="color:#f92672">&#34;showLog&#34;</span>: <span style="color:#66d9ef">true</span>
-        }
-    ]
-}
-</code></pre></div><h3 id="linux">Linux</h3>
-<h4 id="1download-and-installation-1">1.Download and Installation</h4>
-<p>Download the tar.gz file and unzip it to &ldquo;/usr/local/&rdquo;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">tar -C /usr/local -zxvf  gox.xx.x.linux-amd64.tar.gz
-</code></pre></div><h4 id="2config-goroot">2.Config GOROOT</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vim /etc/profile
-</code></pre></div><p>Add the following words in the last line</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export GOROOT<span style="color:#f92672">=</span>/usr/local/go
-export PATH<span style="color:#f92672">=</span>$PATH:$GOROOT/bin
-</code></pre></div><p>Save the file and source it</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">source /etc/profile
-</code></pre></div><h4 id="2verify-the-installation">2.Verify the installation</h4>
-<p>Terminal:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">go version
-</code></pre></div><h4 id="3config-gopath">3.Config GOPATH</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vim ~/.bash_profile
-</code></pre></div><p>Or</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vim ~/.bashrc
-</code></pre></div><p>Add the following words in the last line</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export GOPATH<span style="color:#f92672">=</span>$HOME/go
-</code></pre></div><p>Save the file and source it</p></article>
+      <article class="main"><p>The summary about linux common command.</p>
+<h2 id="vim-command">Vim Command</h2>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CTRL+ALT+T</td>
+<td>打开终端</td>
+</tr>
+<tr>
+<td>Ctrl+a</td>
+<td>光标移动到开始位置</td>
+</tr>
+<tr>
+<td>Ctrl+e</td>
+<td>光标移动到最末尾</td>
+</tr>
+<tr>
+<td>Ctrl+k</td>
+<td>删除此处至末尾的所有内容</td>
+</tr>
+<tr>
+<td>Ctrl+u</td>
+<td>删除此处至开始的所有内容</td>
+</tr>
+<tr>
+<td>Ctrl+d</td>
+<td>删除当前字符</td>
+</tr>
+<tr>
+<td>Ctrl+h</td>
+<td>删除当前字符前一个字符</td>
+</tr>
+<tr>
+<td>Ctrl+w</td>
+<td>删除此处到左边的单词</td>
+</tr>
+<tr>
+<td>Ctrl+y</td>
+<td>粘贴由Ctrl+u， Ctrl+d， Ctrl+w删除的单词</td>
+</tr>
+<tr>
+<td>Ctrl+l</td>
+<td>相当于clear，即清屏</td>
+</tr>
+<tr>
+<td>Ctrl+r</td>
+<td>查找历史命令</td>
+</tr>
+<tr>
+<td>Ctrl+b</td>
+<td>向回移动光标</td>
+</tr>
+<tr>
+<td>Ctrl+f</td>
+<td>向前移动光标</td>
+</tr>
+<tr>
+<td>Ctrl+t</td>
+<td>将光标位置的字符和前一个字符进行位置交换</td>
+</tr>
+<tr>
+<td>Ctrl+&amp;</td>
+<td>恢复 ctrl+h 或者 ctrl+d 或者 ctrl+w 删除的内容</td>
+</tr>
+<tr>
+<td>Ctrl+S</td>
+<td>暂停屏幕输出</td>
+</tr>
+<tr>
+<td>Ctrl+Q</td>
+<td>继续屏幕输出</td>
+</tr>
+<tr>
+<td>Ctrl+Left-Arrow</td>
+<td>光标移动到上一个单词的词首</td>
+</tr>
+<tr>
+<td>Ctrl+Right-Arrow</td>
+<td>光标移动到下一个单词的词尾</td>
+</tr>
+<tr>
+<td>Ctrl+p</td>
+<td>向上显示缓存命令</td>
+</tr>
+<tr>
+<td>Ctrl+n</td>
+<td>向下显示缓存命令</td>
+</tr>
+<tr>
+<td>Ctrl+d</td>
+<td>关闭终端</td>
+</tr>
+<tr>
+<td>Ctrl+xx</td>
+<td>在EOL和当前光标位置移动</td>
+</tr>
+<tr>
+<td>Ctrl+x@</td>
+<td>显示可能hostname补全</td>
+</tr>
+<tr>
+<td>Ctrl+c</td>
+<td>终止进程/命令</td>
+</tr>
+<tr>
+<td>Shift+上或下</td>
+<td>终端上下滚动</td>
+</tr>
+<tr>
+<td>Shift+PgUp/PgDn</td>
+<td>终端上下翻页滚动</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+n</td>
+<td>新终端</td>
+</tr>
+<tr>
+<td>alt+F2</td>
+<td>输入gnome-terminal打开终端</td>
+</tr>
+<tr>
+<td>Shift+Ctrl+T</td>
+<td>打开新的标签页</td>
+</tr>
+<tr>
+<td>Shift+Ctrl+W</td>
+<td>关闭标签页</td>
+</tr>
+<tr>
+<td>Shift+Ctrl+C</td>
+<td>复制</td>
+</tr>
+<tr>
+<td>Shift+Ctrl+V</td>
+<td>粘贴</td>
+</tr>
+<tr>
+<td>Alt+数字</td>
+<td>切换至对应的标签页</td>
+</tr>
+<tr>
+<td>Shift+Ctrl+N</td>
+<td>打开新的终端窗口</td>
+</tr>
+<tr>
+<td>Shift+Ctrl+Q</td>
+<td>管壁终端窗口</td>
+</tr>
+<tr>
+<td>Shift+Ctrl+PgUp/PgDn</td>
+<td>左移右移标签页</td>
+</tr>
+<tr>
+<td>Ctrl+PgUp/PgDn</td>
+<td>切换标签页</td>
+</tr>
+<tr>
+<td>F1</td>
+<td>打开帮助指南</td>
+</tr>
+<tr>
+<td>F10</td>
+<td>激活菜单栏</td>
+</tr>
+<tr>
+<td>F11</td>
+<td>全屏切换</td>
+</tr>
+<tr>
+<td>Alt+F</td>
+<td>打开 “文件” 菜单（file）</td>
+</tr>
+<tr>
+<td>Alt+E</td>
+<td>打开 “编辑” 菜单（edit）</td>
+</tr>
+<tr>
+<td>Alt+V</td>
+<td>打开 “查看” 菜单（view）</td>
+</tr>
+<tr>
+<td>Alt+S</td>
+<td>打开 “搜索” 菜单（search）</td>
+</tr>
+<tr>
+<td>Alt+T</td>
+<td>打开 “终端” 菜单（terminal）</td>
+</tr>
+<tr>
+<td>Alt+H</td>
+<td>打开 “帮助” 菜单（help）</td>
+</tr>
+</tbody>
+</table></article>
     </section>
 
     <footer class="ui attached segment dream-tags" data-html2canvas-ignore>
       
         
-          <a class="ui label" href="/tags/go" title="go">go</a>
-        
-          <a class="ui label" href="/tags/env" title="env">env</a>
+          <a class="ui label" href="/tags/ubuntu" title="ubuntu">ubuntu</a>
         
           <a class="ui label" href="/tags/linux" title="linux">linux</a>
         
@@ -221,12 +369,7 @@ export PATH<span style="color:#f92672">=</span>$PATH:$GOROOT/bin
       <div class="ui segment toc">
         <nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#windows">Windows</a></li>
-        <li><a href="#linux">Linux</a></li>
-      </ul>
-    </li>
+    <li><a href="#vim-command">Vim Command</a></li>
   </ul>
 </nav>
       </div>

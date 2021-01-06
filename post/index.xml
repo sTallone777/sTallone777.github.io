@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 31 Dec 2020 21:21:10 +0900</lastBuildDate><atom:link href="http://ranbo777.me/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jan 2021 14:21:18 +0900</lastBuildDate><atom:link href="http://ranbo777.me/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux Command Summary</title>
+      <link>http://ranbo777.me/post/server/linux/ubuntu/</link>
+      <pubDate>Wed, 06 Jan 2021 14:21:18 +0900</pubDate>
+      
+      <guid>http://ranbo777.me/post/server/linux/ubuntu/</guid>
+      <description>&lt;p&gt;The summary about linux common command.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Flutter Expreiences Summary</title>
       <link>http://ranbo777.me/post/flutter/flutter-expreiences/</link>
