@@ -165,7 +165,23 @@
 
 <span style="color:#75715e">#Check the port config</span>
     docker port <span style="color:#f92672">[</span>containerID<span style="color:#f92672">]</span>
-</code></pre></div></article>
+</code></pre></div><h2 id="wsl2中vmmem内存占用过大问题">WSL2中Vmmem内存占用过大问题</h2>
+<h4 id="原因">原因</h4>
+<p>子系统占用内存过大。</p>
+<h4 id="解决方案限制子系统内存">解决方案：限制子系统内存</h4>
+<ol>
+<li>按[<code>Win + R</code>]打开运行，输入<code>%UserProfile%</code>进入用户文件夹。</li>
+<li>新建<code>.wslconfig</code>文件，然后将以下内容保存进去。
+<pre><code class="language-dos" data-lang="dos">[wsl2]
+memory=2GB ::限制子系统内存大小为2GB
+swap=0
+localhostForwarding=true
+</code></pre></li>
+<li>然后在命令行输入
+<pre><code class="language-dos" data-lang="dos">::关闭子系统
+wsl --shutdown
+</code></pre></li>
+</ol></article>
     </section>
 
     <footer class="ui attached segment dream-tags" data-html2canvas-ignore>
@@ -193,6 +209,18 @@
   </div>
   <aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside">
     
+    
+      <div class="ui segment toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#wsl2中vmmem内存占用过大问题">WSL2中Vmmem内存占用过大问题</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
     
 
     <article class="dream-header">
