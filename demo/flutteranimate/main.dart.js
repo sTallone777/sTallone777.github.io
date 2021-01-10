@@ -47710,8 +47710,8 @@ K:function(a8,a9){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b=null,a=a9.X(t.w).f.a,a
 a7=a7>=0?a7:0
 a0=E.a_e(L.zN("Dealing",b))
 s=H.d([],t.fQ)
-r=L.zN("Deal",A.qH(b,b,b,b,b,b,b,b,b,b,b,20,b,b,b,b,!0,b,b,b,b,b,b))
-s.push(T.y2(100,new M.nP(M.XM(!1,b,b,b,b,30,b,b,C.nM,b,100,b,b,b,C.bB),new D.y7(new K.SP(this),b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,r,b,b,b,C.ad,b,!1,b,b,b),b),b,b,a1-50,b,b,b))
+r=L.zN("Deal",A.qH(b,b,C.j,b,b,b,b,b,b,b,b,20,b,b,b,b,!0,b,b,b,b,b,b))
+s.push(T.y2(100,new M.nP(M.XM(!1,b,b,b,b,40,b,b,C.nM,b,100,b,b,b,C.bB),new D.y7(new K.SP(this),b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,b,r,b,b,b,C.ad,b,!1,b,b,b),b),b,b,a1-50,b,b,b))
 for(a1=a.b,r=t.jI,q=r.j("aD<ah.T>"),p=0;p<a6;p=o)for(o=p+1,n=10*o,m=p*a5,l=0;l<a5;l=j){k=this.d
 j=l+1
 i=10*j+80*l+a7
