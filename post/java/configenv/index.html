@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>EF | Ranbo</title>
+    <title>Config Java Environment | Ranbo</title>
 
     
 <link href="/img/ico/favicon.ico" rel="shortcut icon" type="image/x-icon" />
@@ -19,20 +19,21 @@
 
 <meta name="generator" content="Hugo 0.79.0" />
 
-<link rel="canonical" href="http://ranbo777.me/tags/ef/" />
+<link rel="canonical" href="http://ranbo777.me/post/java/configenv/" />
 
 
-<meta property="og:title" content="EF" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://ranbo777.me/tags/ef/" />
-<meta property="og:updated_time" content="2020-12-22T21:56:58+09:00" />
+<meta property="og:title" content="Config Java Environment" />
+<meta property="og:description" content="Record the configuration of java and idea." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://ranbo777.me/post/java/configenv/" />
+<meta property="article:published_time" content="2021-01-14T21:28:34+09:00" />
+<meta property="article:modified_time" content="2021-01-14T21:28:34+09:00" />
 
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="EF"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Config Java Environment"/>
+<meta name="twitter:description" content="Record the configuration of java and idea."/>
 
 
 <link rel="stylesheet" href="/css/semantic.min.css" />
@@ -72,7 +73,13 @@
   
 </style>
 
-     
+    
+
+
+
+
+
+
   </head>
 
   <body class="default">
@@ -97,7 +104,107 @@
           <div class="dream-max-width">
             
 <div class="ui centered relaxed grid dream-grid">
-  <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id="dream-save-post-as-img">
+    
+    <section class="ui top attached segment cover">
+      <div class="cover-img" style="background-image: url(/img/idea1.jpg);"></div>
+    </section>
+    
+    <section class="ui attached segment">
+      <header>
+        <h1 class="ui large header">
+          Config Java Environment
+          <div class="sub header">
+            @
+            
+              
+                ranbo
+              
+            
+
+            | 
+                Thursday, Jan 14, 2021
+              
+
+            | 1 minutes read
+
+            | Update at
+              
+                Thursday, Jan 14, 2021
+              
+          </div>
+        </h1>
+      </header>
+
+      <article class="main"><p>Record the configuration of java and idea.</p>
+<h1 id="java8">Java8</h1>
+<p><a href="https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html" target="_blank">JDK8 download</a></p>
+<h2 id="config-environment-variables">Config environment variables</h2>
+<h4 id="create-environment-variables">Create environment variables</h4>
+<ol>
+<li>name: <code>JAVA_HOME</code><br>
+value: <code>C:\Program Files\Java\jdk1.8.0_91</code></li>
+<li>name: <code>CLASSPATH</code><br>
+value: <code>.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar</code></li>
+<li>Add to path:<code>;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin</code></li>
+</ol>
+<h1 id="java15">Java15</h1>
+<p><a href="https://www.oracle.com/java/technologies/javase-jdk15-downloads.html" target="_blank">JDK15 download</a></p>
+<h2 id="config-environment-variables-1">Config environment variables</h2>
+<h4 id="create-environment-variables-1">Create environment variables</h4>
+<p>name: <code>JAVA_HOME</code><br>
+value: <code>C:\WINDOWS\system32;C:\WINDOWS;&quot;C:\Program Files\Java\jdk-15\bin&quot;</code></p></article>
+    </section>
+
+    <footer class="ui attached segment dream-tags" data-html2canvas-ignore>
+      
+        
+          <a class="ui label" href="/tags/jdk" title="jdk">jdk</a>
+        
+          <a class="ui label" href="/tags/idea" title="IDEA">IDEA</a>
+        
+      
+      <div
+        class="ui label"
+        style="float: right; cursor: pointer;"
+        onclick="savePostAsImg()">
+        <i class="save icon"></i>Save as image
+      </div>
+    </footer>
+
+    
+
+    
+    
+    
+
+    
+
+  </div>
+  <aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside">
+    
+    
+      <div class="ui segment toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#config-environment-variables">Config environment variables</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#config-environment-variables-1">Config environment variables</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    
+
     <article class="dream-header">
   <section class="ui top attached center aligned segment">
     <div class="ui small circular image">
@@ -107,12 +214,12 @@
     </div>
 
     
-    <div class="ui medium header">
+    <h1 class="ui medium header">
     
       Ranbo&#39;s blog
       <div class="sub header" style="margin-top: 0.5rem;">Do not say easy</div>
     
-    </div>
+    </h1>
     
 
     <div class="ui horizontal list">
@@ -567,46 +674,7 @@
   </section>
 </article>
 
-  </div>
-
-  
-  
-    <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
-      <article class="ui attached segment card dream-card">
-  <a class="image" href="http://ranbo777.me/post/csharp/mvc-ef/">
-    
-      <img src="/img/ef-core.jpg" alt="Use EF In DotNet Core" />
-    
-  </a>
-
-  <div class="content">
-    <h2 class="ui medium header">
-      <a href="/post/csharp/mvc-ef/">Use EF In DotNet Core</a>
-    </h2>
-    <div class="meta">
-      <p class="date">Tuesday, Dec 22, 2020</p>
-    </div>
-    <div class="description">
-      <p>How to create ef in .net core.</p>
-    </div>
-  </div>
-
-  <div class="extra content">
-    <div class="author">@&nbsp;Ranbo</div>
-    <div class="reading-time">
-      <i class="clock icon"></i>1 minutes read</div>
-  </div>
-</article>
-
-    </div>
-  
-
-  <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
-    
-
-
-
-  </div>
+  </aside>
 </div>
 
           </div>
@@ -746,9 +814,11 @@
 <script src="/js/theme.js"></script>
 
     
-<script src="/js/imagesloaded.pkgd.min.js"></script>
-<script src="/js/masonry.pkgd.min.js"></script>
-<script src="/js/grid.js"></script>
+<script src="/js/html2canvas.min.js"></script>
+<script src="/js/post.js"></script>
+
+
+
 
 
     

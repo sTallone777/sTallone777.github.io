@@ -6,7 +6,16 @@
     <description>Recent content in Config on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 28 Dec 2020 17:36:14 +0900</lastBuildDate><atom:link href="http://ranbo777.me/categories/config/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Jan 2021 21:28:34 +0900</lastBuildDate><atom:link href="http://ranbo777.me/categories/config/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Config Java Environment</title>
+      <link>http://ranbo777.me/post/java/configenv/</link>
+      <pubDate>Thu, 14 Jan 2021 21:28:34 +0900</pubDate>
+      
+      <guid>http://ranbo777.me/post/java/configenv/</guid>
+      <description>&lt;p&gt;Record the configuration of java and idea.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>React&#43;Webpack Scaffold</title>
       <link>http://ranbo777.me/post/nodejs/react/start-react/</link>

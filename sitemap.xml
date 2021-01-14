@@ -4,7 +4,42 @@
   
   <url>
     <loc>http://ranbo777.me/categories/</loc>
-    <lastmod>2021-01-06T14:21:18+09:00</lastmod>
+    <lastmod>2021-01-14T21:28:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ranbo777.me/categories/config/</loc>
+    <lastmod>2021-01-14T21:28:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ranbo777.me/post/java/configenv/</loc>
+    <lastmod>2021-01-14T21:28:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ranbo777.me/tags/idea/</loc>
+    <lastmod>2021-01-14T21:28:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ranbo777.me/tags/jdk/</loc>
+    <lastmod>2021-01-14T21:28:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ranbo777.me/post/</loc>
+    <lastmod>2021-01-14T21:28:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ranbo777.me/</loc>
+    <lastmod>2021-01-14T21:28:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ranbo777.me/tags/</loc>
+    <lastmod>2021-01-14T21:28:34+09:00</lastmod>
   </url>
   
   <url>
@@ -19,21 +54,6 @@
   
   <url>
     <loc>http://ranbo777.me/post/server/linux/ubuntu/</loc>
-    <lastmod>2021-01-06T14:21:18+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ranbo777.me/post/</loc>
-    <lastmod>2021-01-06T14:21:18+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ranbo777.me/</loc>
-    <lastmod>2021-01-06T14:21:18+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ranbo777.me/tags/</loc>
     <lastmod>2021-01-06T14:21:18+09:00</lastmod>
   </url>
   
@@ -55,11 +75,6 @@
   <url>
     <loc>http://ranbo777.me/post/flutter/flutter-expreiences/</loc>
     <lastmod>2020-12-31T21:21:10+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ranbo777.me/categories/config/</loc>
-    <lastmod>2020-12-28T17:36:14+09:00</lastmod>
   </url>
   
   <url>
