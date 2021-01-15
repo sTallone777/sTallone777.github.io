@@ -6,7 +6,16 @@
     <description>Recent content on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 14 Jan 2021 21:28:34 +0900</lastBuildDate><atom:link href="http://ranbo777.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Jan 2021 21:23:58 +0900</lastBuildDate><atom:link href="http://ranbo777.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Write cpp with vscode</title>
+      <link>http://ranbo777.me/post/cpp/configvscode/</link>
+      <pubDate>Fri, 15 Jan 2021 21:23:58 +0900</pubDate>
+      
+      <guid>http://ranbo777.me/post/cpp/configvscode/</guid>
+      <description>&lt;p&gt;Configure the C++ development environment of vscode.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Config Java Environment</title>
       <link>http://ranbo777.me/post/java/configenv/</link>

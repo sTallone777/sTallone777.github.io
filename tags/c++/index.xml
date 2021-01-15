@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C&#43;&#43; on Ranbo</title>
+    <link>http://ranbo777.me/tags/c&#43;&#43;/</link>
+    <description>Recent content in C&#43;&#43; on Ranbo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 15 Jan 2021 21:23:58 +0900</lastBuildDate><atom:link href="http://ranbo777.me/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Write cpp with vscode</title>
+      <link>http://ranbo777.me/post/cpp/configvscode/</link>
+      <pubDate>Fri, 15 Jan 2021 21:23:58 +0900</pubDate>
+      
+      <guid>http://ranbo777.me/post/cpp/configvscode/</guid>
+      <description>&lt;p&gt;Configure the C++ development environment of vscode.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
