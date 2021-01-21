@@ -136,34 +136,41 @@
 
       <article class="main"><p>Common docker command.</p>
 <h1 id="docker-command">Docker Command</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#Start/Stop Container</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">##Start/Stop Container</span>
     docker start/stop <span style="color:#f92672">[</span>containerID<span style="color:#f92672">]</span>
 
-<span style="color:#75715e">#Running container status</span>
+<span style="color:#75715e">##Running container status</span>
     docker ps
 
-<span style="color:#75715e">#Enter the container</span>
+<span style="color:#75715e">##Enter the container</span>
     docker attach <span style="color:#f92672">[</span>containerID<span style="color:#f92672">]</span>
 
-<span style="color:#75715e">#Create a container and run it</span>
+<span style="color:#75715e">##Create a container and run it</span>
     docker run -it ubuntu:14.04 /bin/bash
 
-<span style="color:#75715e">#Slove the problem than process 1 is not &#34;init&#34;</span>
+<span style="color:#75715e">##Slove the problem than process 1 is not &#34;init&#34;</span>
     docker run -tid --name centos8 --privileged<span style="color:#f92672">=</span>true -p 3306:3306centos:latest /sbin/init
     docker exec -it test /bin/bash
 
-<span style="color:#75715e">#Create a container with mysql5.7 image</span>
+<span style="color:#75715e">##Create a container with mysql5.7 image</span>
     docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD<span style="color:#f92672">=</span><span style="color:#ae81ff">123456</span> -d mysql:5.7
     sudo docker exec -it mysql bash
     mysql -uroot -p123456
 
-<span style="color:#75715e">#Delete image</span>
+<span style="color:#75715e">##Create a container with redis image</span>
+    docker pull redis:latest
+    docker run -itd --name redis-test -p 6379:6379 redis
+    docker exec -it redis-test /bin/bash
+    <span style="color:#75715e">#run redis command line</span>
+    redis-cli  
+
+<span style="color:#75715e">##Delete image</span>
     docker rmi <span style="color:#f92672">[</span>image<span style="color:#f92672">]</span>
 
-<span style="color:#75715e">#Run a container with port mapping</span>
+<span style="color:#75715e">##Run a container with port mapping</span>
     docker run -it -d -p 8083:80 centos:latest /bin/bash
 
-<span style="color:#75715e">#Check the port config</span>
+<span style="color:#75715e">##Check the port config</span>
     docker port <span style="color:#f92672">[</span>containerID<span style="color:#f92672">]</span>
 </code></pre></div><h2 id="wsl2中vmmem内存占用过大问题">WSL2中Vmmem内存占用过大问题</h2>
 <h4 id="原因">原因</h4>
