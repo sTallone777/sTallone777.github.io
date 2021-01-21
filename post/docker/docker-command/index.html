@@ -136,7 +136,10 @@
 
       <article class="main"><p>Common docker command.</p>
 <h1 id="docker-command">Docker Command</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">##Start/Stop Container</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">##Search image</span>
+    docker search <span style="color:#f92672">[</span>imange name<span style="color:#f92672">]</span>
+
+<span style="color:#75715e">##Start/Stop Container</span>
     docker start/stop <span style="color:#f92672">[</span>containerID<span style="color:#f92672">]</span>
 
 <span style="color:#75715e">##Running container status</span>
@@ -159,13 +162,29 @@
 
 <span style="color:#75715e">##Create a container with redis image</span>
     docker pull redis:latest
-    docker run -itd --name redis-test -p 6379:6379 redis
-    docker exec -it redis-test /bin/bash
+    docker run -itd --name myred -p 6379:6379 redis --requirepass <span style="color:#ae81ff">123456</span>
+    docker exec -it myred /bin/bash
     <span style="color:#75715e">#run redis command line</span>
     redis-cli  
+    <span style="color:#75715e">#为现有redis设置密码：</span>
+        redis-cli
+        config get reuirepass           <span style="color:#75715e">#查看现有密码</span>
+        config set requirepass xxxxxx   <span style="color:#75715e">#设置密码</span>
+    <span style="color:#75715e">#login</span>
+         auth <span style="color:#e6db74">&#34;123456&#34;</span>
+
+<span style="color:#75715e">##Create a container with rabbitMQ</span>
+    docker pull rabbitmq:management <span style="color:#75715e">#带管理界面</span>
+    docker run -dit --name myrabbitmq -e RABBITMQ_DEFAULT_USER<span style="color:#f92672">=</span>admin -e RABBITMQ_DEFAULT_PASS<span style="color:#f92672">=</span>admin -p 15672:15672 -p 5672:5672 rabbitmq:management
 
 <span style="color:#75715e">##Delete image</span>
     docker rmi <span style="color:#f92672">[</span>image<span style="color:#f92672">]</span>
+
+<span style="color:#75715e">##Delete container</span>
+    docker rm <span style="color:#f92672">[</span>container ID|NAME<span style="color:#f92672">]</span>
+
+<span style="color:#75715e">##Delete all stoped container</span>
+    docker rm <span style="color:#66d9ef">$(</span>docker ps -a -q<span style="color:#66d9ef">)</span>
 
 <span style="color:#75715e">##Run a container with port mapping</span>
     docker run -it -d -p 8083:80 centos:latest /bin/bash
