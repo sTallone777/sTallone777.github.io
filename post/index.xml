@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 15 Jan 2021 21:23:58 +0900</lastBuildDate><atom:link href="http://ranbo777.me/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Jan 2021 21:15:49 +0900</lastBuildDate><atom:link href="http://ranbo777.me/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IdeaSummary</title>
+      <link>http://ranbo777.me/post/java/ideasummary/</link>
+      <pubDate>Sun, 24 Jan 2021 21:15:49 +0900</pubDate>
+      
+      <guid>http://ranbo777.me/post/java/ideasummary/</guid>
+      <description>&lt;p&gt;Summary about idea.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Write cpp with vscode</title>
       <link>http://ranbo777.me/post/cpp/configvscode/</link>
