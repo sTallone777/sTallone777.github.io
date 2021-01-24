@@ -117,14 +117,16 @@
           <div class="sub header">
             @
             
-              Ranbo
+              
+                Ranbo
+              
             
 
             | 
                 Saturday, Dec 5, 2020
               
 
-            | 1 minutes read
+            | 2 minutes read
 
             | Update at
               
@@ -183,7 +185,7 @@
 <span style="color:#75715e">##Delete container</span>
     docker rm <span style="color:#f92672">[</span>container ID|NAME<span style="color:#f92672">]</span>
 
-<span style="color:#75715e">##Delete all stoped container</span>
+<span style="color:#75715e">##Delete all stoped containers</span>
     docker rm <span style="color:#66d9ef">$(</span>docker ps -a -q<span style="color:#66d9ef">)</span>
 
 <span style="color:#75715e">##Run a container with port mapping</span>
@@ -191,6 +193,15 @@
 
 <span style="color:#75715e">##Check the port config</span>
     docker port <span style="color:#f92672">[</span>containerID<span style="color:#f92672">]</span>
+
+<span style="color:#75715e">##Start/Stop all containers</span>
+    docker start/stop <span style="color:#66d9ef">$(</span>docker ps -a | awk <span style="color:#e6db74">&#39;{ print $1}&#39;</span> | tail -n +2<span style="color:#66d9ef">)</span>
+
+<span style="color:#75715e">##Delete all containers</span>
+    docker rm <span style="color:#66d9ef">$(</span>docker ps -a | awk <span style="color:#e6db74">&#39;{ print $1}&#39;</span> | tail -n +2<span style="color:#66d9ef">)</span>
+
+<span style="color:#75715e">##Delete all images</span>
+    docker rmi <span style="color:#66d9ef">$(</span>docker images | awk <span style="color:#e6db74">&#39;{print $3}&#39;</span> |tail -n +2<span style="color:#66d9ef">)</span>
 </code></pre></div><h2 id="wsl2中vmmem内存占用过大问题">WSL2中Vmmem内存占用过大问题</h2>
 <h4 id="原因">原因</h4>
 <p>子系统占用内存过大。</p>
