@@ -6,7 +6,16 @@
     <description>Recent content in Syntax on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 20 Dec 2020 14:23:13 +0900</lastBuildDate><atom:link href="http://ranbo777.me/categories/syntax/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Feb 2021 21:31:37 +0900</lastBuildDate><atom:link href="http://ranbo777.me/categories/syntax/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sprintboot Annotations</title>
+      <link>http://ranbo777.me/post/java/sprintboot-annotations/</link>
+      <pubDate>Tue, 02 Feb 2021 21:31:37 +0900</pubDate>
+      
+      <guid>http://ranbo777.me/post/java/sprintboot-annotations/</guid>
+      <description>&lt;p&gt;The most comprehensive springboot annotation.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Delegate In Java And C#</title>
       <link>http://ranbo777.me/post/csharp/post1/</link>
