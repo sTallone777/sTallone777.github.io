@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vim on Ranbo</title>
+    <link>http://ranbo777.me/tags/vim/</link>
+    <description>Recent content in vim on Ranbo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 06 Feb 2021 10:52:15 +0900</lastBuildDate><atom:link href="http://ranbo777.me/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vim key position</title>
+      <link>http://ranbo777.me/post/vim/vim-key/</link>
+      <pubDate>Sat, 06 Feb 2021 10:52:15 +0900</pubDate>
+      
+      <guid>http://ranbo777.me/post/vim/vim-key/</guid>
+      <description>&lt;p&gt;The key position of vim.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

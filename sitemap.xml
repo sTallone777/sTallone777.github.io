@@ -4,21 +4,41 @@
   
   <url>
     <loc>http://ranbo777.me/categories/</loc>
-    <lastmod>2021-02-02T21:31:37+09:00</lastmod>
+    <lastmod>2021-02-06T10:52:15+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://ranbo777.me/tags/java/</loc>
-    <lastmod>2021-02-02T21:31:37+09:00</lastmod>
+    <loc>http://ranbo777.me/categories/command/</loc>
+    <lastmod>2021-02-06T10:52:15+09:00</lastmod>
   </url>
   
   <url>
     <loc>http://ranbo777.me/post/</loc>
-    <lastmod>2021-02-02T21:31:37+09:00</lastmod>
+    <lastmod>2021-02-06T10:52:15+09:00</lastmod>
   </url>
   
   <url>
     <loc>http://ranbo777.me/</loc>
+    <lastmod>2021-02-06T10:52:15+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ranbo777.me/tags/</loc>
+    <lastmod>2021-02-06T10:52:15+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ranbo777.me/tags/vim/</loc>
+    <lastmod>2021-02-06T10:52:15+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ranbo777.me/post/vim/vim-key/</loc>
+    <lastmod>2021-02-06T10:52:15+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://ranbo777.me/tags/java/</loc>
     <lastmod>2021-02-02T21:31:37+09:00</lastmod>
   </url>
   
@@ -34,11 +54,6 @@
   
   <url>
     <loc>http://ranbo777.me/categories/syntax/</loc>
-    <lastmod>2021-02-02T21:31:37+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ranbo777.me/tags/</loc>
     <lastmod>2021-02-02T21:31:37+09:00</lastmod>
   </url>
   
@@ -75,11 +90,6 @@
   <url>
     <loc>http://ranbo777.me/tags/jdk/</loc>
     <lastmod>2021-01-14T21:28:34+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://ranbo777.me/categories/command/</loc>
-    <lastmod>2021-01-06T14:21:18+09:00</lastmod>
   </url>
   
   <url>

@@ -6,7 +6,16 @@
     <description>Recent content on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Feb 2021 21:31:37 +0900</lastBuildDate><atom:link href="http://ranbo777.me/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Feb 2021 10:52:15 +0900</lastBuildDate><atom:link href="http://ranbo777.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vim key position</title>
+      <link>http://ranbo777.me/post/vim/vim-key/</link>
+      <pubDate>Sat, 06 Feb 2021 10:52:15 +0900</pubDate>
+      
+      <guid>http://ranbo777.me/post/vim/vim-key/</guid>
+      <description>&lt;p&gt;The key position of vim.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Sprintboot Annotations</title>
       <link>http://ranbo777.me/post/java/sprintboot-annotations/</link>

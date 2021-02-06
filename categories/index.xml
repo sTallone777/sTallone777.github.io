@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Feb 2021 21:31:37 +0900</lastBuildDate><atom:link href="http://ranbo777.me/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Feb 2021 10:52:15 +0900</lastBuildDate><atom:link href="http://ranbo777.me/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Command</title>
+      <link>http://ranbo777.me/categories/command/</link>
+      <pubDate>Sat, 06 Feb 2021 10:52:15 +0900</pubDate>
+      
+      <guid>http://ranbo777.me/categories/command/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Syntax</title>
       <link>http://ranbo777.me/categories/syntax/</link>
@@ -22,15 +31,6 @@
       <pubDate>Sun, 24 Jan 2021 21:15:49 +0900</pubDate>
       
       <guid>http://ranbo777.me/categories/config/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Command</title>
-      <link>http://ranbo777.me/categories/command/</link>
-      <pubDate>Wed, 06 Jan 2021 14:21:18 +0900</pubDate>
-      
-      <guid>http://ranbo777.me/categories/command/</guid>
       <description></description>
     </item>
     

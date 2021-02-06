@@ -6,7 +6,16 @@
     <description>Recent content in Command on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 06 Jan 2021 14:21:18 +0900</lastBuildDate><atom:link href="http://ranbo777.me/categories/command/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Feb 2021 10:52:15 +0900</lastBuildDate><atom:link href="http://ranbo777.me/categories/command/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vim key position</title>
+      <link>http://ranbo777.me/post/vim/vim-key/</link>
+      <pubDate>Sat, 06 Feb 2021 10:52:15 +0900</pubDate>
+      
+      <guid>http://ranbo777.me/post/vim/vim-key/</guid>
+      <description>&lt;p&gt;The key position of vim.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Linux Command Summary</title>
       <link>http://ranbo777.me/post/server/linux/ubuntu/</link>
