@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Java on Ranbo</title>
-    <link>http://ranbo777.me/tags/java/</link>
-    <description>Recent content in Java on Ranbo</description>
+    <title>Java on Hugo tranquilpeak theme</title>
+    <link>https://example.org/tags/java/</link>
+    <description>Recent content in Java on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 02 Feb 2021 21:31:37 +0900</lastBuildDate><atom:link href="http://ranbo777.me/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Feb 2021 21:31:37 +0900</lastBuildDate><atom:link href="https://example.org/tags/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sprintboot Annotations</title>
-      <link>http://ranbo777.me/post/java/sprintboot-annotations/</link>
+      <link>https://example.org/2021/02/sprintboot-annotations/</link>
       <pubDate>Tue, 02 Feb 2021 21:31:37 +0900</pubDate>
       
-      <guid>http://ranbo777.me/post/java/sprintboot-annotations/</guid>
+      <guid>https://example.org/2021/02/sprintboot-annotations/</guid>
       <description>&lt;p&gt;The most comprehensive springboot annotation.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>IdeaSummary</title>
-      <link>http://ranbo777.me/post/java/ideasummary/</link>
+      <link>https://example.org/2021/01/ideasummary/</link>
       <pubDate>Sun, 24 Jan 2021 21:15:49 +0900</pubDate>
       
-      <guid>http://ranbo777.me/post/java/ideasummary/</guid>
+      <guid>https://example.org/2021/01/ideasummary/</guid>
       <description>&lt;p&gt;Summary about idea.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Delegate In Java And C#</title>
-      <link>http://ranbo777.me/post/csharp/post1/</link>
+      <link>https://example.org/2020/12/delegate-in-java-and-c/</link>
       <pubDate>Sun, 20 Dec 2020 14:23:13 +0900</pubDate>
       
-      <guid>http://ranbo777.me/post/csharp/post1/</guid>
+      <guid>https://example.org/2020/12/delegate-in-java-and-c/</guid>
       <description>&lt;p&gt;Introduce the difference between java and c# lambda expression.&lt;/p&gt;</description>
     </item>
     

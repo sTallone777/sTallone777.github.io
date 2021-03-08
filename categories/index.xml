@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Ranbo</title>
-    <link>http://ranbo777.me/categories/</link>
-    <description>Recent content in Categories on Ranbo</description>
+    <title>Categories on Hugo tranquilpeak theme</title>
+    <link>https://example.org/categories/</link>
+    <description>Recent content in Categories on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 06 Feb 2021 10:52:15 +0900</lastBuildDate><atom:link href="http://ranbo777.me/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Feb 2021 10:52:15 +0900</lastBuildDate><atom:link href="https://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Command</title>
-      <link>http://ranbo777.me/categories/command/</link>
+      <link>https://example.org/categories/command/</link>
       <pubDate>Sat, 06 Feb 2021 10:52:15 +0900</pubDate>
       
-      <guid>http://ranbo777.me/categories/command/</guid>
+      <guid>https://example.org/categories/command/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Syntax</title>
-      <link>http://ranbo777.me/categories/syntax/</link>
+      <link>https://example.org/categories/syntax/</link>
       <pubDate>Tue, 02 Feb 2021 21:31:37 +0900</pubDate>
       
-      <guid>http://ranbo777.me/categories/syntax/</guid>
+      <guid>https://example.org/categories/syntax/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Config</title>
-      <link>http://ranbo777.me/categories/config/</link>
+      <link>https://example.org/categories/config/</link>
       <pubDate>Sun, 24 Jan 2021 21:15:49 +0900</pubDate>
       
-      <guid>http://ranbo777.me/categories/config/</guid>
+      <guid>https://example.org/categories/config/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>http://ranbo777.me/categories/linux/</link>
+      <link>https://example.org/categories/linux/</link>
       <pubDate>Mon, 28 Dec 2020 08:12:12 +0900</pubDate>
       
-      <guid>http://ranbo777.me/categories/linux/</guid>
+      <guid>https://example.org/categories/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Algorithm</title>
-      <link>http://ranbo777.me/categories/algorithm/</link>
+      <link>https://example.org/categories/algorithm/</link>
       <pubDate>Sun, 27 Dec 2020 18:22:28 +0900</pubDate>
       
-      <guid>http://ranbo777.me/categories/algorithm/</guid>
+      <guid>https://example.org/categories/algorithm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Compare</title>
-      <link>http://ranbo777.me/categories/compare/</link>
+      <link>https://example.org/categories/compare/</link>
       <pubDate>Sun, 20 Dec 2020 14:23:13 +0900</pubDate>
       
-      <guid>http://ranbo777.me/categories/compare/</guid>
+      <guid>https://example.org/categories/compare/</guid>
       <description></description>
     </item>
     

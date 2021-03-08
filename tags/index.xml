@@ -1,261 +1,261 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Ranbo</title>
-    <link>http://ranbo777.me/tags/</link>
-    <description>Recent content in Tags on Ranbo</description>
+    <title>Tags on Hugo tranquilpeak theme</title>
+    <link>https://example.org/tags/</link>
+    <description>Recent content in Tags on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 06 Feb 2021 10:52:15 +0900</lastBuildDate><atom:link href="http://ranbo777.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Feb 2021 10:52:15 +0900</lastBuildDate><atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>vim</title>
-      <link>http://ranbo777.me/tags/vim/</link>
+      <link>https://example.org/tags/vim/</link>
       <pubDate>Sat, 06 Feb 2021 10:52:15 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/vim/</guid>
+      <guid>https://example.org/tags/vim/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Java</title>
-      <link>http://ranbo777.me/tags/java/</link>
+      <link>https://example.org/tags/java/</link>
       <pubDate>Tue, 02 Feb 2021 21:31:37 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/java/</guid>
+      <guid>https://example.org/tags/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>springboot</title>
-      <link>http://ranbo777.me/tags/springboot/</link>
+      <link>https://example.org/tags/springboot/</link>
       <pubDate>Tue, 02 Feb 2021 21:31:37 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/springboot/</guid>
+      <guid>https://example.org/tags/springboot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IDEA</title>
-      <link>http://ranbo777.me/tags/idea/</link>
+      <link>https://example.org/tags/idea/</link>
       <pubDate>Sun, 24 Jan 2021 21:15:49 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/idea/</guid>
+      <guid>https://example.org/tags/idea/</guid>
       <description></description>
     </item>
     
     <item>
       <title>C&#43;&#43;</title>
-      <link>http://ranbo777.me/tags/c&#43;&#43;/</link>
+      <link>https://example.org/tags/c&#43;&#43;/</link>
       <pubDate>Fri, 15 Jan 2021 21:23:58 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/c&#43;&#43;/</guid>
+      <guid>https://example.org/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
     
     <item>
       <title>jdk</title>
-      <link>http://ranbo777.me/tags/jdk/</link>
+      <link>https://example.org/tags/jdk/</link>
       <pubDate>Thu, 14 Jan 2021 21:28:34 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/jdk/</guid>
+      <guid>https://example.org/tags/jdk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>linux</title>
-      <link>http://ranbo777.me/tags/linux/</link>
+      <link>https://example.org/tags/linux/</link>
       <pubDate>Wed, 06 Jan 2021 14:21:18 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/linux/</guid>
+      <guid>https://example.org/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ubuntu</title>
-      <link>http://ranbo777.me/tags/ubuntu/</link>
+      <link>https://example.org/tags/ubuntu/</link>
       <pubDate>Wed, 06 Jan 2021 14:21:18 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/ubuntu/</guid>
+      <guid>https://example.org/tags/ubuntu/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dart</title>
-      <link>http://ranbo777.me/tags/dart/</link>
+      <link>https://example.org/tags/dart/</link>
       <pubDate>Thu, 31 Dec 2020 21:21:10 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/dart/</guid>
+      <guid>https://example.org/tags/dart/</guid>
       <description></description>
     </item>
     
     <item>
       <title>flutter</title>
-      <link>http://ranbo777.me/tags/flutter/</link>
+      <link>https://example.org/tags/flutter/</link>
       <pubDate>Thu, 31 Dec 2020 21:21:10 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/flutter/</guid>
+      <guid>https://example.org/tags/flutter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>env</title>
-      <link>http://ranbo777.me/tags/env/</link>
+      <link>https://example.org/tags/env/</link>
       <pubDate>Mon, 28 Dec 2020 17:36:14 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/env/</guid>
+      <guid>https://example.org/tags/env/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Nodejs</title>
-      <link>http://ranbo777.me/tags/nodejs/</link>
+      <link>https://example.org/tags/nodejs/</link>
       <pubDate>Mon, 28 Dec 2020 17:36:14 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/nodejs/</guid>
+      <guid>https://example.org/tags/nodejs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>React</title>
-      <link>http://ranbo777.me/tags/react/</link>
+      <link>https://example.org/tags/react/</link>
       <pubDate>Mon, 28 Dec 2020 17:36:14 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/react/</guid>
+      <guid>https://example.org/tags/react/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Manjaro</title>
-      <link>http://ranbo777.me/tags/manjaro/</link>
+      <link>https://example.org/tags/manjaro/</link>
       <pubDate>Mon, 28 Dec 2020 08:12:12 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/manjaro/</guid>
+      <guid>https://example.org/tags/manjaro/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pacman</title>
-      <link>http://ranbo777.me/tags/pacman/</link>
+      <link>https://example.org/tags/pacman/</link>
       <pubDate>Mon, 28 Dec 2020 08:12:12 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/pacman/</guid>
+      <guid>https://example.org/tags/pacman/</guid>
       <description></description>
     </item>
     
     <item>
       <title>BinaryTree</title>
-      <link>http://ranbo777.me/tags/binarytree/</link>
+      <link>https://example.org/tags/binarytree/</link>
       <pubDate>Sun, 27 Dec 2020 18:22:28 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/binarytree/</guid>
+      <guid>https://example.org/tags/binarytree/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Go</title>
-      <link>http://ranbo777.me/tags/go/</link>
+      <link>https://example.org/tags/go/</link>
       <pubDate>Sun, 27 Dec 2020 18:22:28 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/go/</guid>
+      <guid>https://example.org/tags/go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>C#</title>
-      <link>http://ranbo777.me/tags/c#/</link>
+      <link>https://example.org/tags/c#/</link>
       <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/c#/</guid>
+      <guid>https://example.org/tags/c#/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DotNet Core</title>
-      <link>http://ranbo777.me/tags/dotnet-core/</link>
+      <link>https://example.org/tags/dotnet-core/</link>
       <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/dotnet-core/</guid>
+      <guid>https://example.org/tags/dotnet-core/</guid>
       <description></description>
     </item>
     
     <item>
       <title>EF</title>
-      <link>http://ranbo777.me/tags/ef/</link>
+      <link>https://example.org/tags/ef/</link>
       <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/ef/</guid>
+      <guid>https://example.org/tags/ef/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MVC</title>
-      <link>http://ranbo777.me/tags/mvc/</link>
+      <link>https://example.org/tags/mvc/</link>
       <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/mvc/</guid>
+      <guid>https://example.org/tags/mvc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Lambda</title>
-      <link>http://ranbo777.me/tags/lambda/</link>
+      <link>https://example.org/tags/lambda/</link>
       <pubDate>Sun, 20 Dec 2020 14:23:13 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/lambda/</guid>
+      <guid>https://example.org/tags/lambda/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cacert</title>
-      <link>http://ranbo777.me/tags/cacert/</link>
+      <link>https://example.org/tags/cacert/</link>
       <pubDate>Mon, 07 Dec 2020 15:23:53 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/cacert/</guid>
+      <guid>https://example.org/tags/cacert/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SSL</title>
-      <link>http://ranbo777.me/tags/ssl/</link>
+      <link>https://example.org/tags/ssl/</link>
       <pubDate>Mon, 07 Dec 2020 15:23:53 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/ssl/</guid>
+      <guid>https://example.org/tags/ssl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TLS</title>
-      <link>http://ranbo777.me/tags/tls/</link>
+      <link>https://example.org/tags/tls/</link>
       <pubDate>Mon, 07 Dec 2020 15:23:53 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/tls/</guid>
+      <guid>https://example.org/tags/tls/</guid>
       <description></description>
     </item>
     
     <item>
       <title>web</title>
-      <link>http://ranbo777.me/tags/web/</link>
+      <link>https://example.org/tags/web/</link>
       <pubDate>Mon, 07 Dec 2020 12:00:41 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/web/</guid>
+      <guid>https://example.org/tags/web/</guid>
       <description></description>
     </item>
     
     <item>
       <title>docker</title>
-      <link>http://ranbo777.me/tags/docker/</link>
+      <link>https://example.org/tags/docker/</link>
       <pubDate>Sat, 05 Dec 2020 22:02:10 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/docker/</guid>
+      <guid>https://example.org/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>git</title>
-      <link>http://ranbo777.me/tags/git/</link>
+      <link>https://example.org/tags/git/</link>
       <pubDate>Sat, 05 Dec 2020 11:53:10 +0900</pubDate>
       
-      <guid>http://ranbo777.me/tags/git/</guid>
+      <guid>https://example.org/tags/git/</guid>
       <description></description>
     </item>
     

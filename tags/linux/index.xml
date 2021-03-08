@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>linux on Ranbo</title>
-    <link>http://ranbo777.me/tags/linux/</link>
-    <description>Recent content in linux on Ranbo</description>
+    <title>linux on Hugo tranquilpeak theme</title>
+    <link>https://example.org/tags/linux/</link>
+    <description>Recent content in linux on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 06 Jan 2021 14:21:18 +0900</lastBuildDate><atom:link href="http://ranbo777.me/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Jan 2021 14:21:18 +0900</lastBuildDate><atom:link href="https://example.org/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux Command Summary</title>
-      <link>http://ranbo777.me/post/server/linux/ubuntu/</link>
+      <link>https://example.org/2021/01/linux-command-summary/</link>
       <pubDate>Wed, 06 Jan 2021 14:21:18 +0900</pubDate>
       
-      <guid>http://ranbo777.me/post/server/linux/ubuntu/</guid>
+      <guid>https://example.org/2021/01/linux-command-summary/</guid>
       <description>&lt;p&gt;The summary about linux common command.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Go Install</title>
-      <link>http://ranbo777.me/post/go/go-install/</link>
+      <link>https://example.org/2020/12/go-install/</link>
       <pubDate>Tue, 01 Dec 2020 22:20:08 +0900</pubDate>
       
-      <guid>http://ranbo777.me/post/go/go-install/</guid>
+      <guid>https://example.org/2020/12/go-install/</guid>
       <description>&lt;p&gt;Configuration of golang.&lt;/p&gt;</description>
     </item>
     

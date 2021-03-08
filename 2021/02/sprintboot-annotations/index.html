@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.79.0 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="author" content="Firstname Lastname">
+<meta name="keywords" content="">
+<meta name="description" content="The most comprehensive springboot annotation.">
+
+
+<meta property="og:description" content="The most comprehensive springboot annotation.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Sprintboot Annotations">
+<meta name="twitter:title" content="Sprintboot Annotations">
+<meta property="og:url" content="https://example.org/2021/02/sprintboot-annotations/">
+<meta property="twitter:url" content="https://example.org/2021/02/sprintboot-annotations/">
+<meta property="og:site_name" content="Hugo tranquilpeak theme">
+<meta property="og:description" content="The most comprehensive springboot annotation.">
+<meta name="twitter:description" content="The most comprehensive springboot annotation.">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2021-02-02T21:31:37">
+  
+  
+    <meta property="article:modified_time" content="2021-02-02T21:31:37">
+  
+  
+  
+    
+      <meta property="article:section" content="Syntax">
+    
+  
+  
+    
+      <meta property="article:tag" content="springboot">
+    
+      <meta property="article:tag" content="java">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=640">
+
+
+    <title>Sprintboot Annotations</title>
+
+    <link rel="icon" href="https://example.org/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://example.org/2021/02/sprintboot-annotations/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://example.org/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://example.org/">Hugo tranquilpeak theme</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://example.org/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=90" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://example.org/#about">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=110" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Firstname Lastname</h4>
+        
+          <h5 class="sidebar-profile-bio">Super bio with markdown support <strong>COOL</strong></h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://example.org/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://example.org/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://example.org/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://example.org/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://example.org/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/kakawait" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://stackoverflow.com/users/636472/kakawait" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-stack-overflow"></i>
+      
+      <span class="sidebar-button-desc">Stack Overflow</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://example.org/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      Sprintboot Annotations
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2021-02-02T21:31:37&#43;09:00">
+        
+  February 2, 2021
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://example.org/categories/syntax">Syntax</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>The most comprehensive springboot annotation.</p>
+<h2 id="注解详解">注解详解</h2>
+<table>
+<thead>
+<tr>
+<th>注解</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@SpringBootApplication</td>
+<td>申明让spring boot自动给程序进行必要的配置，这个配置等同于 @Configuration ，@EnableAutoConfiguration 和 @ComponentScan 三个配置。</td>
+</tr>
+<tr>
+<td>@ResponseBody</td>
+<td>表示该方法的返回结果直接写入HTTP response body中，一般在异步获取数据时使用，用于构建RESTful的api。在使用@RequestMapping后，返回值通常解析为跳转路径，加上@esponsebody后返回结果不会被解析为跳转路径，而是直接写入HTTP response body中。比如异步获取json数据，加上@Responsebody后，会直接返回json数据。该注解一般会配合@RequestMapping一起使用。</td>
+</tr>
+<tr>
+<td>@Controller</td>
+<td>用于定义控制器类，在spring项目中由控制器负责将用户发来的URL请求转发到对应的服务接口（service层），一般这个注解在类中，通常方法需要配合注解@RequestMapping。</td>
+</tr>
+<tr>
+<td>@RestController</td>
+<td>用于标注控制层组件(如struts中的action)，@ResponseBody和@Controller的合集。</td>
+</tr>
+<tr>
+<td>@RequestMapping</td>
+<td>提供路由信息，负责URL到Controller中的具体函数的映射。</td>
+</tr>
+<tr>
+<td>@EnableAutoConfiguration</td>
+<td>SpringBoot自动配置（auto-configuration）</td>
+</tr>
+<tr>
+<td>@ComponentScan</td>
+<td>表示将该类自动发现扫描组件。个人理解相当于，如果扫描到有@Component、@Controller、@Service等这些注解的类，并注册为Bean，可以自动收集所有的Spring组件，包括@Configuration类。我们经常使用@ComponentScan注解搜索beans，并结合@Autowired注解导入。可以自动收集所有的Spring组件，包括@Configuration类。我们经常使用@ComponentScan注解搜索beans，并结合@Autowired注解导入。如果没有配置的话，Spring Boot会扫描启动类所在包下以及子包下的使用了@Service,@Repository等注解的类。</td>
+</tr>
+<tr>
+<td>@Configuration</td>
+<td>相当于传统的xml配置文件，如果有些第三方库需要用到xml文件，建议仍然通过@Configuration类作为项目的配置主类——可以使用@ImportResource注解加载xml配置文件。</td>
+</tr>
+<tr>
+<td>@Import</td>
+<td>用来导入其他配置类。</td>
+</tr>
+<tr>
+<td>@ImportResource</td>
+<td>用来加载xml配置文件。</td>
+</tr>
+<tr>
+<td>@Autowired</td>
+<td>自动导入依赖的bean</td>
+</tr>
+<tr>
+<td>@Service</td>
+<td>一般用于修饰service层的组件</td>
+</tr>
+<tr>
+<td>@Repository</td>
+<td>使用@Repository注解可以确保DAO或者repositories提供异常转译，这个注解修饰的DAO或者repositories类会被ComponetScan发现并配置，同时也不需要为它们提供XML配置项。</td>
+</tr>
+<tr>
+<td>@Bean</td>
+<td>用@Bean标注方法等价于XML中配置的bean。</td>
+</tr>
+<tr>
+<td>@Value</td>
+<td>注入Spring boot application.properties配置的属性的值。示例代码</td>
+</tr>
+<tr>
+<td>@Inject</td>
+<td>等价于默认的@Autowired，只是没有required属性；</td>
+</tr>
+<tr>
+<td>@Component</td>
+<td>泛指组件，当组件不好归类的时候，我们可以使用这个注解进行标注。</td>
+</tr>
+<tr>
+<td>@Bean</td>
+<td>相当于XML中的,放在方法的上面，而不是类，意思是产生一个bean,并交给spring管理。</td>
+</tr>
+<tr>
+<td>@AutoWired</td>
+<td>自动导入依赖的bean。byType方式。把配置好的Bean拿来用，完成属性、方法的组装，它可以对类成员变量、方法及构造函数进行标注，完成自动装配的工作。当加上（required=false）时，就算找不到bean也不报错。</td>
+</tr>
+<tr>
+<td>@Qualifier</td>
+<td>当有多个同一类型的Bean时，可以用@Qualifier(“name”)来指定。与@Autowired配合使用。@Qualifier限定描述符除了能根据名字进行注入，但能进行更细粒度的控制如何选择候选者，具体使用方式如下</td>
+</tr>
+<tr>
+<td>@Resource(name=”name”,type=”type”)</td>
+<td>没有括号内内容的话，默认byName。与@Autowired干类似的事。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="注解列表如下">注解列表如下</h2>
+<table>
+<thead>
+<tr>
+<th>注解</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@SpringBootApplication</td>
+<td>包含了@ComponentScan、@Configuration和@EnableAutoConfiguration注解。其中</td>
+</tr>
+<tr>
+<td>@ComponentScan</td>
+<td>让spring Boot扫描到Configuration类并把它加入到程序上下文。</td>
+</tr>
+<tr>
+<td>@Configuration</td>
+<td>等同于spring的XML配置文件；使用Java代码可以检查类型安全。</td>
+</tr>
+<tr>
+<td>@EnableAutoConfiguration</td>
+<td>自动配置。</td>
+</tr>
+<tr>
+<td>@ComponentScan</td>
+<td>组件扫描，可自动发现和装配一些Bean。</td>
+</tr>
+<tr>
+<td>@Component</td>
+<td>可配合CommandLineRunner使用，在程序启动后执行一些基础任务。</td>
+</tr>
+<tr>
+<td>@RestController</td>
+<td>注解是@Controller和@ResponseBody的合集,表示这是个控制器bean,并且是将函数的返回值直 接填入HTTP响应体中,是REST风格的控制器。</td>
+</tr>
+<tr>
+<td>@Autowired</td>
+<td>自动导入。</td>
+</tr>
+<tr>
+<td>@PathVariable</td>
+<td>获取参数。</td>
+</tr>
+<tr>
+<td>@JsonBackReference</td>
+<td>解决嵌套外链问题。</td>
+</tr>
+<tr>
+<td>@RepositoryRestResourcepublic</td>
+<td>配合spring-boot-starter-data-rest使用。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="jpa注解">JPA注解</h2>
+<table>
+<thead>
+<tr>
+<th>注解</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@Entity： @Table(name=”“)</td>
+<td>表明这是一个实体类。一般用于jpa这两个注解一般一块使用，但是如果表名和实体类名相同的话，@Table可以省略</td>
+</tr>
+<tr>
+<td>@MappedSuperClass</td>
+<td>用在确定是父类的entity上。父类的属性子类可以继承。</td>
+</tr>
+<tr>
+<td>@NoRepositoryBean</td>
+<td>一般用作父类的repository，有这个注解，spring不会去实例化该repository。</td>
+</tr>
+<tr>
+<td>@Column</td>
+<td>如果字段名与列名相同，则可以省略。</td>
+</tr>
+<tr>
+<td>@Id</td>
+<td>表示该属性为主键。</td>
+</tr>
+<tr>
+<td>@GeneratedValue(strategy = GenerationType.SEQUENCE,generator = “repair_seq”)</td>
+<td>表示主键生成策略是sequence（可以为Auto、IDENTITY、native等，Auto表示可在多个数据库间切换），指定sequence的名字是repair_seq。</td>
+</tr>
+<tr>
+<td>@SequenceGeneretor(name = “repair_seq”, sequenceName = “seq_repair”, allocationSize = 1)</td>
+<td>name为sequence的名称，以便使用，sequenceName为数据库的sequence名称，两个名称可以一致。</td>
+</tr>
+<tr>
+<td>@Transient</td>
+<td>表示该属性并非一个到数据库表的字段的映射,ORM框架将忽略该属性。如果一个属性并非数据库表的字段映射,就务必将其标示为@Transient,否则,ORM框架默认其注解为@Basic。@Basic(fetch=FetchType.LAZY)</td>
+</tr>
+<tr>
+<td>@JsonIgnore</td>
+<td>作用是json序列化时将Java bean中的一些属性忽略掉,序列化和反序列化都受影响。</td>
+</tr>
+<tr>
+<td>@JoinColumn（name=”loginId”）:一对一</td>
+<td>本表中指向另一个表的外键。一对多</td>
+</tr>
+<tr>
+<td>@OneToOne、@OneToMany、@ManyToOne</td>
+<td>对应hibernate配置文件中的一对一，一对多，多对一。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="springmvc相关注解">springMVC相关注解</h2>
+<table>
+<thead>
+<tr>
+<th>注解</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@RequestMapping</td>
+<td>@RequestMapping(“/path”)表示该控制器处理所有“/path”的UR L请求。RequestMapping是一个用来处理请求地址映射的注解，可用于类或方法上。用于类上，表示类中的所有响应请求的方法都是以该地址作为父路径。该注解有六个属性</td>
+</tr>
+<tr>
+<td>params</td>
+<td>指定request中必须包含某些参数值是，才让该方法处理。</td>
+</tr>
+<tr>
+<td>headers</td>
+<td>指定request中必须包含某些指定的header值，才能让该方法处理请求。</td>
+</tr>
+<tr>
+<td>value</td>
+<td>指定请求的实际地址，指定的地址可以是URI Template 模式</td>
+</tr>
+<tr>
+<td>method</td>
+<td>指定请求的method类型， GET、POST、PUT、DELETE等</td>
+</tr>
+<tr>
+<td>consumes</td>
+<td>指定处理请求的提交内容类型（Content-Type），如application/json,text/html;</td>
+</tr>
+<tr>
+<td>produces</td>
+<td>指定返回的内容类型，仅当request请求头中的(Accept)类型中包含该指定类型才返回</td>
+</tr>
+<tr>
+<td>@RequestParam</td>
+<td>用在方法的参数前面。@RequestParam String a =request.getParameter(“a”)。</td>
+</tr>
+<tr>
+<td>@PathVariable</td>
+<td>路径变量。如参数与大括号里的名字一样要相同。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="全局异常处理">全局异常处理</h2>
+<table>
+<thead>
+<tr>
+<th>注解</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@ControllerAdvice</td>
+<td>包含@Component。可以被扫描到。统一处理异常。</td>
+</tr>
+<tr>
+<td>@ExceptionHandler（Exception.class）</td>
+<td>用在方法上面表示遇到这个异常就执行以下方法。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="项目中具体配置解析和使用环境">项目中具体配置解析和使用环境</h2>
+<h3 id="mappedsuperclass">@MappedSuperclass</h3>
+<ol>
+<li>
+<p>@MappedSuperclass 注解使用在父类上面，是用来标识父类的</p>
+</li>
+<li>
+<p>@MappedSuperclass 标识的类表示其不能映射到数据库表，因为其不是一个完整的实体类，但是它所拥有的属性能够映射在其子类对用的数据库表中</p>
+</li>
+<li>
+<p>@MappedSuperclass 标识的类不能再有@Entity或@Table注解</p>
+</li>
+</ol>
+<h3 id="column">@Column</h3>
+<ol>
+<li>
+<p>当实体的属性与其映射的数据库表的列不同名时需要使用@Column标注说明，该属性通常置于实体的属性声明语句之前，还可与 @Id 标注一起使用。</p>
+</li>
+<li>
+<p>@Column 标注的常用属性是name，用于设置映射数据库表的列名。此外，该标注还包含其它多个属性，如 | unique、nullable、length、precision等。具体如下：</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>name属性 | name属性定义了被标注字段在数据库表中所对应字段的名称</p>
+</li>
+<li>
+<p>unique属性 | unique属性表示该字段是否为唯一标识，默认为false，如果表中有一个字段需要唯一标识，则既可以使用该标记，也可以使用@Table注解中的@UniqueConstraint</p>
+</li>
+<li>
+<p>nullable属性 | nullable属性表示该字段是否可以为null值，默认为true</p>
+</li>
+<li>
+<p>insertable属性 | insertable属性表示在使用”INSERT”语句插入数据时，是否需要插入该字段的值</p>
+</li>
+<li>
+<p>updateable属性 | updateable属性表示在使用”UPDATE”语句插入数据时，是否需要更新该字段的值</p>
+</li>
+<li>
+<p>insertable和updateable属性 | 一般多用于只读的属性，例如主键和外键等，这些字段通常是自动生成的</p>
+</li>
+<li>
+<p>columnDefinition属性 | columnDefinition属性表示创建表时，该字段创建的SQL语句，一般用于通过Entity生成表定义时使用，如果数据库中表已经建好，该属性没有必要使用</p>
+</li>
+<li>
+<p>table属性 | table属性定义了包含当前字段的表名</p>
+</li>
+<li>
+<p>length属性 | length属性表示字段的长度，当字段的类型为varchar时，该属性才有效，默认为255个字符</p>
+</li>
+<li>
+<p>precision属性和scale属性 | precision属性和scale属性一起表示精度，当字段类型为double时，precision表示数值的总长度，scale表示小数点所占的位数<br>
+具体如下:</p>
+<ul>
+<li>double类型将在数据库中映射为double类型，precision和scale属性无效</li>
+<li>double类型若在columnDefinition属性中指定数字类型为decimal并指定精度，则最终以columnDefinition为准</li>
+<li>BigDecimal类型在数据库中映射为decimal类型，precision和scale属性有效</li>
+<li>precision和scale属性只在BigDecimal类型中有效</li>
+</ul>
+</li>
+</ul>
+<ol start="3">
+<li>
+<p>@Column 标注的columnDefinition属性: 表示该字段在数据库中的实际类型.通常 ORM 框架可以根据属性类型自动判断数据库中字段的类型,但是对于Date类型仍无法确定数据库中字段类型究竟是DATE,TIME还是TIMESTAMP.此外,String的默认映射类型为VARCHAR,如果要将 String 类型映射到特定数据库的 BLOB 或TEXT字段类型.</p>
+</li>
+<li>
+<p>@Column标注也可置于属性的getter方法之前</p>
+</li>
+</ol>
+<h3 id="getter和setterlombok">@Getter和@Setter（Lombok）</h3>
+<table>
+<thead>
+<tr>
+<th>注解</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@Setter</td>
+<td>注解在属性上；为属性提供 setting 方法 @Getter</td>
+</tr>
+<tr>
+<td>@Data</td>
+<td>注解在类上；提供类所有属性的 getting 和 setting 方法，此外还提供了equalsnEqual、hashCode、toString 方法</td>
+</tr>
+<tr>
+<td>@Setter</td>
+<td>注解在属性上；为属性提供 setting 方法</td>
+</tr>
+<tr>
+<td>@Getter</td>
+<td>注解在属性上；为属性提供 getting 方法</td>
+</tr>
+<tr>
+<td>@Log4j2</td>
+<td>注解在类上；为类提供一个 属性名为log 的 log4j 日志对象，和@Log4j注</td>
+</tr>
+<tr>
+<td>@NoArgsConstructor</td>
+<td>注解在类上；为类提供一个无参的构造方法</td>
+</tr>
+<tr>
+<td>@AllArgsConstructor</td>
+<td>注解在类上；为类提供一个全参的构造方法</td>
+</tr>
+<tr>
+<td>@EqualsAndHashCode</td>
+<td>默认情况下，会使用所有非瞬态(non-transient)和非静态n-static)字段来生成equals和hascode方法，也可以指定具体使用哪些属性。</td>
+</tr>
+<tr>
+<td>@toString</td>
+<td>生成toString方法，默认情况下，会输出类名、所有属性，属性会按照顺序输逗号分割。</td>
+</tr>
+<tr>
+<td>@NoArgsConstructor, @RequiredArgsConstructor, @AllArgsConstructor</td>
+<td>无参构造器、部分参数构造器、全参构造器，当我们需要重载多个构造器的时候，只能自己</td>
+</tr>
+<tr>
+<td>@NonNull</td>
+<td>注解在属性上，如果注解了，就必须不能为Null</td>
+</tr>
+<tr>
+<td>@val</td>
+<td>注解在属性上，如果注解了，就是设置为final类型，可查看源码的注释知道</td>
+</tr>
+</tbody>
+</table>
+<h2 id="持久化方法">持久化方法</h2>
+<table>
+<thead>
+<tr>
+<th>注解</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@javax.persistence.PostLoad</td>
+<td>加载后。</td>
+</tr>
+<tr>
+<td>@javax.persistence.PrePersist</td>
+<td>持久化前。</td>
+</tr>
+<tr>
+<td>@javax.persistence.PostPersist</td>
+<td>持久化后。</td>
+</tr>
+<tr>
+<td>@javax.persistence.PreUpdate</td>
+<td>更新前。</td>
+</tr>
+<tr>
+<td>@javax.persistence.PostUpdate</td>
+<td>更新后。</td>
+</tr>
+<tr>
+<td>@javax.persistence.PreRemove</td>
+<td>删除前。</td>
+</tr>
+<tr>
+<td>@javax.persistence.PostRemove</td>
+<td>删除后。</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://example.org/tags/springboot/">springboot</a>
+
+  <a class="tag tag--primary tag--small" href="https://example.org/tags/java/">java</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://example.org/2021/02/vim-key-position/" data-tooltip="Vim key position">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://example.org/2021/01/ideasummary/" data-tooltip="IdeaSummary">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://example.org/2021/02/sprintboot-annotations/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://example.org/2021/02/sprintboot-annotations/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://example.org/2021/02/sprintboot-annotations/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2021 Firstname Lastname. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://example.org/2021/02/vim-key-position/" data-tooltip="Vim key position">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://example.org/2021/01/ideasummary/" data-tooltip="IdeaSummary">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://example.org/2021/02/sprintboot-annotations/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://example.org/2021/02/sprintboot-annotations/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://example.org/2021/02/sprintboot-annotations/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fexample.org%2F2021%2F02%2Fsprintboot-annotations%2F">
+          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fexample.org%2F2021%2F02%2Fsprintboot-annotations%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fexample.org%2F2021%2F02%2Fsprintboot-annotations%2F">
+          <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=110" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Firstname Lastname</h4>
+    
+      <div id="about-card-bio">Super bio with markdown support <strong>COOL</strong></div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Your job title
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        France
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://example.org/images/cover.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://example.org/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/example.org\/2021\/02\/sprintboot-annotations\/';
+          
+            this.page.identifier = '\/2021\/02\/sprintboot-annotations\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'hugo-tranquilpeak-theme';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+
