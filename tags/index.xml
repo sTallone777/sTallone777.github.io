@@ -8,7 +8,7 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 06 Feb 2021 10:52:15 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Vim</title>
+      <title>vim</title>
       <link>https://stallone777.github.io/tags/vim/</link>
       <pubDate>Sat, 06 Feb 2021 10:52:15 +0900</pubDate>
       
@@ -17,7 +17,7 @@
     </item>
     
     <item>
-      <title>Java</title>
+      <title>java</title>
       <link>https://stallone777.github.io/tags/java/</link>
       <pubDate>Tue, 02 Feb 2021 21:31:37 +0900</pubDate>
       
@@ -26,7 +26,7 @@
     </item>
     
     <item>
-      <title>Springboot</title>
+      <title>springboot</title>
       <link>https://stallone777.github.io/tags/springboot/</link>
       <pubDate>Tue, 02 Feb 2021 21:31:37 +0900</pubDate>
       
@@ -35,7 +35,7 @@
     </item>
     
     <item>
-      <title>IDEA</title>
+      <title>idea</title>
       <link>https://stallone777.github.io/tags/idea/</link>
       <pubDate>Sun, 24 Jan 2021 21:15:49 +0900</pubDate>
       
@@ -44,7 +44,7 @@
     </item>
     
     <item>
-      <title>C&#43;&#43;</title>
+      <title>c&#43;&#43;</title>
       <link>https://stallone777.github.io/tags/c&#43;&#43;/</link>
       <pubDate>Fri, 15 Jan 2021 21:23:58 +0900</pubDate>
       
@@ -53,7 +53,7 @@
     </item>
     
     <item>
-      <title>Jdk</title>
+      <title>jdk</title>
       <link>https://stallone777.github.io/tags/jdk/</link>
       <pubDate>Thu, 14 Jan 2021 21:28:34 +0900</pubDate>
       
@@ -62,7 +62,7 @@
     </item>
     
     <item>
-      <title>Linux</title>
+      <title>linux</title>
       <link>https://stallone777.github.io/tags/linux/</link>
       <pubDate>Wed, 06 Jan 2021 14:21:18 +0900</pubDate>
       
@@ -71,7 +71,7 @@
     </item>
     
     <item>
-      <title>Ubuntu</title>
+      <title>ubuntu</title>
       <link>https://stallone777.github.io/tags/ubuntu/</link>
       <pubDate>Wed, 06 Jan 2021 14:21:18 +0900</pubDate>
       
@@ -80,7 +80,7 @@
     </item>
     
     <item>
-      <title>Dart</title>
+      <title>dart</title>
       <link>https://stallone777.github.io/tags/dart/</link>
       <pubDate>Thu, 31 Dec 2020 21:21:10 +0900</pubDate>
       
@@ -89,7 +89,7 @@
     </item>
     
     <item>
-      <title>Flutter</title>
+      <title>flutter</title>
       <link>https://stallone777.github.io/tags/flutter/</link>
       <pubDate>Thu, 31 Dec 2020 21:21:10 +0900</pubDate>
       
@@ -98,7 +98,7 @@
     </item>
     
     <item>
-      <title>Nodejs</title>
+      <title>nodejs</title>
       <link>https://stallone777.github.io/tags/nodejs/</link>
       <pubDate>Mon, 28 Dec 2020 17:36:14 +0900</pubDate>
       
@@ -107,7 +107,7 @@
     </item>
     
     <item>
-      <title>React</title>
+      <title>react</title>
       <link>https://stallone777.github.io/tags/react/</link>
       <pubDate>Mon, 28 Dec 2020 17:36:14 +0900</pubDate>
       
@@ -116,7 +116,7 @@
     </item>
     
     <item>
-      <title>Manjaro</title>
+      <title>manjaro</title>
       <link>https://stallone777.github.io/tags/manjaro/</link>
       <pubDate>Mon, 28 Dec 2020 08:12:12 +0900</pubDate>
       
@@ -125,7 +125,7 @@
     </item>
     
     <item>
-      <title>Pacman</title>
+      <title>pacman</title>
       <link>https://stallone777.github.io/tags/pacman/</link>
       <pubDate>Mon, 28 Dec 2020 08:12:12 +0900</pubDate>
       
@@ -134,7 +134,7 @@
     </item>
     
     <item>
-      <title>Go</title>
+      <title>go</title>
       <link>https://stallone777.github.io/tags/go/</link>
       <pubDate>Sun, 27 Dec 2020 18:22:28 +0900</pubDate>
       
@@ -143,7 +143,16 @@
     </item>
     
     <item>
-      <title>C#</title>
+      <title>.net Core</title>
+      <link>https://stallone777.github.io/tags/.net-core/</link>
+      <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
+      
+      <guid>https://stallone777.github.io/tags/.net-core/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>c#</title>
       <link>https://stallone777.github.io/tags/c#/</link>
       <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
       
@@ -152,25 +161,7 @@
     </item>
     
     <item>
-      <title>DotNetCore</title>
-      <link>https://stallone777.github.io/tags/dotnetcore/</link>
-      <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
-      
-      <guid>https://stallone777.github.io/tags/dotnetcore/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>EF</title>
-      <link>https://stallone777.github.io/tags/ef/</link>
-      <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
-      
-      <guid>https://stallone777.github.io/tags/ef/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MVC</title>
+      <title>mvc</title>
       <link>https://stallone777.github.io/tags/mvc/</link>
       <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
       
@@ -179,7 +170,7 @@
     </item>
     
     <item>
-      <title>Lambda</title>
+      <title>lambda</title>
       <link>https://stallone777.github.io/tags/lambda/</link>
       <pubDate>Sun, 20 Dec 2020 14:23:13 +0900</pubDate>
       
@@ -188,7 +179,7 @@
     </item>
     
     <item>
-      <title>SSL</title>
+      <title>ssl</title>
       <link>https://stallone777.github.io/tags/ssl/</link>
       <pubDate>Mon, 07 Dec 2020 15:23:53 +0900</pubDate>
       
@@ -197,7 +188,7 @@
     </item>
     
     <item>
-      <title>TLS</title>
+      <title>tls</title>
       <link>https://stallone777.github.io/tags/tls/</link>
       <pubDate>Mon, 07 Dec 2020 15:23:53 +0900</pubDate>
       
@@ -206,7 +197,7 @@
     </item>
     
     <item>
-      <title>Docker</title>
+      <title>docker</title>
       <link>https://stallone777.github.io/tags/docker/</link>
       <pubDate>Sat, 05 Dec 2020 22:02:10 +0900</pubDate>
       
@@ -215,20 +206,11 @@
     </item>
     
     <item>
-      <title>Git</title>
+      <title>git</title>
       <link>https://stallone777.github.io/tags/git/</link>
       <pubDate>Sat, 05 Dec 2020 11:53:10 +0900</pubDate>
       
       <guid>https://stallone777.github.io/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Env</title>
-      <link>https://stallone777.github.io/tags/env/</link>
-      <pubDate>Tue, 01 Dec 2020 22:20:08 +0900</pubDate>
-      
-      <guid>https://stallone777.github.io/tags/env/</guid>
       <description></description>
     </item>
     
