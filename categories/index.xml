@@ -1,63 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Hugo tranquilpeak theme</title>
-    <link>https://example.org/categories/</link>
-    <description>Recent content in Categories on Hugo tranquilpeak theme</description>
+    <title>Categories on </title>
+    <link>https://stallone777.github.io/categories/</link>
+    <description>Recent content in Categories on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Feb 2021 10:52:15 +0900</lastBuildDate><atom:link href="https://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Command</title>
-      <link>https://example.org/categories/command/</link>
-      <pubDate>Sat, 06 Feb 2021 10:52:15 +0900</pubDate>
-      
-      <guid>https://example.org/categories/command/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Syntax</title>
-      <link>https://example.org/categories/syntax/</link>
-      <pubDate>Tue, 02 Feb 2021 21:31:37 +0900</pubDate>
-      
-      <guid>https://example.org/categories/syntax/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Sat, 06 Feb 2021 10:52:15 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Config</title>
-      <link>https://example.org/categories/config/</link>
-      <pubDate>Sun, 24 Jan 2021 21:15:49 +0900</pubDate>
+      <link>https://stallone777.github.io/categories/config/</link>
+      <pubDate>Sat, 06 Feb 2021 10:52:15 +0900</pubDate>
       
-      <guid>https://example.org/categories/config/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://example.org/categories/linux/</link>
-      <pubDate>Mon, 28 Dec 2020 08:12:12 +0900</pubDate>
-      
-      <guid>https://example.org/categories/linux/</guid>
+      <guid>https://stallone777.github.io/categories/config/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Algorithm</title>
-      <link>https://example.org/categories/algorithm/</link>
+      <link>https://stallone777.github.io/categories/algorithm/</link>
       <pubDate>Sun, 27 Dec 2020 18:22:28 +0900</pubDate>
       
-      <guid>https://example.org/categories/algorithm/</guid>
+      <guid>https://stallone777.github.io/categories/algorithm/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Compare</title>
-      <link>https://example.org/categories/compare/</link>
+      <title>Language</title>
+      <link>https://stallone777.github.io/categories/language/</link>
       <pubDate>Sun, 20 Dec 2020 14:23:13 +0900</pubDate>
       
-      <guid>https://example.org/categories/compare/</guid>
+      <guid>https://stallone777.github.io/categories/language/</guid>
       <description></description>
     </item>
     

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>git on Hugo tranquilpeak theme</title>
-    <link>https://example.org/tags/git/</link>
-    <description>Recent content in git on Hugo tranquilpeak theme</description>
+    <title>Git on </title>
+    <link>https://stallone777.github.io/tags/git/</link>
+    <description>Recent content in Git on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Dec 2020 11:53:10 +0900</lastBuildDate><atom:link href="https://example.org/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Dec 2020 11:53:10 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git Command</title>
-      <link>https://example.org/2020/12/git-command/</link>
+      <link>https://stallone777.github.io/2020/12/git-command/</link>
       <pubDate>Sat, 05 Dec 2020 11:53:10 +0900</pubDate>
       
-      <guid>https://example.org/2020/12/git-command/</guid>
+      <guid>https://stallone777.github.io/2020/12/git-command/</guid>
       <description>&lt;p&gt;Common command of git.&lt;/p&gt;</description>
     </item>
     

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>springboot on Hugo tranquilpeak theme</title>
-    <link>https://example.org/tags/springboot/</link>
-    <description>Recent content in springboot on Hugo tranquilpeak theme</description>
+    <title>Springboot on </title>
+    <link>https://stallone777.github.io/tags/springboot/</link>
+    <description>Recent content in Springboot on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Feb 2021 21:31:37 +0900</lastBuildDate><atom:link href="https://example.org/tags/springboot/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Feb 2021 21:31:37 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/tags/springboot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sprintboot Annotations</title>
-      <link>https://example.org/2021/02/sprintboot-annotations/</link>
+      <link>https://stallone777.github.io/2021/02/sprintboot-annotations/</link>
       <pubDate>Tue, 02 Feb 2021 21:31:37 +0900</pubDate>
       
-      <guid>https://example.org/2021/02/sprintboot-annotations/</guid>
+      <guid>https://stallone777.github.io/2021/02/sprintboot-annotations/</guid>
       <description>&lt;p&gt;The most comprehensive springboot annotation.&lt;/p&gt;</description>
     </item>
     
