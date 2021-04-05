@@ -6,7 +6,16 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Feb 2021 10:52:15 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Apr 2021 22:16:01 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LeetCode_203: Remove Linked List Elements</title>
+      <link>https://stallone777.github.io/2021/04/leetcode_203-remove-linked-list-elements/</link>
+      <pubDate>Mon, 05 Apr 2021 22:16:01 +0900</pubDate>
+      
+      <guid>https://stallone777.github.io/2021/04/leetcode_203-remove-linked-list-elements/</guid>
+      <description>&lt;p&gt;About how to remove linked list elements&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Vim key position</title>
       <link>https://stallone777.github.io/2021/02/vim-key-position/</link>
