@@ -275,11 +275,17 @@ git push -u origin main
 git rm <span style="color:#f92672">{</span>folder_name<span style="color:#f92672">}</span> -r -f
 <span style="color:#75715e"># delete file</span>
 git rm <span style="color:#f92672">{</span>file_name<span style="color:#f92672">}</span>
-</code></pre></div><h3 id="change-branch-name">Change branch name</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># delete folder</span>
+</code></pre></div><h3 id="branch-command">Branch Command</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># create new branch and replace the old one</span>
 git branch -m <span style="color:#f92672">{</span>oldname<span style="color:#f92672">}</span> <span style="color:#f92672">{</span>newname<span style="color:#f92672">}</span>
-<span style="color:#75715e"># delete file</span>
-git push origin <span style="color:#f92672">{</span>newname<span style="color:#f92672">}</span>
+<span style="color:#75715e"># push the new branch to remote and make it default</span>
+git push -u origin <span style="color:#f92672">{</span>newname<span style="color:#f92672">}</span>
+<span style="color:#75715e"># show the branchs list</span>
+git branch -a
+<span style="color:#75715e"># switch the branchs</span>
+git checkout -b <span style="color:#f92672">{</span>localbranchname<span style="color:#f92672">}</span> <span style="color:#f92672">{</span>remotebranchname<span style="color:#f92672">}</span>
+<span style="color:#75715e"># delete a branch</span>
+git branch -D <span style="color:#f92672">{</span>branchname<span style="color:#f92672">}</span>
 </code></pre></div>
               
             </div>
