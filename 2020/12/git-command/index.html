@@ -269,12 +269,17 @@ ssh-keygen -t rsa -C <span style="color:#e6db74">&#34;{github_account_email}&#34
 <span style="color:#75715e"># confirm connect</span>
 ssh -T git@github.com
 <span style="color:#75715e"># push to your repositry</span>
-git push -u origin master
+git push -u origin main
 </code></pre></div><h3 id="other-command">Other Command</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># delete folder</span>
 git rm <span style="color:#f92672">{</span>folder_name<span style="color:#f92672">}</span> -r -f
 <span style="color:#75715e"># delete file</span>
 git rm <span style="color:#f92672">{</span>file_name<span style="color:#f92672">}</span>
+</code></pre></div><h3 id="change-branch-name">Change branch name</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># delete folder</span>
+git branch -m <span style="color:#f92672">{</span>oldname<span style="color:#f92672">}</span> <span style="color:#f92672">{</span>newname<span style="color:#f92672">}</span>
+<span style="color:#75715e"># delete file</span>
+git push origin <span style="color:#f92672">{</span>newname<span style="color:#f92672">}</span>
 </code></pre></div>
               
             </div>
