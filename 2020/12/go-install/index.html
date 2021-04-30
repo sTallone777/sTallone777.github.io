@@ -266,7 +266,9 @@
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">go version
 </code></pre></div><h4 id="4open-the-gomod">4.Open the GOMOD</h4>
 <p>Command Line:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd">go env -w GO111MODULE=on
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmd" data-lang="cmd"># when the program in gopath then do not use module;
+# when the program out of gopath then module is required;
+go env -w GO111MODULE=auto
 </code></pre></div><h4 id="5create-a-golang-project-by-vscode-and-config-the-setting-json">5.Create a golang project by vscode and config the setting json</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
     <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;0.2.0&#34;</span>,
