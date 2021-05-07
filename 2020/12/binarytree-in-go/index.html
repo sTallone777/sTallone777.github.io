@@ -254,42 +254,42 @@
             <div class="main-content-wrap">
               <p>Introduce how to create a binary-tree with go.</p>
 <h1 id="create-a-binarytree-by-golang">Create a binarytree by golang</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">//TreeNode :
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">TreeNode</span> <span style="color:#66d9ef">struct</span> {
-	<span style="color:#a6e22e">Val</span>   <span style="color:#66d9ef">int</span>
-	<span style="color:#a6e22e">Left</span>  <span style="color:#f92672">*</span><span style="color:#a6e22e">TreeNode</span>
-	<span style="color:#a6e22e">Right</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">TreeNode</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Cpp" data-lang="Cpp"><span style="color:#75715e">//TreeNode :
+</span><span style="color:#75715e"></span>type TreeNode <span style="color:#66d9ef">struct</span> {
+	Val   <span style="color:#66d9ef">int</span>
+	Left  <span style="color:#f92672">*</span>TreeNode
+	Right <span style="color:#f92672">*</span>TreeNode
 }
 
 <span style="color:#75715e">//Create treenode by traversal
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">createTree</span>(<span style="color:#a6e22e">lr</span> <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">d</span> <span style="color:#66d9ef">int</span>, <span style="color:#a6e22e">parent</span> <span style="color:#66d9ef">int</span>) <span style="color:#f92672">*</span><span style="color:#a6e22e">TreeNode</span> {
-	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#66d9ef">string</span>
+</span><span style="color:#75715e"></span>func <span style="color:#a6e22e">createTree</span>(lr string, d <span style="color:#66d9ef">int</span>, parent <span style="color:#66d9ef">int</span>) <span style="color:#f92672">*</span>TreeNode {
+	var a string
 
-	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">lr</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;root&#34;</span> {
-		<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Please input the deep: %d %s node of root:\r\n&#34;</span>, <span style="color:#a6e22e">d</span>, <span style="color:#a6e22e">lr</span>)
+	<span style="color:#66d9ef">if</span> lr <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;root&#34;</span> {
+		fmt.Printf(<span style="color:#e6db74">&#34;Please input the deep: %d %s node of root:</span><span style="color:#ae81ff">\r\n</span><span style="color:#e6db74">&#34;</span>, d, lr)
 	} <span style="color:#66d9ef">else</span> {
-		<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Please input the deep: %d %s node of node: %d:\r\n&#34;</span>, <span style="color:#a6e22e">d</span>, <span style="color:#a6e22e">lr</span>, <span style="color:#a6e22e">parent</span>)
+		fmt.Printf(<span style="color:#e6db74">&#34;Please input the deep: %d %s node of node: %d:</span><span style="color:#ae81ff">\r\n</span><span style="color:#e6db74">&#34;</span>, d, lr, parent)
 	}
 
-	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Scanln</span>(<span style="color:#f92672">&amp;</span><span style="color:#a6e22e">a</span>)
+	fmt.Scanln(<span style="color:#f92672">&amp;</span>a)
 	<span style="color:#75715e">//Stop to creating the branch by typing &#39;#&#39;
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;#&#34;</span> {
-		<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Stop traversal on deep: %d\r\n&#34;</span>, <span style="color:#a6e22e">d</span>)
-		<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">nil</span>
+</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">if</span> a <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;#&#34;</span> {
+		fmt.Printf(<span style="color:#e6db74">&#34;Stop traversal on deep: %d</span><span style="color:#ae81ff">\r\n</span><span style="color:#e6db74">&#34;</span>, d)
+		<span style="color:#66d9ef">return</span> nil
 	}
-	<span style="color:#a6e22e">tree</span> <span style="color:#f92672">:=</span> new(<span style="color:#a6e22e">TreeNode</span>)
-	<span style="color:#a6e22e">tree</span>.<span style="color:#a6e22e">Val</span>, <span style="color:#a6e22e">_</span> = <span style="color:#a6e22e">strconv</span>.<span style="color:#a6e22e">Atoi</span>(<span style="color:#a6e22e">a</span>)
-	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Start create deep: %d node: %d.\r\n&#34;</span>, <span style="color:#a6e22e">d</span>, <span style="color:#a6e22e">tree</span>.<span style="color:#a6e22e">Val</span>)
-	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">lr</span> <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;root&#34;</span> {
-		<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;**Current parent node: %d\r\n&#34;</span>, <span style="color:#a6e22e">parent</span>)
+	tree :<span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span>(TreeNode)
+	tree.Val, _ <span style="color:#f92672">=</span> strconv.Atoi(a)
+	fmt.Printf(<span style="color:#e6db74">&#34;Start create deep: %d node: %d.</span><span style="color:#ae81ff">\r\n</span><span style="color:#e6db74">&#34;</span>, d, tree.Val)
+	<span style="color:#66d9ef">if</span> lr <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;root&#34;</span> {
+		fmt.Printf(<span style="color:#e6db74">&#34;**Current parent node: %d</span><span style="color:#ae81ff">\r\n</span><span style="color:#e6db74">&#34;</span>, parent)
 	}
-	<span style="color:#a6e22e">tree</span>.<span style="color:#a6e22e">Left</span> = <span style="color:#a6e22e">createTree</span>(<span style="color:#e6db74">&#34;left&#34;</span>, <span style="color:#a6e22e">d</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">tree</span>.<span style="color:#a6e22e">Val</span>)
-	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Back to deep: %d node: %d.\r\n&#34;</span>, <span style="color:#a6e22e">d</span>, <span style="color:#a6e22e">tree</span>.<span style="color:#a6e22e">Val</span>)
-	<span style="color:#a6e22e">tree</span>.<span style="color:#a6e22e">Right</span> = <span style="color:#a6e22e">createTree</span>(<span style="color:#e6db74">&#34;right&#34;</span>, <span style="color:#a6e22e">d</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">tree</span>.<span style="color:#a6e22e">Val</span>)
-	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Back to deep: %d node: %d.\r\n&#34;</span>, <span style="color:#a6e22e">d</span>, <span style="color:#a6e22e">tree</span>.<span style="color:#a6e22e">Val</span>)
+	tree.Left <span style="color:#f92672">=</span> createTree(<span style="color:#e6db74">&#34;left&#34;</span>, d<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, tree.Val)
+	fmt.Printf(<span style="color:#e6db74">&#34;Back to deep: %d node: %d.</span><span style="color:#ae81ff">\r\n</span><span style="color:#e6db74">&#34;</span>, d, tree.Val)
+	tree.Right <span style="color:#f92672">=</span> createTree(<span style="color:#e6db74">&#34;right&#34;</span>, d<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, tree.Val)
+	fmt.Printf(<span style="color:#e6db74">&#34;Back to deep: %d node: %d.</span><span style="color:#ae81ff">\r\n</span><span style="color:#e6db74">&#34;</span>, d, tree.Val)
 
-	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Create deep: %d node: %d successed.\r\n&#34;</span>, <span style="color:#a6e22e">d</span>, <span style="color:#a6e22e">tree</span>.<span style="color:#a6e22e">Val</span>)
-	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">tree</span>
+	fmt.Printf(<span style="color:#e6db74">&#34;Create deep: %d node: %d successed.</span><span style="color:#ae81ff">\r\n</span><span style="color:#e6db74">&#34;</span>, d, tree.Val)
+	<span style="color:#66d9ef">return</span> tree
 }
 
 </code></pre></div><p><a href="https://github.com/sTallone777/leetcode_notes/blob/master/medium/094.%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86.go">Full Code</a></p>

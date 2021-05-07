@@ -255,83 +255,83 @@
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
               <p>About how to remove linked list elements</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Cpp" data-lang="Cpp">package main
 
-<span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+import <span style="color:#e6db74">&#34;fmt&#34;</span>
 
-<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">ListNode</span> <span style="color:#66d9ef">struct</span> {
-	<span style="color:#a6e22e">Val</span>  <span style="color:#66d9ef">int</span>
-	<span style="color:#a6e22e">Next</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">ListNode</span>
+type ListNode <span style="color:#66d9ef">struct</span> {
+	Val  <span style="color:#66d9ef">int</span>
+	Next <span style="color:#f92672">*</span>ListNode
 }
 
-<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">create</span>(<span style="color:#a6e22e">e</span> <span style="color:#66d9ef">int</span>) <span style="color:#f92672">*</span><span style="color:#a6e22e">ListNode</span> {
-	<span style="color:#66d9ef">return</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">ListNode</span>{
-		<span style="color:#a6e22e">Val</span>:  <span style="color:#a6e22e">e</span>,
-		<span style="color:#a6e22e">Next</span>: <span style="color:#66d9ef">nil</span>,
+func <span style="color:#a6e22e">create</span>(e <span style="color:#66d9ef">int</span>) <span style="color:#f92672">*</span>ListNode {
+	<span style="color:#66d9ef">return</span> <span style="color:#f92672">&amp;</span>ListNode{
+		Val:  e,
+		Next: nil,
 	}
 }
 
-<span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">ln</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">ListNode</span>) <span style="color:#a6e22e">add</span>(<span style="color:#a6e22e">e</span> <span style="color:#66d9ef">int</span>) <span style="color:#f92672">*</span><span style="color:#a6e22e">ListNode</span> {
-	<span style="color:#a6e22e">newNode</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">ListNode</span>{
-		<span style="color:#a6e22e">Val</span>:  <span style="color:#a6e22e">e</span>,
-		<span style="color:#a6e22e">Next</span>: <span style="color:#66d9ef">nil</span>,
+func (ln <span style="color:#f92672">*</span>ListNode) add(e <span style="color:#66d9ef">int</span>) <span style="color:#f92672">*</span>ListNode {
+	newNode :<span style="color:#f92672">=</span> ListNode{
+		Val:  e,
+		Next: nil,
 	}
 
-	<span style="color:#a6e22e">tmp</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">ln</span>
+	tmp :<span style="color:#f92672">=</span> ln
 
-	<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">tmp</span>.<span style="color:#a6e22e">Next</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
-		<span style="color:#a6e22e">tmp</span> = <span style="color:#a6e22e">tmp</span>.<span style="color:#a6e22e">Next</span>
+	<span style="color:#66d9ef">for</span> tmp.Next <span style="color:#f92672">!=</span> nil {
+		tmp <span style="color:#f92672">=</span> tmp.Next
 	}
 
-	<span style="color:#a6e22e">tmp</span>.<span style="color:#a6e22e">Next</span> = <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">newNode</span>
-	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">ln</span>
+	tmp.Next <span style="color:#f92672">=</span> <span style="color:#f92672">&amp;</span>newNode
+	<span style="color:#66d9ef">return</span> ln
 }
 
-<span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">ln</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">ListNode</span>) <span style="color:#a6e22e">display</span>() {
-	<span style="color:#a6e22e">tmp</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">ln</span>
-	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Print</span>(<span style="color:#e6db74">&#34;ListNodes:&#34;</span>)
-	<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">tmp</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
-		<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34; %d&#34;</span>, <span style="color:#a6e22e">tmp</span>.<span style="color:#a6e22e">Val</span>)
-		<span style="color:#a6e22e">tmp</span> = <span style="color:#a6e22e">tmp</span>.<span style="color:#a6e22e">Next</span>
+func (ln <span style="color:#f92672">*</span>ListNode) display() {
+	tmp :<span style="color:#f92672">=</span> ln
+	fmt.Print(<span style="color:#e6db74">&#34;ListNodes:&#34;</span>)
+	<span style="color:#66d9ef">for</span> tmp <span style="color:#f92672">!=</span> nil {
+		fmt.Printf(<span style="color:#e6db74">&#34; %d&#34;</span>, tmp.Val)
+		tmp <span style="color:#f92672">=</span> tmp.Next
 	}
-	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>()
+	fmt.Println()
 }
 
-<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">removeElements</span>(<span style="color:#a6e22e">head</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">ListNode</span>, <span style="color:#a6e22e">val</span> <span style="color:#66d9ef">int</span>) <span style="color:#f92672">*</span><span style="color:#a6e22e">ListNode</span> {
+func <span style="color:#a6e22e">removeElements</span>(head <span style="color:#f92672">*</span>ListNode, val <span style="color:#66d9ef">int</span>) <span style="color:#f92672">*</span>ListNode {
 	<span style="color:#75715e">// copy the head
-</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">s</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">head</span>
+</span><span style="color:#75715e"></span>	s :<span style="color:#f92672">=</span> head
 	<span style="color:#75715e">// pre node
-</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">pre</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">s</span>
+</span><span style="color:#75715e"></span>	pre :<span style="color:#f92672">=</span> s
 	<span style="color:#75715e">// current node index of ListNode
-</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">c</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">0</span>
-	<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">s</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
-		<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">Val</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">val</span> {
+</span><span style="color:#75715e"></span>	c :<span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+	<span style="color:#66d9ef">for</span> s <span style="color:#f92672">!=</span> nil {
+		<span style="color:#66d9ef">if</span> s.Val <span style="color:#f92672">==</span> val {
 			<span style="color:#75715e">// when the delete target node is head
-</span><span style="color:#75715e"></span>			<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">c</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> {
-				<span style="color:#a6e22e">head</span> = <span style="color:#a6e22e">head</span>.<span style="color:#a6e22e">Next</span>
-				<span style="color:#a6e22e">s</span> = <span style="color:#a6e22e">head</span>
-				<span style="color:#a6e22e">pre</span> = <span style="color:#a6e22e">s</span>
-				<span style="color:#a6e22e">c</span><span style="color:#f92672">--</span>
+</span><span style="color:#75715e"></span>			<span style="color:#66d9ef">if</span> c <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> {
+				head <span style="color:#f92672">=</span> head.Next
+				s <span style="color:#f92672">=</span> head
+				pre <span style="color:#f92672">=</span> s
+				c<span style="color:#f92672">--</span>
 			} <span style="color:#66d9ef">else</span> {
 			<span style="color:#75715e">// when the delete target node is not head
-</span><span style="color:#75715e"></span>				<span style="color:#a6e22e">pre</span>.<span style="color:#a6e22e">Next</span> = <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">Next</span>    <span style="color:#75715e">// delete the target node
-</span><span style="color:#75715e"></span>				<span style="color:#a6e22e">s</span> = <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">Next</span>    <span style="color:#75715e">// move to next node
+</span><span style="color:#75715e"></span>				pre.Next <span style="color:#f92672">=</span> s.Next    <span style="color:#75715e">// delete the target node
+</span><span style="color:#75715e"></span>				s <span style="color:#f92672">=</span> s.Next    <span style="color:#75715e">// move to next node
 </span><span style="color:#75715e"></span>			}
 		} <span style="color:#66d9ef">else</span> {
 			<span style="color:#75715e">// move the pointer to next node
-</span><span style="color:#75715e"></span>			<span style="color:#a6e22e">pre</span> = <span style="color:#a6e22e">s</span>
-			<span style="color:#a6e22e">s</span> = <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">Next</span>
+</span><span style="color:#75715e"></span>			pre <span style="color:#f92672">=</span> s
+			s <span style="color:#f92672">=</span> s.Next
 		}
-		<span style="color:#a6e22e">c</span><span style="color:#f92672">++</span>
+		c<span style="color:#f92672">++</span>
 	}
-	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">head</span>
+	<span style="color:#66d9ef">return</span> head
 }
 
-<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
-	<span style="color:#a6e22e">s</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">create</span>(<span style="color:#ae81ff">7</span>).<span style="color:#a6e22e">add</span>(<span style="color:#ae81ff">7</span>).<span style="color:#a6e22e">add</span>(<span style="color:#ae81ff">7</span>).<span style="color:#a6e22e">add</span>(<span style="color:#ae81ff">7</span>).<span style="color:#a6e22e">add</span>(<span style="color:#ae81ff">7</span>)
+func <span style="color:#a6e22e">main</span>() {
+	s :<span style="color:#f92672">=</span> create(<span style="color:#ae81ff">7</span>).add(<span style="color:#ae81ff">7</span>).add(<span style="color:#ae81ff">7</span>).add(<span style="color:#ae81ff">7</span>).add(<span style="color:#ae81ff">7</span>)
 	<span style="color:#75715e">// s := create(1)
-</span><span style="color:#75715e"></span>	<span style="color:#a6e22e">s</span> = <span style="color:#a6e22e">removeElements</span>(<span style="color:#a6e22e">s</span>, <span style="color:#ae81ff">7</span>)
-	<span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">display</span>()
+</span><span style="color:#75715e"></span>	s <span style="color:#f92672">=</span> removeElements(s, <span style="color:#ae81ff">7</span>)
+	s.display()
 }
 </code></pre></div>
               
