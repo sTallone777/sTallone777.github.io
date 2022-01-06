@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="SSL Command" />
+<meta property="og:description" content="Common command of SSL &amp; TLS" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://stallone777.github.io/post/ssl/ssl-command/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-12-07T15:23:53+09:00" />
+<meta property="article:modified_time" content="2020-12-07T15:23:53+09:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="SSL Command"/>
+<meta name="twitter:description" content="Common command of SSL &amp; TLS"/>
+
+  
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#262d33">
+  <title>
+    
+    Ranbo - SSL Command
+    
+  </title>
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  
+  
+  
+  <link rel="stylesheet" href="/minima.1641436919.css">
+
+  
+  
+  <script defer type="text/javascript" src="/minima.1641436919.js"></script>
+</head>
+<script>
+  try {
+    if (!('theme' in localStorage)) {
+      localStorage.theme = window.matchMedia('(prefer-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.querySelector('html').classList.add(localStorage.theme);
+  } catch (e) {
+    console.error(e);
+  }
+</script>
+
+<body class=" sm:mx-5 sm:my-0">
+  <header class="flex justify-between items-center mb-6 sm:my-3">
+  <div class="flex items-center">
+    
+    <div id="theme-switcher" class="text-4xl cursor-pointer">🌝</div>
+  </div>
+  <nav class="flex items-center
+    whitespace-nowrap overflow-x-auto overflow-y-hidden">
+    
+    <a class="ml-5" href="/">Home</a>
+    
+    <a class="ml-5" href="/categories">Categories</a>
+    
+    <a class="ml-5" href="/tags">tags</a>
+    
+    <a class="ml-5" href="/about">About</a>
+    
+  </nav>
+</header>
+  
+  
+
+<h1 class="mt-6 mb-6">SSL Command</h1>
+<div class="mb-3 text-xs flex justify-between sm:flex-col">
+	<div>
+	
+		Posted at &mdash; Dec 07, 2020
+	
+		
+	</div>
+	
+	<div class="sm:mt-4">
+		
+		<a class="not-first:ml-3" href="/tags/ssl">#ssl</a>
+		
+	</div>
+	
+</div>
+<main>
+	<p></p>
+	<article class="md">
+		<p>Common command of SSL &amp; TLS</p>
+<h1 id="certificates-generation-and-publisher">Certificate&rsquo;s generation and publisher</h1>
+<h3 id="rootca作成keytool">RootCA作成(keytool)：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">keytool -genkeypair -alias <span class="o">{</span>rootca_name<span class="o">}</span> -keyalg RSA -keysize <span class="m">2048</span> -validity <span class="m">7300</span> -keystore ca.jks
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="rootcaで二級ca作成に関するコマンドkeytool">RootCAで二級CA作成に関するコマンド(keytool)：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#独自証明書作成：</span>
+keytool -genkeypair -alias <span class="o">{</span>subca_name<span class="o">}</span> -keyalg RSA -keysize <span class="m">2048</span> -validity <span class="m">7300</span> -keystore ca.jks
+
+<span class="c1">#独自証明書の請求書を作成：</span>
+keytool -certreq -alias <span class="o">{</span>subca_name<span class="o">}</span> -file <span class="o">{</span>subca_name<span class="o">}</span>.csr -keystore ca.jks
+
+<span class="c1">#RootCAで独自証明書をサイン：</span>
+keytool -gencert -alias <span class="o">{</span>rootca_name<span class="o">}</span> -keystore ca.jks -infile <span class="o">{</span>subca_name<span class="o">}</span>.csr -outfile <span class="o">{</span>subca_name<span class="o">}</span>.cer　-validity <span class="m">7300</span>
+
+<span class="c1">#証明書の証明書チェーンをキーストアに入れる：</span>
+keytool -importcert -alias <span class="o">{</span>subca_name<span class="o">}</span> -file <span class="o">{</span>subca_name<span class="o">}</span>.cer -keystore ca.jks
+
+<span class="c1">#p12形式のモニタサーバ証明書をエクスポート：</span>
+keytool -importkeystore -srckeystore ca.jks -destkeystore jp.cps-iot.<span class="o">{</span>your_filename<span class="o">}</span>.P12 -srcalias <span class="o">{</span>subca_name<span class="o">}</span> -destalias pvk -srcstoretype JKS -deststoretype PKCS12 -noprompt
+
+<span class="c1">#p12からclient証明書を取り出す：</span>
+openssl pkcs12 -in .<span class="se">\P</span>F.pfx -nokeys -clcerts -out PF-cert.pem
+
+<span class="c1">#キーペアを取り出す：</span>
+openssl pkcs12 -in .<span class="se">\P</span>F.pfx -nocerts -nodes -out PF-keypair.pem
+
+<span class="c1"># keystoreから証明書をエクスポート：</span>
+
+keytool -exportcert -alias <span class="o">{</span>rootca_name<span class="o">}</span> -keystore ca.jks  -file <span class="o">{</span>rootca_name<span class="o">}</span>.cer
+	
+<span class="c1">#cer⇒pem</span>
+openssl x509 -inform der -in <span class="o">{</span>rootca_name<span class="o">}</span>.cer -out <span class="o">{</span>rootca_name<span class="o">}</span>.pem
+
+<span class="c1">#pem⇒der</span>
+openssl x509 -inform PEM -in PF-cert.pem -outform der -out 0000.der
+
+<span class="c1">#証明書から公開鍵をエクスポート：</span>
+openssl x509 -outform pem -in 0000.pem -pubkey -out 000000.key
+
+<span class="c1">#P12からオリジナル証明書(秘密鍵入り)：</span>
+openssl pkcs12 -in myssl.pfx -nodes -out server.pem
+
+<span class="c1">#秘密鍵をエクスポート：</span>
+openssl rsa -in server.pem -out server.key
+
+<span class="c1">#公開鍵をエクスポート：</span>
+openssl x509 -in server.pem -out server.crt
+
+<span class="c1">#P12から秘密鍵：</span>
+openssl pkcs12 -in test.p12 -nocerts -out key.pem
+
+<span class="c1">#キーベアから秘密鍵：</span>
+openssl rsa -in keypair.key -out private.key
+
+<span class="c1">#キーペアから公開鍵：</span>
+openssl rsa -in keypair.key -pubout -out public.key
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="keystore操作">keystore操作：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#export:</span>
+keytool -export -keystore ca.jks -file xxx.cer/pem -alias xxx
+
+<span class="c1">#import:</span>
+keytool -import -alias xxxx -file xxx.pem/cer -keystore xxxxx.truststore
+
+<span class="c1">#truststore作成：</span>
+keytool -import -alias selfca -file .<span class="se">\s</span>elfca.pem -keystore cacert.truststore
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="opensslで証明書作成">opensslで証明書作成：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1">#private key作成：</span>
+    <span class="c1">#passwordなし</span>
+    openssl genrsa -out xxx_key.pem <span class="m">2048</span>
+
+    <span class="c1">#passwordあり(des3で暗号化)</span>
+    openssl genrsa -des3 -out xxx_key.pem <span class="m">2048</span>
+
+<span class="c1">#請求書を作成：</span>
+openssl req -new -key .<span class="se">\x</span>xx_key.pem -out xxx_crt.csr -config C:<span class="se">\O</span>penSSL-Win64<span class="se">\b</span>in<span class="se">\o</span>penssl.cfg
+
+<span class="c1">#証明書作成</span>
+    <span class="c1">#rootca:</span>
+        &gt;openssl x509 -req -in .<span class="se">\r</span>ootca.csr -signkey .<span class="se">\r</span>ootca-key.pem -out rootca.pem
+    
+    <span class="c1">#二級CA：</span>
+        openssl x509 -req -in .<span class="se">\x</span>xx_crt.csr -signkey .<span class="se">\x</span>xx_key.pem -out xxx_crt.pem -CA .<span class="se">\r</span>ootca.pem -CAkey .<span class="se">\r</span>ootca-key.pem -CAcreateserial -days <span class="m">7300</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+	</article>
+</main>
+
+
+
+
+
+	
+
+	
+
+	
+
+
+
+  <footer class="mt-8 flex sm:flex-col-reverse justify-between items-center">
+  <p class="mt-0 text-sm">
+
+  </p>
+  <p class="flex items-center mt-0">
+    
+      <a class="icon mx-2" href="https://github.com/stallone777" title="github">
+      
+        <svg fill="#63636f" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      
+      </a>
+    
+      <a class="icon mx-2" href="/index.xml" title="rss">
+      
+        <svg fill="#63636f" t="1626591563876" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1984" width="18" height="16"><path d="M128 768a128 128 0 1 0 0 256 128 128 0 0 0 0-256zM0 368v176c265.104 0 480 214.912 480 480h176c0-362.32-293.696-656-656-656zM0 0v176c468.336 0 848 379.664 848 848h176C1024 458.464 565.536 0 0 0z" p-id="1985"></path></svg>
+      
+      </a>
+    
+  </p>
+</footer>
+</body>
+</html>

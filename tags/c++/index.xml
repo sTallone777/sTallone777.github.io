@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>c&#43;&#43; on Ranbo</title>
+    <link>https://stallone777.github.io/tags/c&#43;&#43;/</link>
+    <description>Recent content in c&#43;&#43; on Ranbo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Jan 2022 23:08:00 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>用vscode写c&#43;&#43;</title>
+      <link>https://stallone777.github.io/post/cpp/cpp_vscode/</link>
+      <pubDate>Wed, 05 Jan 2022 23:08:00 +0900</pubDate>
+      
+      <guid>https://stallone777.github.io/post/cpp/cpp_vscode/</guid>
+      <description>关于用vscode进行c++开发的配置 1.在vscode中安装[cpptools]插件 ※Offline installation packages:
+vscode-cpptools
+2.安装 MinGW MinGW download
+※Download the latest release of [x86_64-posix-seh] and unzip to C:\Program Files\mingw64
+3.配置系统环境变量 Add to path C:\Program Files\mingw64\bin\
+校验命令: 在CMD中输入 g++ 如果输出：&amp;gt; g++: fatal error: no input files. 则表明配置成功。
+4.配置 vscode config files</description>
+    </item>
+    
+  </channel>
+</rss>

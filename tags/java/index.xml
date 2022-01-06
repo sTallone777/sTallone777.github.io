@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>java on Ranbo</title>
+    <link>https://stallone777.github.io/tags/java/</link>
+    <description>Recent content in java on Ranbo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 06 Jan 2022 11:23:04 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自动生成mybatis entities 和 mappers</title>
+      <link>https://stallone777.github.io/post/java/autogen_mybatis/</link>
+      <pubDate>Thu, 06 Jan 2022 11:23:04 +0900</pubDate>
+      
+      <guid>https://stallone777.github.io/post/java/autogen_mybatis/</guid>
+      <description>1.下载 [MyBatis Builder] plugin 2.打开插件，连接DB </description>
+    </item>
+    
+    <item>
+      <title>Delegate In Java And C#</title>
+      <link>https://stallone777.github.io/post/csharp/lambda1/</link>
+      <pubDate>Sun, 20 Dec 2020 14:23:13 +0900</pubDate>
+      
+      <guid>https://stallone777.github.io/post/csharp/lambda1/</guid>
+      <description>&lt;p&gt;Introduce the difference between java and c# lambda expression.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

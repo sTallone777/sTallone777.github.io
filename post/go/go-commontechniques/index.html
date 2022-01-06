@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Go CommonTechniques" />
+<meta property="og:description" content="Experiences summary of golang." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://stallone777.github.io/post/go/go-commontechniques/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-12-03T12:38:30+09:00" />
+<meta property="article:modified_time" content="2020-12-03T12:38:30+09:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Go CommonTechniques"/>
+<meta name="twitter:description" content="Experiences summary of golang."/>
+
+  
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#262d33">
+  <title>
+    
+    Ranbo - Go CommonTechniques
+    
+  </title>
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  
+  
+  
+  <link rel="stylesheet" href="/minima.1641436919.css">
+
+  
+  
+  <script defer type="text/javascript" src="/minima.1641436919.js"></script>
+</head>
+<script>
+  try {
+    if (!('theme' in localStorage)) {
+      localStorage.theme = window.matchMedia('(prefer-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.querySelector('html').classList.add(localStorage.theme);
+  } catch (e) {
+    console.error(e);
+  }
+</script>
+
+<body class=" sm:mx-5 sm:my-0">
+  <header class="flex justify-between items-center mb-6 sm:my-3">
+  <div class="flex items-center">
+    
+    <div id="theme-switcher" class="text-4xl cursor-pointer">🌝</div>
+  </div>
+  <nav class="flex items-center
+    whitespace-nowrap overflow-x-auto overflow-y-hidden">
+    
+    <a class="ml-5" href="/">Home</a>
+    
+    <a class="ml-5" href="/categories">Categories</a>
+    
+    <a class="ml-5" href="/tags">tags</a>
+    
+    <a class="ml-5" href="/about">About</a>
+    
+  </nav>
+</header>
+  
+  
+
+<h1 class="mt-6 mb-6">Go CommonTechniques</h1>
+<div class="mb-3 text-xs flex justify-between sm:flex-col">
+	<div>
+	
+		Posted at &mdash; Dec 03, 2020
+	
+		
+	</div>
+	
+	<div class="sm:mt-4">
+		
+		<a class="not-first:ml-3" href="/tags/go">#go</a>
+		
+	</div>
+	
+</div>
+<main>
+	<p></p>
+	<article class="md">
+		<p>Experiences summary of golang.</p>
+<h2 id="data-conversion">Data Conversion</h2>
+<h4 id="1int-to-string">1)int to string</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="nx">s</span> <span class="o">:=</span> <span class="nx">strconv</span><span class="p">.</span><span class="nf">Itoa</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
+<span class="nx">s</span> <span class="o">:=</span> <span class="nx">strconv</span><span class="p">.</span><span class="nf">FormatInt</span><span class="p">(</span><span class="nb">int64</span><span class="p">(</span><span class="nx">i</span><span class="p">),</span> <span class="mi">10</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="2int64-to-string">2)int64 to string</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="nx">i</span> <span class="o">:=</span> <span class="nb">int64</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span>
+<span class="nx">s</span> <span class="o">:=</span> <span class="nx">strconv</span><span class="p">.</span><span class="nf">FormatInt</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="3string-to-int">3)string to int</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="nx">i</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">strconv</span><span class="p">.</span><span class="nf">Atoi</span><span class="p">(</span><span class="nx">s</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="4string-to-int64">4)string to int64</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="nx">i</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">strconv</span><span class="p">.</span><span class="nf">ParseInt</span><span class="p">(</span><span class="nx">s</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">64</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="5float-to-string">5)float to string</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="nx">v</span> <span class="o">:=</span> <span class="mf">3.1415926535</span>
+<span class="nx">s1</span> <span class="o">:=</span> <span class="nx">strconv</span><span class="p">.</span><span class="nf">FormatFloat</span><span class="p">(</span><span class="nx">v</span><span class="p">,</span> <span class="sc">&#39;E&#39;</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span><span class="c1">//float32s2 := strconv.FormatFloat(v, &#39;E&#39;, -1, 64)//float64
+</span></code></pre></td></tr></table>
+</div>
+</div><h4 id="6string-to-float">6)string to float</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="nx">s</span> <span class="o">:=</span> <span class="s">&#34;3.1415926535&#34;</span>
+<span class="nx">v1</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">strconv</span><span class="p">.</span><span class="nf">ParseFloat</span><span class="p">(</span><span class="nx">v</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span>
+<span class="nx">v2</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">strconv</span><span class="p">.</span><span class="nf">ParseFloat</span><span class="p">(</span><span class="nx">v</span><span class="p">,</span> <span class="mi">64</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="float-format">Float format</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="nx">a</span><span class="o">:=</span><span class="nx">strconv</span><span class="p">.</span><span class="nf">FormatFloat</span><span class="p">(</span><span class="mf">10.100</span><span class="p">,</span><span class="sc">&#39;f&#39;</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">32</span><span class="p">)</span>
+<span class="nx">output</span><span class="p">:</span><span class="mf">10.1</span>
+<span class="nx">a</span> <span class="o">:=</span> <span class="nx">strconv</span><span class="p">.</span><span class="nf">FormatFloat</span><span class="p">(</span><span class="mf">10.101</span><span class="p">,</span> <span class="sc">&#39;f&#39;</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">64</span><span class="p">)</span>
+<span class="nx">output</span><span class="p">:</span><span class="mf">10.101</span>
+<span class="nx">a</span> <span class="o">:=</span> <span class="nx">strconv</span><span class="p">.</span><span class="nf">FormatFloat</span><span class="p">(</span><span class="mf">10.010</span><span class="p">,</span> <span class="sc">&#39;f&#39;</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">64</span><span class="p">)</span>
+<span class="nx">output</span><span class="p">:</span><span class="mf">10.01</span>
+<span class="nx">a</span><span class="o">:=</span><span class="nx">strconv</span><span class="p">.</span><span class="nf">FormatFloat</span><span class="p">(</span><span class="mf">10.1</span><span class="p">,</span><span class="sc">&#39;f&#39;</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">64</span><span class="p">)</span>
+<span class="nx">output</span><span class="p">:</span><span class="mf">10.10</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="fmt">fmt</h2>
+<h4 id="1print">1)Print</h4>
+<p>Output the content to the standard output</p>
+<p>■　Print : standard output</p>
+<p>■　Printf : standard output with format</p>
+<h5 id="format">Format</h5>
+<table>
+<thead>
+<tr>
+<th>占位符</th>
+<th>说明</th>
+<th>举例</th>
+<th>输出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>%v</td>
+<td>相应值的默认格式。</td>
+<td>Printf(&quot;%v&quot;, people)</td>
+<td>{zhangsan}</td>
+</tr>
+<tr>
+<td>%+v</td>
+<td>打印结构体时，会添加字段名</td>
+<td>Printf(&quot;%+v&quot;, people)</td>
+<td>{Name:zhangsan}</td>
+</tr>
+<tr>
+<td>%#v</td>
+<td>相应值的Go语法表示</td>
+<td>Printf(&quot;#v&quot;, people)</td>
+<td>main.Human{Name:&ldquo;zhangsan&rdquo;}</td>
+</tr>
+<tr>
+<td>%T</td>
+<td>相应值的类型的Go语法表示</td>
+<td>Printf(&quot;%T&quot;, people)</td>
+<td>main.Human</td>
+</tr>
+<tr>
+<td>%%</td>
+<td>字面上的百分号，并非值的占位符</td>
+<td>Printf(&quot;%%&quot;)</td>
+<td>%</td>
+</tr>
+<tr>
+<td>%t</td>
+<td>true 或 false。</td>
+<td>Printf(&quot;%t&quot;, true)</td>
+<td>true</td>
+</tr>
+<tr>
+<td>%b</td>
+<td>二进制表示</td>
+<td>Printf(&quot;%b&quot;, 5)</td>
+<td>101</td>
+</tr>
+<tr>
+<td>%c</td>
+<td>相应Unicode码点所表示的字符</td>
+<td>Printf(&quot;%c&quot;, 0x4E2D)</td>
+<td>中</td>
+</tr>
+<tr>
+<td>%d</td>
+<td>十进制表示</td>
+<td>Printf(&quot;%d&quot;, 0x12)</td>
+<td>18</td>
+</tr>
+<tr>
+<td>%o</td>
+<td>八进制表示</td>
+<td>Printf(&quot;%d&quot;, 10)</td>
+<td>12</td>
+</tr>
+<tr>
+<td>%q</td>
+<td>单引号围绕的字符字面值，由Go语法安全地转义</td>
+<td>Printf(&quot;%q&quot;, 0x4E2D)</td>
+<td>&lsquo;中&rsquo;</td>
+</tr>
+<tr>
+<td>%x</td>
+<td>十六进制表示，字母形式为小写 a-f</td>
+<td>Printf(&quot;%x&quot;, 13)</td>
+<td>d</td>
+</tr>
+<tr>
+<td>%X</td>
+<td>十六进制表示，字母形式为大写 A-F</td>
+<td>Printf(&quot;%x&quot;, 13)</td>
+<td>D</td>
+</tr>
+<tr>
+<td>%U</td>
+<td>Unicode格式：U+1234，等同于 &ldquo;U+%04X&rdquo;</td>
+<td>Printf(&quot;%U&quot;, 0x4E2D)</td>
+<td>U+4E2D</td>
+</tr>
+</tbody>
+</table>
+<h5 id="字符串与字节切片">字符串与字节切片</h5>
+<table>
+<thead>
+<tr>
+<th>占位符</th>
+<th>说明</th>
+<th>举例</th>
+<th>输出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>%s</td>
+<td>输出字符串表示（string类型或[]byte)</td>
+<td>Printf(&quot;%s&quot;, []byte(&ldquo;Go语言&rdquo;))</td>
+<td>Go语言</td>
+</tr>
+<tr>
+<td>%q</td>
+<td>双引号围绕的字符串，由Go语法安全地转义</td>
+<td>Printf(&quot;%q&quot;, &ldquo;Go语言&rdquo;)</td>
+<td>&ldquo;Go语言&rdquo;</td>
+</tr>
+<tr>
+<td>%x</td>
+<td>十六进制，小写字母，每字节两个字符</td>
+<td>Printf(&quot;%x&quot;, &ldquo;golang&rdquo;)</td>
+<td>676f6c616e67</td>
+</tr>
+<tr>
+<td>%X</td>
+<td>十六进制，大写字母，每字节两个字符</td>
+<td>Printf(&quot;%X&quot;, &ldquo;golang&rdquo;)</td>
+<td>676F6C616E67</td>
+</tr>
+</tbody>
+</table>
+<h5 id="其它标记">其它标记</h5>
+<table>
+<thead>
+<tr>
+<th>占位符</th>
+<th>说明</th>
+<th>举例</th>
+<th>输出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>总打印数值的正负号；对于%q（%+q）保证只输出ASCII编码的字符。</td>
+<td>Printf(&quot;%+q&quot;, &ldquo;中文&rdquo;)</td>
+<td>&ldquo;\u4e2d\u6587&rdquo;</td>
+</tr>
+<tr>
+<td>-</td>
+<td>在右侧而非左侧填充空格（左对齐该区域）</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>#</td>
+<td>备用格式：为八进制添加前导 0（%#o）</td>
+<td>Printf(&quot;%#U&quot;, &lsquo;中&rsquo;)</td>
+<td>U+4E2D</td>
+</tr>
+<tr>
+<td>0</td>
+<td>填充前导的0而非空格；对于数字，这会将填充移到正负号之后</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>■　Println : standard output with /n</p>
+<h4 id="2fprint">2)Fprint</h4>
+<p>Input data to <code>io.Writer</code> which is the interface that usually used to write content to a file.</p>
+<p>■　Fprintln :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="nx">fmt</span><span class="p">.</span><span class="nf">Fprintln</span><span class="p">(</span><span class="nx">os</span><span class="p">.</span><span class="nx">Stdout</span><span class="p">,</span> <span class="s">&#34;input content&#34;</span><span class="p">)</span>
+<span class="nx">fileObj</span><span class="p">,</span> <span class="nx">err</span> <span class="o">:=</span> <span class="nx">os</span><span class="p">.</span><span class="nf">OpenFile</span><span class="p">(</span><span class="s">&#34;./xx.txt&#34;</span><span class="p">,</span> <span class="nx">os</span><span class="p">.</span><span class="nx">O_CREATE</span><span class="p">|</span><span class="nx">os</span><span class="p">.</span><span class="nx">O_WRONLY</span><span class="p">|</span><span class="nx">os</span><span class="p">.</span><span class="nx">O_APPEND</span><span class="p">,</span> <span class="mo">0644</span><span class="p">)</span>
+<span class="k">if</span> <span class="nx">err</span> <span class="o">!=</span> <span class="kc">nil</span> <span class="p">{</span>
+	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;open file error:&#34;</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>
+	<span class="k">return</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>■　Fprintf :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="nx">fmt</span><span class="p">.</span><span class="nf">Fprintf</span><span class="p">(</span><span class="nx">fileObj</span><span class="p">,</span> <span class="s">&#34;input data to file：%s&#34;</span><span class="p">,</span> <span class="s">&#34;xxx&#34;</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="3sprint">3)Sprint</h4>
+<p>Convert input data to string</p>
+	</article>
+</main>
+
+
+
+
+
+	
+
+	
+
+	
+
+
+
+  <footer class="mt-8 flex sm:flex-col-reverse justify-between items-center">
+  <p class="mt-0 text-sm">
+
+  </p>
+  <p class="flex items-center mt-0">
+    
+      <a class="icon mx-2" href="https://github.com/stallone777" title="github">
+      
+        <svg fill="#63636f" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      
+      </a>
+    
+      <a class="icon mx-2" href="/index.xml" title="rss">
+      
+        <svg fill="#63636f" t="1626591563876" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1984" width="18" height="16"><path d="M128 768a128 128 0 1 0 0 256 128 128 0 0 0 0-256zM0 368v176c265.104 0 480 214.912 480 480h176c0-362.32-293.696-656-656-656zM0 0v176c468.336 0 848 379.664 848 848h176C1024 458.464 565.536 0 0 0z" p-id="1985"></path></svg>
+      
+      </a>
+    
+  </p>
+</footer>
+</body>
+</html>

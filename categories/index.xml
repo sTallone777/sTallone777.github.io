@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Ranbo</title>
+    <link>https://stallone777.github.io/categories/</link>
+    <description>Recent content in Categories on Ranbo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 06 Jan 2022 11:23:04 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ide</title>
+      <link>https://stallone777.github.io/categories/ide/</link>
+      <pubDate>Thu, 06 Jan 2022 11:23:04 +0900</pubDate>
+      
+      <guid>https://stallone777.github.io/categories/ide/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>command</title>
+      <link>https://stallone777.github.io/categories/command/</link>
+      <pubDate>Thu, 06 Jan 2022 10:55:12 +0900</pubDate>
+      
+      <guid>https://stallone777.github.io/categories/command/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>leetcode</title>
+      <link>https://stallone777.github.io/categories/leetcode/</link>
+      <pubDate>Thu, 06 Jan 2022 09:25:04 +0900</pubDate>
+      
+      <guid>https://stallone777.github.io/categories/leetcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>program</title>
+      <link>https://stallone777.github.io/categories/program/</link>
+      <pubDate>Thu, 31 Dec 2020 21:21:10 +0900</pubDate>
+      
+      <guid>https://stallone777.github.io/categories/program/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>algorithm</title>
+      <link>https://stallone777.github.io/categories/algorithm/</link>
+      <pubDate>Sun, 27 Dec 2020 18:22:28 +0900</pubDate>
+      
+      <guid>https://stallone777.github.io/categories/algorithm/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

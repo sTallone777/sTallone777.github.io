@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>golang on Ranbo</title>
+    <link>https://stallone777.github.io/tags/golang/</link>
+    <description>Recent content in golang on Ranbo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Dec 2020 18:22:28 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BinaryTree in Go</title>
+      <link>https://stallone777.github.io/post/algorithm/go-binarytree/</link>
+      <pubDate>Sun, 27 Dec 2020 18:22:28 +0900</pubDate>
+      
+      <guid>https://stallone777.github.io/post/algorithm/go-binarytree/</guid>
+      <description>&lt;p&gt;Introduce how to create a binary-tree with go.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
