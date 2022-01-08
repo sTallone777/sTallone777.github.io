@@ -6,7 +6,16 @@
     <description>Recent content in command on Ranbo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Jan 2022 10:55:12 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/categories/command/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Jan 2022 11:51:38 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/categories/command/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ffmpeg视频转换命令</title>
+      <link>https://stallone777.github.io/post/media/ffmpeg/</link>
+      <pubDate>Sat, 08 Jan 2022 11:51:38 +0900</pubDate>
+      
+      <guid>https://stallone777.github.io/post/media/ffmpeg/</guid>
+      <description>MKV转MP4 1  ffmpeg -i input.mkv -c:v copy -c:a copy output.mp4   压缩视频 1  ffmpeg -i input.mp4 -b:v 1500k output.mp4   截取视频 1 2 3 4 5 6 7  ffmpeg -ss 00:30:00 -to 01:45:10 -i video.mp4 -c copy cut.mp4 # -ss 时间：从哪个时间点开始 # video.mp4 ：是路径下的视频，例如C:\video.mp4 # -to 时间：从哪个时间点结束 # -c：是视音频的格式 # copy：是指输出视频直接copy输入视频 # cut.mp4:指输出视频的地址，例如：C:\cut.mp4   </description>
+    </item>
+    
     <item>
       <title>一些版本管理工具</title>
       <link>https://stallone777.github.io/post/others/version_control_tool/</link>

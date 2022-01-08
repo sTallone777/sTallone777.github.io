@@ -3,24 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="自动生成mybatis entities 和 mappers" />
-<meta property="og:description" content="1.下载 [MyBatis Builder] plugin 2.打开插件，连接DB " />
+  <meta property="og:title" content="ffmpeg视频转换命令" />
+<meta property="og:description" content="MKV转MP4 1  ffmpeg -i input.mkv -c:v copy -c:a copy output.mp4   压缩视频 1  ffmpeg -i input.mp4 -b:v 1500k output.mp4   截取视频 1 2 3 4 5 6 7  ffmpeg -ss 00:30:00 -to 01:45:10 -i video.mp4 -c copy cut.mp4 # -ss 时间：从哪个时间点开始 # video.mp4 ：是路径下的视频，例如C:\video.mp4 # -to 时间：从哪个时间点结束 # -c：是视音频的格式 # copy：是指输出视频直接copy输入视频 # cut.mp4:指输出视频的地址，例如：C:\cut.mp4   " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://stallone777.github.io/post/java/autogen_mybatis/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2022-01-06T11:23:04+09:00" />
-<meta property="article:modified_time" content="2022-01-06T11:23:04+09:00" />
+<meta property="og:url" content="https://stallone777.github.io/post/media/ffmpeg/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-01-08T11:51:38+09:00" />
+<meta property="article:modified_time" content="2022-01-08T11:51:38+09:00" />
 
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="自动生成mybatis entities 和 mappers"/>
-<meta name="twitter:description" content="1.下载 [MyBatis Builder] plugin 2.打开插件，连接DB "/>
+<meta name="twitter:title" content="ffmpeg视频转换命令"/>
+<meta name="twitter:description" content="MKV转MP4 1  ffmpeg -i input.mkv -c:v copy -c:a copy output.mp4   压缩视频 1  ffmpeg -i input.mp4 -b:v 1500k output.mp4   截取视频 1 2 3 4 5 6 7  ffmpeg -ss 00:30:00 -to 01:45:10 -i video.mp4 -c copy cut.mp4 # -ss 时间：从哪个时间点开始 # video.mp4 ：是路径下的视频，例如C:\video.mp4 # -to 时间：从哪个时间点结束 # -c：是视音频的格式 # copy：是指输出视频直接copy输入视频 # cut.mp4:指输出视频的地址，例如：C:\cut.mp4   "/>
 
   
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#262d33">
   <title>
     
-    Ranbo - 自动生成mybatis entities 和 mappers
+    Ranbo - ffmpeg视频转换命令
     
   </title>
   
@@ -71,18 +71,18 @@
   
   
 
-<h1 class="mt-6 mb-6">自动生成mybatis entities 和 mappers</h1>
+<h1 class="mt-6 mb-6">ffmpeg视频转换命令</h1>
 <div class="mb-3 text-xs flex justify-between sm:flex-col">
 	<div>
 	
-		Posted at &mdash; Jan 06, 2022
+		Posted at &mdash; Jan 08, 2022
 	
 		
 	</div>
 	
 	<div class="sm:mt-4">
 		
-		<a class="not-first:ml-3" href="/tags/java">#java</a>
+		<a class="not-first:ml-3" href="/tags/ffmpeg">#ffmpeg</a>
 		
 	</div>
 	
@@ -90,12 +90,46 @@
 <main>
 	<p></p>
 	<article class="md">
-		<h2 id="1下载-mybatis-builder-plugin">1.下载 [MyBatis Builder] plugin</h2>
-<p><img src="/img/mybatis1.jpg" alt="avatar"></p>
-<h2 id="2打开插件连接db">2.打开插件，连接DB</h2>
-<p><img src="/img/mybatis3.jpg" alt="avatar"><br>
-<img src="/img/mybatis4.jpg" alt="avatar"></p>
-
+		<h2 id="mkv转mp4">MKV转MP4</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">    ffmpeg -i input.mkv -c:v copy -c:a copy output.mp4
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="压缩视频">压缩视频</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">    ffmpeg -i input.mp4  -b:v 1500k output.mp4
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="截取视频">截取视频</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">    ffmpeg -ss 00:30:00 -to 01:45:10 -i video.mp4 -c copy cut.mp4
+    <span class="c1"># -ss 时间：从哪个时间点开始</span>
+    <span class="c1"># video.mp4 ：是路径下的视频，例如C:\video.mp4</span>
+    <span class="c1"># -to 时间：从哪个时间点结束</span>
+    <span class="c1"># -c：是视音频的格式</span>
+    <span class="c1"># copy：是指输出视频直接copy输入视频</span>
+    <span class="c1"># cut.mp4:指输出视频的地址，例如：C:\cut.mp4</span>
+</code></pre></td></tr></table>
+</div>
+</div>
 	</article>
 </main>
 
