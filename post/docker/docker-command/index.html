@@ -32,11 +32,11 @@
   
   
   
-  <link rel="stylesheet" href="/minima.1641610673.css">
+  <link rel="stylesheet" href="/minima.1641992091.css">
 
   
   
-  <script defer type="text/javascript" src="/minima.1641610673.js"></script>
+  <script defer type="text/javascript" src="/minima.1641992091.js"></script>
 </head>
 <script>
   try {
@@ -172,6 +172,23 @@
 </span><span class="lnt">76
 </span><span class="lnt">77
 </span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span><span class="lnt">81
+</span><span class="lnt">82
+</span><span class="lnt">83
+</span><span class="lnt">84
+</span><span class="lnt">85
+</span><span class="lnt">86
+</span><span class="lnt">87
+</span><span class="lnt">88
+</span><span class="lnt">89
+</span><span class="lnt">90
+</span><span class="lnt">91
+</span><span class="lnt">92
+</span><span class="lnt">93
+</span><span class="lnt">94
+</span><span class="lnt">95
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Search image</span>
@@ -185,6 +202,9 @@
 
 <span class="c1"># Enter the container</span>
     docker attach <span class="o">[</span>containerID<span class="o">]</span>
+
+<span class="c1"># Enter container by root user</span>
+    docker <span class="nb">exec</span> -it -u root &lt;container id&gt; bash
 
 <span class="c1"># Create a container and run it</span>
     docker run -it ubuntu:14.04 /bin/bash
@@ -200,6 +220,20 @@
 <span class="c1"># Create a container with sqlserver</span>
     docker run -e <span class="s2">&#34;ACCEPT_EULA=Y&#34;</span> -e <span class="s2">&#34;SA_PASSWORD=yourStrong(!)Password&#34;</span> -p 1433:1433 --name sqlserver2019 -d mcr.microsoft.com/mssql/server:latest
     sudo docker <span class="nb">exec</span> -it sqlserver2019 <span class="s2">&#34;bash&#34;</span>
+
+<span class="c1"># Create a container via special collation</span>
+   <span class="c1"># eg:</span>
+   <span class="c1"># &gt; docker run \</span>
+   <span class="c1"># --name=mssql \</span>
+   <span class="c1"># --hostname=my-docker-mssql \</span>
+   <span class="c1"># -d \</span>
+   <span class="c1"># -e &#39;ACCEPT_EULA=Y&#39; \</span>
+   <span class="c1"># -e &#39;SA_PASSWORD=mssqllinux@1&#39; \</span>
+   <span class="c1"># -e &#39;MSSQL_LCID=1041&#39; \</span>
+   <span class="c1"># -e &#39;MSSQL_COLLATION=Japanese_CI_AS&#39; \</span>
+   <span class="c1"># -p 1433:1433 \</span>
+   <span class="c1"># microsoft/mssql-server-linux:latest</span>
+    docker run --name<span class="o">=</span>mssql -e <span class="s2">&#34;ACCEPT_EULA=Y&#34;</span> -e <span class="s2">&#34;SA_PASSWORD=yourStrong(!)Password&#34;</span> -e <span class="s1">&#39;MSSQL_COLLATION=Japanese_90_CI_AS&#39;</span> -p 1433:1433 -d mcr.microsoft.com/mssql/server:latest
 
 <span class="c1"># Copy data to container</span>
 <span class="c1"># Format: docker cp {from path}  {container name}:{to path}</span>
