@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:title" content="ffmpeg视频转换命令" />
-<meta property="og:description" content="MKV转MP4 1  ffmpeg -i input.mkv -c:v copy -c:a copy output.mp4   压缩视频 1  ffmpeg -i input.mp4 -b:v 1500k output.mp4   截取视频 1 2 3 4 5 6 7  ffmpeg -ss 00:30:00 -to 01:45:10 -i video.mp4 -c copy cut.mp4 # -ss 时间：从哪个时间点开始 # video.mp4 ：是路径下的视频，例如C:\video.mp4 # -to 时间：从哪个时间点结束 # -c：是视音频的格式 # copy：是指输出视频直接copy输入视频 # cut.mp4:指输出视频的地址，例如：C:\cut.mp4   合并视频 1 2 3 4  # 先将 mp4 转化为同样编码形式的 ts 流，因为 ts流是可以 concate 的，先把 mp4 封装成 ts ，然后 concate ts 流， 最后再把 ts 流转化为 mp4。 ffmpeg -i 1." />
+<meta property="og:description" content="MKV转MP4 1  ffmpeg -i input.mkv -c:v copy -c:a copy output.mp4   压缩视频 1  ffmpeg -i input.mp4 -b:v 1500k output.mp4   截取视频 1 2 3 4 5 6 7  ffmpeg -ss 00:30:00 -to 01:45:10 -i video.mp4 -c copy cut.mp4 # -ss 时间：从哪个时间点开始 # video.mp4 ：是路径下的视频，例如C:\video.mp4 # -to 时间：从哪个时间点结束 # -c：是视音频的格式 # copy：是指输出视频直接copy输入视频 # cut.mp4:指输出视频的地址，例如：C:\cut.mp4   合并视频 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  # 方法一： # 先将mp4转化为同样编码形式的ts流，因为ts流是可以concate的， # 所以先把mp4封装成ts然后concate ts流，最后再把ts流转化为mp4。 ffmpeg -i 1." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://stallone777.github.io/post/media/ffmpeg/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2022-01-08T11:51:38+09:00" />
@@ -13,7 +13,7 @@
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="ffmpeg视频转换命令"/>
-<meta name="twitter:description" content="MKV转MP4 1  ffmpeg -i input.mkv -c:v copy -c:a copy output.mp4   压缩视频 1  ffmpeg -i input.mp4 -b:v 1500k output.mp4   截取视频 1 2 3 4 5 6 7  ffmpeg -ss 00:30:00 -to 01:45:10 -i video.mp4 -c copy cut.mp4 # -ss 时间：从哪个时间点开始 # video.mp4 ：是路径下的视频，例如C:\video.mp4 # -to 时间：从哪个时间点结束 # -c：是视音频的格式 # copy：是指输出视频直接copy输入视频 # cut.mp4:指输出视频的地址，例如：C:\cut.mp4   合并视频 1 2 3 4  # 先将 mp4 转化为同样编码形式的 ts 流，因为 ts流是可以 concate 的，先把 mp4 封装成 ts ，然后 concate ts 流， 最后再把 ts 流转化为 mp4。 ffmpeg -i 1."/>
+<meta name="twitter:description" content="MKV转MP4 1  ffmpeg -i input.mkv -c:v copy -c:a copy output.mp4   压缩视频 1  ffmpeg -i input.mp4 -b:v 1500k output.mp4   截取视频 1 2 3 4 5 6 7  ffmpeg -ss 00:30:00 -to 01:45:10 -i video.mp4 -c copy cut.mp4 # -ss 时间：从哪个时间点开始 # video.mp4 ：是路径下的视频，例如C:\video.mp4 # -to 时间：从哪个时间点结束 # -c：是视音频的格式 # copy：是指输出视频直接copy输入视频 # cut.mp4:指输出视频的地址，例如：C:\cut.mp4   合并视频 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18  # 方法一： # 先将mp4转化为同样编码形式的ts流，因为ts流是可以concate的， # 所以先把mp4封装成ts然后concate ts流，最后再把ts流转化为mp4。 ffmpeg -i 1."/>
 
   
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
@@ -32,11 +32,11 @@
   
   
   
-  <link rel="stylesheet" href="/minima.1642465313.css">
+  <link rel="stylesheet" href="/minima.1642472906.css">
 
   
   
-  <script defer type="text/javascript" src="/minima.1642465313.js"></script>
+  <script defer type="text/javascript" src="/minima.1642472906.js"></script>
 </head>
 <script>
   try {
@@ -132,16 +132,44 @@
 </div><h2 id="合并视频">合并视频</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">  <span class="c1"># 先将 mp4 转化为同样编码形式的 ts 流，因为 ts流是可以 concate 的，先把 mp4 封装成 ts ，然后 concate ts 流， 最后再把 ts 流转化为 mp4。</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">  <span class="c1"># 方法一：</span>
+  <span class="c1"># 先将mp4转化为同样编码形式的ts流，因为ts流是可以concate的，</span>
+  <span class="c1"># 所以先把mp4封装成ts然后concate ts流，最后再把ts流转化为mp4。</span>
     ffmpeg -i 1.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb 1.ts
     ffmpeg -i 2.mp4 -vcodec copy -acodec copy -vbsf h264_mp4toannexb 2.ts
     ffmpeg -i <span class="s2">&#34;concat:1.ts|2.ts&#34;</span> -acodec copy -vcodec copy -absf aac_adtstoasc output.mp4
+  
+  <span class="c1"># wmv转ts</span>
+  <span class="c1"># 保持视频质量：-qscale 0</span>
+    ffmpeg -i 1.wmv -qscale <span class="m">0</span> 1.ts
+
+  <span class="c1"># 方法二：</span>
+  <span class="c1"># 先创建一个文本文件 filelist.txt</span>
+    file <span class="s1">&#39;input1.mkv&#39;</span>
+    file <span class="s1">&#39;input2.mkv&#39;</span>
+    file <span class="s1">&#39;input3.mkv&#39;</span>
+  <span class="c1"># 然后：</span>
+    ffmpeg -f concat -i filelist.txt -c copy output.mkv
 </code></pre></td></tr></table>
 </div>
 </div>
