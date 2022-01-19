@@ -9,19 +9,19 @@
     <lastBuildDate>Tue, 22 Dec 2020 21:56:58 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/tags/csharp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Use EF In DotNet Core</title>
-      <link>https://stallone777.github.io/post/csharp/mvc-ef/</link>
+      <link>https://stallone777.github.io/csharp/mvc-ef/</link>
       <pubDate>Tue, 22 Dec 2020 21:56:58 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/post/csharp/mvc-ef/</guid>
+      <guid>https://stallone777.github.io/csharp/mvc-ef/</guid>
       <description>&lt;p&gt;How to create ef in .net core.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Delegate In Java And C#</title>
-      <link>https://stallone777.github.io/post/csharp/lambda1/</link>
+      <link>https://stallone777.github.io/csharp/lambda1/</link>
       <pubDate>Sun, 20 Dec 2020 14:23:13 +0900</pubDate>
       
-      <guid>https://stallone777.github.io/post/csharp/lambda1/</guid>
+      <guid>https://stallone777.github.io/csharp/lambda1/</guid>
       <description>&lt;p&gt;Introduce the difference between java and c# lambda expression.&lt;/p&gt;</description>
     </item>
     

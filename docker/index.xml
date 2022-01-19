@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dockers on Ranbo</title>
+    <link>https://stallone777.github.io/docker/</link>
+    <description>Recent content in Dockers on Ranbo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Dec 2020 22:02:10 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker Command</title>
+      <link>https://stallone777.github.io/docker/docker-command/</link>
+      <pubDate>Sat, 05 Dec 2020 22:02:10 +0900</pubDate>
+      
+      <guid>https://stallone777.github.io/docker/docker-command/</guid>
+      <description>&lt;p&gt;Common docker command.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

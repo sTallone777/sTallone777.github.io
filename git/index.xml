@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gits on Ranbo</title>
+    <link>https://stallone777.github.io/git/</link>
+    <description>Recent content in Gits on Ranbo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Dec 2020 11:53:10 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Command</title>
+      <link>https://stallone777.github.io/git/git-command/</link>
+      <pubDate>Sat, 05 Dec 2020 11:53:10 +0900</pubDate>
+      
+      <guid>https://stallone777.github.io/git/git-command/</guid>
+      <description>&lt;p&gt;Common command of git.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Others on Ranbo</title>
+    <link>https://stallone777.github.io/others/</link>
+    <description>Recent content in Others on Ranbo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 06 Jan 2022 10:55:12 +0900</lastBuildDate><atom:link href="https://stallone777.github.io/others/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>一些版本管理工具</title>
+      <link>https://stallone777.github.io/others/version_control_tool/</link>
+      <pubDate>Thu, 06 Jan 2022 10:55:12 +0900</pubDate>
+      
+      <guid>https://stallone777.github.io/others/version_control_tool/</guid>
+      <description>版本管理工具介绍  flutter：fvm golang：g download nodejs：nvm download  fvm 1.下载dart dart download
+下载后将dart的bin目录添加到path
+2.通过dart安装fvm pub global activate fvm
+3.修改系统环境变量，添加fvm的缓存目录 1 2 3 4  # 变量名： FVM_HOME # 变量值： D:\fvm   4.fmv常用命令 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16  # 查看可用版本 fvm releases # 安装flutter fvm install &amp;lt;版本&amp;gt; # 查看当前安装了哪些版本 fvm list # 查看当前版本 fvm current # 设置默认版本 # 此命令需要管理员权限 # 此命令需要在flutter项目路径下使用，使用后会在项目路径下生成一个[.</description>
+    </item>
+    
+  </channel>
+</rss>

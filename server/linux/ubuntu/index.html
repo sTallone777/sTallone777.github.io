@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Linux Command Summary" />
+<meta property="og:description" content="The summary about linux common command." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://stallone777.github.io/server/linux/ubuntu/" /><meta property="article:section" content="server" />
+<meta property="article:published_time" content="2021-01-06T14:21:18+09:00" />
+<meta property="article:modified_time" content="2021-01-06T14:21:18+09:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux Command Summary"/>
+<meta name="twitter:description" content="The summary about linux common command."/>
+
+  
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#262d33">
+  <title>
+    
+    Ranbo - Linux Command Summary
+    
+  </title>
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  
+  
+  
+  <link rel="stylesheet" href="/minima.1642604159.css">
+
+  
+  
+  <script defer type="text/javascript" src="/minima.1642604159.js"></script>
+</head>
+<script>
+  try {
+    if (!('theme' in localStorage)) {
+      localStorage.theme = window.matchMedia('(prefer-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.querySelector('html').classList.add(localStorage.theme);
+  } catch (e) {
+    console.error(e);
+  }
+</script>
+
+<body class=" sm:mx-5 sm:my-0">
+  <header class="flex justify-between items-center mb-6 sm:my-3">
+  <div class="flex items-center">
+    
+    <div id="theme-switcher" class="text-4xl cursor-pointer">🌝</div>
+  </div>
+  <nav class="flex items-center
+    whitespace-nowrap overflow-x-auto overflow-y-hidden">
+    
+    <a class="ml-5" href="/">Home</a>
+    
+    <a class="ml-5" href="/categories">Categories</a>
+    
+    <a class="ml-5" href="/tags">tags</a>
+    
+    <a class="ml-5" href="/about">About</a>
+    
+  </nav>
+</header>
+  
+  
+
+<h1 class="mt-6 mb-6">Linux Command Summary</h1>
+<div class="mb-3 text-xs flex justify-between sm:flex-col">
+	<div>
+	
+		Posted at &mdash; Jan 06, 2021
+	
+		
+	</div>
+	
+	<div class="sm:mt-4">
+		
+		<a class="not-first:ml-3" href="/tags/ubuntu">#ubuntu</a>
+		
+	</div>
+	
+</div>
+<main>
+	<p></p>
+	<article class="md">
+		<p>The summary about linux common command.</p>
+<h2 id="vim-command">Vim Command</h2>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CTRL+ALT+T</td>
+<td>打开终端</td>
+</tr>
+<tr>
+<td>Ctrl+a</td>
+<td>光标移动到开始位置</td>
+</tr>
+<tr>
+<td>Ctrl+e</td>
+<td>光标移动到最末尾</td>
+</tr>
+<tr>
+<td>Ctrl+k</td>
+<td>删除此处至末尾的所有内容</td>
+</tr>
+<tr>
+<td>Ctrl+u</td>
+<td>删除此处至开始的所有内容</td>
+</tr>
+<tr>
+<td>Ctrl+d</td>
+<td>删除当前字符</td>
+</tr>
+<tr>
+<td>Ctrl+h</td>
+<td>删除当前字符前一个字符</td>
+</tr>
+<tr>
+<td>Ctrl+w</td>
+<td>删除此处到左边的单词</td>
+</tr>
+<tr>
+<td>Ctrl+y</td>
+<td>粘贴由Ctrl+u， Ctrl+d， Ctrl+w删除的单词</td>
+</tr>
+<tr>
+<td>Ctrl+l</td>
+<td>相当于clear，即清屏</td>
+</tr>
+<tr>
+<td>Ctrl+r</td>
+<td>查找历史命令</td>
+</tr>
+<tr>
+<td>Ctrl+b</td>
+<td>向回移动光标</td>
+</tr>
+<tr>
+<td>Ctrl+f</td>
+<td>向前移动光标</td>
+</tr>
+<tr>
+<td>Ctrl+t</td>
+<td>将光标位置的字符和前一个字符进行位置交换</td>
+</tr>
+<tr>
+<td>Ctrl+&amp;</td>
+<td>恢复 ctrl+h 或者 ctrl+d 或者 ctrl+w 删除的内容</td>
+</tr>
+<tr>
+<td>Ctrl+S</td>
+<td>暂停屏幕输出</td>
+</tr>
+<tr>
+<td>Ctrl+Q</td>
+<td>继续屏幕输出</td>
+</tr>
+<tr>
+<td>Ctrl+Left-Arrow</td>
+<td>光标移动到上一个单词的词首</td>
+</tr>
+<tr>
+<td>Ctrl+Right-Arrow</td>
+<td>光标移动到下一个单词的词尾</td>
+</tr>
+<tr>
+<td>Ctrl+p</td>
+<td>向上显示缓存命令</td>
+</tr>
+<tr>
+<td>Ctrl+n</td>
+<td>向下显示缓存命令</td>
+</tr>
+<tr>
+<td>Ctrl+d</td>
+<td>关闭终端</td>
+</tr>
+<tr>
+<td>Ctrl+xx</td>
+<td>在EOL和当前光标位置移动</td>
+</tr>
+<tr>
+<td>Ctrl+x@</td>
+<td>显示可能hostname补全</td>
+</tr>
+<tr>
+<td>Ctrl+c</td>
+<td>终止进程/命令</td>
+</tr>
+<tr>
+<td>Shift+上或下</td>
+<td>终端上下滚动</td>
+</tr>
+<tr>
+<td>Shift+PgUp/PgDn</td>
+<td>终端上下翻页滚动</td>
+</tr>
+<tr>
+<td>Ctrl+Shift+n</td>
+<td>新终端</td>
+</tr>
+<tr>
+<td>alt+F2</td>
+<td>输入gnome-terminal打开终端</td>
+</tr>
+<tr>
+<td>Shift+Ctrl+T</td>
+<td>打开新的标签页</td>
+</tr>
+<tr>
+<td>Shift+Ctrl+W</td>
+<td>关闭标签页</td>
+</tr>
+<tr>
+<td>Shift+Ctrl+C</td>
+<td>复制</td>
+</tr>
+<tr>
+<td>Shift+Ctrl+V</td>
+<td>粘贴</td>
+</tr>
+<tr>
+<td>Alt+数字</td>
+<td>切换至对应的标签页</td>
+</tr>
+<tr>
+<td>Shift+Ctrl+N</td>
+<td>打开新的终端窗口</td>
+</tr>
+<tr>
+<td>Shift+Ctrl+Q</td>
+<td>管壁终端窗口</td>
+</tr>
+<tr>
+<td>Shift+Ctrl+PgUp/PgDn</td>
+<td>左移右移标签页</td>
+</tr>
+<tr>
+<td>Ctrl+PgUp/PgDn</td>
+<td>切换标签页</td>
+</tr>
+<tr>
+<td>F1</td>
+<td>打开帮助指南</td>
+</tr>
+<tr>
+<td>F10</td>
+<td>激活菜单栏</td>
+</tr>
+<tr>
+<td>F11</td>
+<td>全屏切换</td>
+</tr>
+<tr>
+<td>Alt+F</td>
+<td>打开 “文件” 菜单（file）</td>
+</tr>
+<tr>
+<td>Alt+E</td>
+<td>打开 “编辑” 菜单（edit）</td>
+</tr>
+<tr>
+<td>Alt+V</td>
+<td>打开 “查看” 菜单（view）</td>
+</tr>
+<tr>
+<td>Alt+S</td>
+<td>打开 “搜索” 菜单（search）</td>
+</tr>
+<tr>
+<td>Alt+T</td>
+<td>打开 “终端” 菜单（terminal）</td>
+</tr>
+<tr>
+<td>Alt+H</td>
+<td>打开 “帮助” 菜单（help）</td>
+</tr>
+</tbody>
+</table>
+	</article>
+</main>
+
+
+
+
+
+	
+	<div id="disqus_thread" class="my-8"></div>
+<script type="text/javascript">
+  (function () {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    const dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    const disqus_shortname = 'stallone777-github-io';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+    Disqus.</a></noscript>
+	
+
+	
+
+	
+
+
+
+  <footer class="mt-8 flex sm:flex-col-reverse justify-between items-center">
+  <p class="mt-0 text-sm">
+
+  </p>
+  <p class="flex items-center mt-0">
+    
+      <a class="icon mx-2" href="https://github.com/stallone777" title="github">
+      
+        <svg fill="#63636f" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      
+      </a>
+    
+      <a class="icon mx-2" href="/index.xml" title="rss">
+      
+        <svg fill="#63636f" t="1626591563876" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1984" width="18" height="16"><path d="M128 768a128 128 0 1 0 0 256 128 128 0 0 0 0-256zM0 368v176c265.104 0 480 214.912 480 480h176c0-362.32-293.696-656-656-656zM0 0v176c468.336 0 848 379.664 848 848h176C1024 458.464 565.536 0 0 0z" p-id="1985"></path></svg>
+      
+      </a>
+    
+  </p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Manjaro Summary" />
+<meta property="og:description" content="Summary about Manjaro" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://stallone777.github.io/server/linux/manjaro/" /><meta property="article:section" content="server" />
+<meta property="article:published_time" content="2020-12-28T08:12:12+09:00" />
+<meta property="article:modified_time" content="2020-12-28T08:12:12+09:00" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Manjaro Summary"/>
+<meta name="twitter:description" content="Summary about Manjaro"/>
+
+  
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#262d33">
+  <title>
+    
+    Ranbo - Manjaro Summary
+    
+  </title>
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  
+  
+  
+  <link rel="stylesheet" href="/minima.1642604159.css">
+
+  
+  
+  <script defer type="text/javascript" src="/minima.1642604159.js"></script>
+</head>
+<script>
+  try {
+    if (!('theme' in localStorage)) {
+      localStorage.theme = window.matchMedia('(prefer-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.querySelector('html').classList.add(localStorage.theme);
+  } catch (e) {
+    console.error(e);
+  }
+</script>
+
+<body class=" sm:mx-5 sm:my-0">
+  <header class="flex justify-between items-center mb-6 sm:my-3">
+  <div class="flex items-center">
+    
+    <div id="theme-switcher" class="text-4xl cursor-pointer">🌝</div>
+  </div>
+  <nav class="flex items-center
+    whitespace-nowrap overflow-x-auto overflow-y-hidden">
+    
+    <a class="ml-5" href="/">Home</a>
+    
+    <a class="ml-5" href="/categories">Categories</a>
+    
+    <a class="ml-5" href="/tags">tags</a>
+    
+    <a class="ml-5" href="/about">About</a>
+    
+  </nav>
+</header>
+  
+  
+
+<h1 class="mt-6 mb-6">Manjaro Summary</h1>
+<div class="mb-3 text-xs flex justify-between sm:flex-col">
+	<div>
+	
+		Posted at &mdash; Dec 28, 2020
+	
+		
+	</div>
+	
+	<div class="sm:mt-4">
+		
+		<a class="not-first:ml-3" href="/tags/manjaro">#manjaro</a>
+		
+	</div>
+	
+</div>
+<main>
+	<p></p>
+	<article class="md">
+		<p>Summary about Manjaro</p>
+<h1 id="installation-issue">Installation issue</h1>
+<h2 id="light-display-manager-failed-to-start-on-hyper-v-gen2-vm">Light display manager failed to start on Hyper-V Gen2 VM</h2>
+<p>Press CTRL+ALT+F2 to switch to TTY2, and login with manjaro/manjaro.</p>
+<p>Then typing the following comands:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo pacman -Sy
+sudo pacman -S xf86-video-fbdev
+sudo systemctl start lightdm
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="the-things-to-do-after-installation">The things to do after installation</h1>
+<h2 id="换源">换源</h2>
+<p>更换为本地源</p>
+<h2 id="更新包">更新包</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"> sudo pacman -Syy <span class="c1">## 强制更新 package 目录</span>
+ sudo pacman -Syu  <span class="c1"># 强制更新 package 目录，并尝试更新已安装的所有 packages.</span>
+ sudo pacman -S yay  <span class="c1"># 安装 yay</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="中文输入法">中文输入法：</h2>
+<ul>
+<li>Step1: 下载中文语言包</li>
+<li>Step2: 下载输入法(google拼音)</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo pacman -S fcitx-im fcitx-configtool fcitx-googlepinyin
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>Step3: 修改配置文件</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">nano ～/.xprofile
+<span class="nb">export</span> <span class="nv">GTK_IM_MODULE</span><span class="o">=</span>fcitx
+<span class="nb">export</span> <span class="nv">QT_IM_MODULE</span><span class="o">=</span>fcitx
+<span class="nb">export</span> <span class="nv">XMODIFIERS</span><span class="o">=</span><span class="s2">&#34;@im=fcitx&#34;</span>
+<span class="c1"># nano 保存+退出编辑：</span>
+<span class="c1"># ctrl+o -&gt; enter</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="终端间距大">终端间距大</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo pacman -S wqy-bitmapfont
+sudo pacman -S wqy-zenhei
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="pacman-常用命令">Pacman 常用命令</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo pacman -Syy              <span class="c1"># 强制更新 package 目录</span>
+sudo pacman-mirrors --interactive --country China  <span class="c1"># 列出所有国内的镜像源，并提供交</span>
+sudo pacman -Syu              <span class="c1"># 强制更新 package 目录，并尝试更新已安装的所有 packages.</span>
+sudo pacman -S yay            <span class="c1"># 安装 yay</span>
+pacman -S package_name        <span class="c1"># 安装软件  </span>
+pacman -S extra/package_name  <span class="c1"># 安装不同仓库中的版本</span>
+pacman -Syu                   <span class="c1"># 升级整个系统，y是更新数据库，yy是强制更新，u是升级软件</span>
+pacman -Ss string             <span class="c1"># 在包数据库中查询软件</span>
+pacman -Si package_name       <span class="c1"># 显示软件的详细信息</span>
+pacman -Sc                    <span class="c1"># 清除软件缓存，即/var/cache/pacman/pkg目录下的文件</span>
+pacman -R package_name        <span class="c1"># 删除单个软件</span>
+pacman -Rs package_name       <span class="c1"># 删除指定软件及其没有被其他已安装软件使用的依赖关系</span>
+pacman -Qs string             <span class="c1"># 查询已安装的软件包</span>
+pacman -Qi package_name       <span class="c1"># 查询本地安装包的详细信息</span>
+pacman -Ql package_name       <span class="c1"># 获取已安装软件所包含的文件的列表</span>
+pacman -U package.tar.zx      <span class="c1"># 从本地文件安装</span>
+pactree package_name          <span class="c1"># 显示软件的依赖树</span>
+
+<span class="c1">#上述所有 pacman xxx 命令，均可替换成 yay xxx 执行。</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>此外，还有一条 yay 命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">yay -c  <span class="c1"># 卸载所有无用的依赖。类比 apt-get autoremove</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>常用的软件包安装命令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">sudo pacman -S google-chrome  firefox-developer-edition         <span class="c1"># 浏览器</span>
+sudo pacman -S netease-cloud-music     <span class="c1"># 网易云音乐</span>
+sudo pacman -S noto-fonts-cjk wqy-bitmapfont wqy-microhei wqy-zenhei   <span class="c1"># 中文字体：思源系列、文泉系列</span>
+sudo pacman -S wps-office ttf-wps-fonts
+
+sudo pacman -S vim                     <span class="c1"># 命令行编辑器</span>
+sudo pacman -S git                     <span class="c1"># 版本管理工具</span>
+sudo pacman -S clang make cmake gdb    <span class="c1"># 编译调试环境</span>
+sudo pacman -S visual-studio-code-bin  <span class="c1"># 代码编辑器</span>
+
+sudo pacman -S wireshark-qt  mitmproxy         <span class="c1"># 抓包工具</span>
+sudo pacman -S docker  <span class="c1"># docker 容器</span>
+其中 docker 和 wireshark 需要额外配置，否则会要求管理员权限：
+
+sudo groupadd wireshark
+sudo gpasswd --add &lt;username&gt; wireshark  <span class="c1"># &lt;username&gt;是你的用户名，将你添加到 wireshark 用户组中</span>
+
+sudo groupadd docker
+sudo gpasswd --add &lt;username&gt; docker  <span class="c1"># 同上</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+	</article>
+</main>
+
+
+
+
+
+	
+	<div id="disqus_thread" class="my-8"></div>
+<script type="text/javascript">
+  (function () {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    const dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    const disqus_shortname = 'stallone777-github-io';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+    Disqus.</a></noscript>
+	
+
+	
+
+	
+
+
+
+  <footer class="mt-8 flex sm:flex-col-reverse justify-between items-center">
+  <p class="mt-0 text-sm">
+
+  </p>
+  <p class="flex items-center mt-0">
+    
+      <a class="icon mx-2" href="https://github.com/stallone777" title="github">
+      
+        <svg fill="#63636f" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      
+      </a>
+    
+      <a class="icon mx-2" href="/index.xml" title="rss">
+      
+        <svg fill="#63636f" t="1626591563876" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1984" width="18" height="16"><path d="M128 768a128 128 0 1 0 0 256 128 128 0 0 0 0-256zM0 368v176c265.104 0 480 214.912 480 480h176c0-362.32-293.696-656-656-656zM0 0v176c468.336 0 848 379.664 848 848h176C1024 458.464 565.536 0 0 0z" p-id="1985"></path></svg>
+      
+      </a>
+    
+  </p>
+</footer>
+</body>
+</html>
